@@ -101,6 +101,7 @@ h2 {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 0px;
+  color:white
 }
 
 /* =Content Styles
@@ -178,25 +179,21 @@ h2 {
     line-height: 40px;
   }
 
+
+
+  
+
   /* .sub-title { font-size: ; line-height: ; margin-top: 10px; } */
   /* TITLE & CONTACT */
   .title {
     top: 15%;
   }
-  .contact .icons {
-    margin-bottom: 0px;
-  }
-  /* SIZES */
-  .sphere img {
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6, 0.6);
-    transform: scale(0.6);
-  }
+  
+
 }
 
 /* Landscape Phone */
-@media all and (min-width: 400px) {
+@media all and (min-width: 300px) {
   /* HERO */
   h1 {
     font-size: 60px;
@@ -375,4 +372,14 @@ h2 {
     border-radius: 10px;
     padding: 25px 45px;
   }
+}
+
+.event-title{
+  color: white;
+}
+
+.location-wrap{
+  display: flex;
+  flex-direction: row;
+  padding:20px;
 }
