@@ -427,7 +427,7 @@ h2 {
 }
 
 /* Landscape Phone */
-@media all and (min-width: 400px) {
+@media all and (min-width: 300px) {
   /* HERO */
   h1 {
     font-size: 40px;
