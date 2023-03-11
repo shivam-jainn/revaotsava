@@ -482,7 +482,7 @@ strong {
 
 .hero-section .section-overlay {
   z-index: 2;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .hero-section .container {

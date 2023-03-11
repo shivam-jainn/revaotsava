@@ -71,7 +71,7 @@ h1 {
   font-weight: 800;
   line-height: 80px;
   letter-spacing: -0.08em;
-  color: #ff5100;
+  color: #ff7722;
 }
 
 h2 {
@@ -101,7 +101,7 @@ h2 {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 0px;
-  color:white
+  color: white;
 }
 
 /* =Content Styles
@@ -179,17 +179,11 @@ h2 {
     line-height: 40px;
   }
 
-
-
-  
-
   /* .sub-title { font-size: ; line-height: ; margin-top: 10px; } */
   /* TITLE & CONTACT */
   .title {
     top: 15%;
   }
-  
-
 }
 
 /* Landscape Phone */
@@ -374,12 +368,12 @@ h2 {
   }
 }
 
-.event-title{
-  color: white;
+.event-title {
+  color: #ff5100;
 }
 
-.location-wrap{
+.location-wrap {
   display: flex;
   flex-direction: row;
-  padding:20px;
+  padding: 20px;
 }
