@@ -1,4 +1,67 @@
-.about-container {
-  height: 105vh;
-  z-index: 2;
+.about-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.text {
+  flex-grow: 1;
+  background-color: black;
+  background-image: url(/images/about/text-bg.jpg);
+  object-fit: cover;
+}
+.about-title {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 700;
+  color: orange;
+  margin: 3rem 2rem;
+}
+.about-para {
+  font-size: 2rem;
+  margin: 2rem 7rem;
+  color: white;
+}
+.image {
+  flex-grow: 2;
+  position: relative;
+}
+.reva-img {
+  /* background-image: url(/images/about/reva.png); */
+  object-fit: cover;
+
+  max-height: 800px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .text {
+    background-image: url(/images/about/text-bg.jpg);
+  }
+
+  .image {
+    height: 300px;
+    background-color: aqua;
+  }
+
+  .reva-img {
+    height: 100%;
+  }
+
+  .about-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: orange;
+    margin: 3rem 2rem;
+  }
+  .about-para {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem 3rem;
+    color: white;
+  }
 }
