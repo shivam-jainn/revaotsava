@@ -101,6 +101,7 @@ h2 {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 0px;
+  color:white
 }
 
 /* =Content Styles
@@ -346,10 +347,7 @@ h2 {
     font-size: 40px;
     line-height: 40px;
   }
-  #countdown div span {
-    font-size: 24px;
-    line-height: 34px;
-  }
+  
   /* .sub-title { font-size: ; line-height: ; margin-top: 10px; } */
   /* TITLE & CONTACT */
   .title {
@@ -375,54 +373,6 @@ h2 {
   .depth-4 {
     left: -4%;
     top: 20%;
-  }
-
-  .depth-3.flake1 {
-    display: none;
-  }
-
-  .depth-3.flake2 {
-    position: absolute;
-    right: 16%;
-    bottom: 20%;
-  }
-
-  .depth-3.flake3 {
-    position: absolute;
-    left: 10%;
-    bottom: 16%;
-  }
-
-  .depth-3.flake4 {
-    display: none;
-  }
-
-  .depth-2.flake1 {
-    display: none;
-  }
-
-  .depth-2.flake2 {
-    display: none;
-  }
-
-  .depth-1.flake1 {
-    display: none;
-  }
-
-  .depth-1.flake2 {
-    position: absolute;
-    right: 40%;
-    top: 40%;
-  }
-
-  .depth-1.flake3 {
-    display: none;
-  }
-
-  .depth-1.flake4 {
-    position: absolute;
-    right: 0;
-    top: 0;
   }
 }
 
@@ -1141,4 +1091,14 @@ h2 {
     border-radius: 10px;
     padding: 25px 45px;
   }
+}
+
+.event-title{
+  color: white;
+}
+
+.location-wrap{
+  display: flex;
+  flex-direction: row;
+  padding:20px;
 }
