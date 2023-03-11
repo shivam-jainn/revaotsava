@@ -377,3 +377,16 @@ h2 {
   flex-direction: row;
   padding: 20px;
 }
+
+
+.blursection{
+  
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+
+    background-color: #ccc;
+
+}
