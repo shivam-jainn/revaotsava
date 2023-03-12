@@ -86,7 +86,12 @@
 
   color: white;
 }
-
+.dektop-helptext {
+  display: block;
+}
+.mobile-helptext {
+  display: none;
+}
 @media screen and (max-width: 880px) {
   .about-title {
     font-size: 4rem;
@@ -110,5 +115,35 @@
   }
   .about-para {
     font-size: rem;
+  }
+}
+
+.fancyslider {
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .fancyslider {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .dektop-helptext {
+    display: none;
+  }
+  .mobile-helptext {
+    display: block;
+  }
+  .events-section {
+    background-color: var(--dark-color);
+    text-align: center;
+    height: 90vh;
   }
 }
