@@ -1010,7 +1010,7 @@ strong {
   }
 }
 .events-section {
-  background-color: #1f1c1c;
+  background-image: url("/images/background.jpg");
   text-align: center;
 }
 .carousel 
