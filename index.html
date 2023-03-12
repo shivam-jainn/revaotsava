@@ -31,11 +31,24 @@
 </head>
 
 <body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+    <script>
+        VANTA.CLOUDS2({
+          el: "vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          texturePath: "./images/noise.png"
+        })
+        </script>
     <main>
 
-        <header class="site-header">
-            <div class="container">
+        <!-- <header class="site-header">
+            <div id="vanta">
                 <div class="row">
 
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
@@ -47,13 +60,13 @@
 
                 </div>
             </div>
-        </header>
+        </header> -->
 
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    Revostava
+                    REVOTHSAVA
                 </a>
 
                 <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
@@ -81,7 +94,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Events</a>
+                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
                         </li>
 
                         <li class="nav-item">
@@ -93,13 +106,13 @@
                         </li>
                     </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Register</a>
                 </div>
             </div>
         </nav>
 
 
-        <section class="hero-section" id="section_1">
+        <section class="hero-section" id="section_1 hbg">
 
             <div class="section-overlay"></div>
 
@@ -218,7 +231,7 @@
         </section>
 
 
-        <section  id="section_2">
+        <section  id="section_2" >
             <!-- <div class="container">
                     <div class="row">
 
@@ -259,16 +272,16 @@
 
                     </div>
                 </div> -->
-            <div class="about-section">
+            <div class="about-section" id="hbg">
 
                
-                <div class="about-imagee">
+                <div class="about-imagee" id="hbg">
                     <img src="/images/about/reva.png" >
                     <!-- <img src="/images/about/Background.png" alt="" class="about-background">
                         <img src="/images/about/Foreground.png" alt="" class="about-foreground"> -->
                 </div>  
 
-            <div class="about-text">
+            <div class="about-text" id="hbg">
                 <div class="about-title">About Revostava</div>
                 <div class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure
                     laudantium rem veniam optio officiis. Distinctio, vitae! In, veritatis officia doloremque iste
@@ -712,6 +725,7 @@ T e m p l a t e M o
 -->
 
     <!-- JAVASCRIPT FILES -->
+   
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
@@ -720,6 +734,8 @@ T e m p l a t e M o
     <script src="js/plugins.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
+   
+    
 </body>
 
 </html>
