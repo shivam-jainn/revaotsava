@@ -1,39 +1,20 @@
-.about-section {
-  display: flex;
-  flex-direction: column-reverse;
-}
+/* 
 
-.text {
-  flex-grow: 1;
-  background-color: black;
-  background-image: url(/images/about/text-bg.jpg);
-  object-fit: cover;
-}
-.about-title {
-  font-size: 5rem;
-  text-align: center;
-  font-weight: 700;
-  color: orange;
-  margin: 3rem 2rem;
-}
-.about-para {
-  font-size: 2rem;
-  margin: 2rem 7rem;
-  color: white;
-}
-.image {
+
+
+/* .image {
   flex-grow: 2;
   position: relative;
-}
-.reva-img {
-  /* background-image: url(/images/about/reva.png); */
+} */
+/* .reva-img {
+  background-image: url(/images/about/reva.png);
   object-fit: cover;
 
   max-height: 800px;
   width: 100%;
-}
+} */
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .about-section {
     display: flex;
     flex-direction: column-reverse;
@@ -63,5 +44,71 @@
     text-align: center;
     margin: 2rem 3rem;
     color: white;
+  }
+} */
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+.about-imagee {
+  flex-grow: 1.5;
+  background-color: aqua;
+  /* background-image: url(../images/about/reva.png);
+  background-size: cover; */
+}
+
+.about-imagee img {
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  flex-grow: 1.5;
+  background-color: black;
+  background-image: url(/images/about/text-bg.jpg);
+  background-size: cover;
+}
+.about-title {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(255, 98, 0);
+  display: block;
+  padding: 2% 0;
+}
+.about-para {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+
+  color: white;
+}
+
+@media screen and (max-width: 880px) {
+  .about-title {
+    font-size: 4rem;
+  }
+  .about-para {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-title {
+    font-size: 3rem;
+  }
+  .about-para {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-para {
+    font-size: rem;
   }
 }
