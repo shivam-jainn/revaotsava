@@ -26,6 +26,9 @@
         
         <link href="css/about.css" rel="stylesheet">
         
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <link rel="stylesheet" href="css/carousel.css.map">
 
     </head>
     
@@ -274,44 +277,31 @@
                 <div class="eventHeader">
                     <h1 class="text-center mb-4">EVENTS</h1 >
                 </div>
-                <div class="container">
-                    <div
-                        class="slide"
-                        style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1244&q=80');"
-                    >
-                      <h3>Nights</h3>
-                    </div>
-                    <div
-                        class="slide"
-                        style="
-                            background-image: url('https://images.unsplash.com/photo-1585238326164-612cb4248873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80');
-                          "
-                    >
-                      <h3>????</h3>
-                    </div>
-                    <div
-                        class="slide"
-                        style="
-                            background-image: url('https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-                          "
-                    >
-                      <h3>Law</h3>
-                    </div>
-                    <div
-                        class="slide active"
-                        style="
-                            background-image: url('https://images.unsplash.com/photo-1563503136947-cc262fa1e423?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
-                          "
-                    >
-                      <h3>Cult</h3>
-                    </div>
-                    <div
-                        class="slide"
-                        style="
-                            background-image: url('https://images.unsplash.com/photo-1554107136-57b138ea99df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-                          "
-                    >
-                      <h3>Tech</h3>
+                <div class="carouselEventContainer">
+                    
+                    <div class="carousel-wrapper-event">
+                      <div class="carouselEvent">
+                        <div class="slider" id="slider" tabindex="0">
+                          <div class="slide"><span>1<span></div>
+                          <div class="slide"><span>2<span></div>
+                          <div class="slide"><span>3<span></div>
+                          <div class="slide"><span>4<span></div>
+                          <div class="slide"><span>5<span></div>
+                          <div class="slide"><span>6<span></div>
+                          <div class="slide"><span>7<span></div>
+                          <div class="slide"><span>8<span></div>
+                          <div class="slide"><span>9<span></div>
+                          <div class="slide"><span>10<span></div>
+                        </div>
+                        <button class="slider-control arrow-left hide" id="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="15 6 9 12 15 18"></polyline>
+                          </svg></button>
+                        <button class="slider-control arrow-right" id="btn-next"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="9 6 15 12 9 18"></polyline>
+                          </svg></button>
+                      </div>
                     </div>
                   </div>
             </section>
