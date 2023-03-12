@@ -16,7 +16,7 @@ https://templatemo.com/tm-583-festava-live
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #ee5007;
   --custom-btn-bg-hover-color: #c01f27;
-  --dark-color: #000000;
+  --dark-color: #191825;
   --p-color: #717275;
   --border-color: #7fffd4;
   --link-hover-color: #b22727;
@@ -33,7 +33,7 @@ https://templatemo.com/tm-583-festava-live
   --btn-font-size: 14px;
   --copyright-font-size: 16px;
 
-  --border-radius-large: 100px;
+  --border-radius-large: 9px;
   --border-radius-medium: 20px;
   --border-radius-small: 10px;
 
@@ -45,6 +45,7 @@ https://templatemo.com/tm-583-festava-live
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
+  overflow-x: hidden;
 }
 
 /*---------------------------------------
@@ -774,6 +775,9 @@ strong {
 -----------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
+}
+.contact-section{
+  background-color: #191825;
 }
 
 /*---------------------------------------
