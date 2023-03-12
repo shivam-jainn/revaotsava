@@ -357,7 +357,7 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  margin-top: 51px;
+  /* margin-top: 51px; */
 }
 
 .sticky-wrapper.is-sticky .navbar {
@@ -544,11 +544,13 @@ strong {
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url("../images/nicholas-green-unsplash-blur.jpg");
+  background-image: url("../images/nicholas-green-unsplash-blur2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 130px;
+  background-position: bottom left;
+
+  /* padding-top: 130px; */
 }
 
 .ticket-form {
@@ -893,6 +895,10 @@ strong {
   animation: spinAround 2s linear infinite;
 }
 
+.padding-top {
+  padding-top: 10%;
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -1009,22 +1015,21 @@ strong {
   background-color: #1f1c1c;
   text-align: center;
 }
-.carousel 
-{
+.carousel {
   position: relative;
 }
 .carousel::after {
   position: absolute;
   left: 0;
   top: 0;
-  box-shadow: inset 0px 0px 120px 30px rgba(0,0,0,0.35);
+  box-shadow: inset 0px 0px 120px 30px rgba(0, 0, 0, 0.35);
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 .carousel ul {
-  overflow: auto; 
-  display: flex; 
+  overflow: auto;
+  display: flex;
   height: 500px;
   max-height: 500px;
   scroll-snap-type: x mandatory;
@@ -1034,11 +1039,13 @@ strong {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.carousel ul::-webkit-scrollbar {display: none;} 
+.carousel ul::-webkit-scrollbar {
+  display: none;
+}
 .carousel ul li {
-  width: 100%; 
+  width: 100%;
   min-width: 100%;
-  list-style: none; 
+  list-style: none;
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
@@ -1054,11 +1061,16 @@ strong {
   position: relative;
   bottom: 15px;
 }
-.carousel ul li.selected {opacity: 1; z-index: 9;}
-.carousel ul li.selected > div {transform: scale(1.6);}
+.carousel ul li.selected {
+  opacity: 1;
+  z-index: 9;
+}
+.carousel ul li.selected > div {
+  transform: scale(1.6);
+}
 .carousel ul li > div {
-  z-index: 9; 
-  margin: 0 auto; 
+  z-index: 9;
+  margin: 0 auto;
   max-width: 170px;
   background: white;
   transition: all 0.2s linear;
@@ -1066,26 +1078,85 @@ strong {
   padding: 20px 15px;
 }
 .carousel ul li > div > div {
-  background: url("/images/ee.jpg") center center / cover no-repeat; 
+  background: url("/images/ee.jpg") center center / cover no-repeat;
   height: 210px;
   margin-bottom: 15px;
   margin: -20px -15px 15px;
 }
-.carousel ul li div a {color: white; display: inline-block; background: white; color: white; padding: 8px 15px; font-size: 13px; text-decoration: none; border-radius: 4px; margin-top: 17px; background: black;}
+.carousel ul li div a {
+  color: white;
+  display: inline-block;
+  background: white;
+  color: white;
+  padding: 8px 15px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 17px;
+  background: black;
+}
 
-.carousel ol {position: absolute; bottom: 15px; display: flex; justify-content: center; left: 50%; transform: translateX(-50%); z-index: 9;}
-.carousel ol li {list-style: none; padding: 0 5px;}
-.carousel ol li a {display: block; height: 10px; width: 10px; border: 2px solid white; background: transparent; border-radius: 100%;}
-.carousel ol li.selected a {background: white;}
-.carousel .prev, .carousel .next {user-select:none; cursor: pointer; font-size: 50px; color: white; position: absolute; left: 0; padding: 15px; top: 50%; transform: translateY(-50%); z-index: 9;}
-.carousel .next {left: auto; right: 0;}
+.carousel ol {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.carousel ol li {
+  list-style: none;
+  padding: 0 5px;
+}
+.carousel ol li a {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border: 2px solid white;
+  background: transparent;
+  border-radius: 100%;
+}
+.carousel ol li.selected a {
+  background: white;
+}
+.carousel .prev,
+.carousel .next {
+  user-select: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  left: 0;
+  padding: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.carousel .next {
+  left: auto;
+  right: 0;
+}
 
 /* DEMO CSS */
 .carousel ul li:nth-child(2) > div > div,
-.carousel ul li:nth-child(6) > div > div {background-image: url("/images/ee.jpg");}
+.carousel ul li:nth-child(6) > div > div {
+  background-image: url("/images/ee.jpg");
+}
 .carousel ul li:nth-child(3) > div > div,
-.carousel ul li:nth-child(7) > div > div {background-image: url("/images/ee.jpg");}
+.carousel ul li:nth-child(7) > div > div {
+  background-image: url("/images/ee.jpg");
+}
 .carousel ul li:nth-child(4) > div > div,
-.carousel ul li:nth-child(8) > div > div {background-image: url("/images/ee.jpg");}
-p, h2 {margin: 15px auto; padding: 0 15px; max-width: 800px;}
-h2 {margin-top: 30px;}
+.carousel ul li:nth-child(8) > div > div {
+  background-image: url("/images/ee.jpg");
+}
+p,
+h2 {
+  margin: 15px auto;
+  padding: 0 15px;
+  max-width: 800px;
+}
+h2 {
+  margin-top: 30px;
+}
