@@ -26,7 +26,7 @@
         
         <link href="css/about.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="css/carousel.css">
+        <!-- <link rel="stylesheet" href="css/carousel.css"> -->
 
         <link rel="stylesheet" href="css/carousel.css.map">
 
@@ -60,7 +60,8 @@
     <link href="css/revostava.css" rel="stylesheet">
 
     <link href="css/about.css" rel="stylesheet">
-
+    
+    <link href="css/fancyslider.css" rel="stylesheet">
 
 </head>
 
@@ -361,7 +362,10 @@
                 <div class="eventHeader">
                     <h1 class="text-center mb-4">EVENTS</h1 >
                 </div>
-                <div class="carouselEventContainer">
+
+                <h6 class="dektop-helptext" style="color:white; font-weight: 10;">Click and slide to view more categories</h6>
+                <h6 class="mobile-helptext" style="color:white; font-weight: 10;">Flick the cards to view more categories</h6>
+                <!-- <div class="carouselEventContainer">
                     
                     <div class="carousel-wrapper-event">
                       <div class="carouselEvent">
@@ -387,8 +391,12 @@
                           </svg></button>
                       </div>
                     </div>
-                  </div>
-            </section>
+                  </div> -->
+            <!-- Fancy event slider -->
+
+<!-- ######################################################################################### -->
+  <iframe class="fancyslider"src="Epic slider/EventsSlider.html" title="W3Schools Free Online Web Tutorials" height="auto" width="auto"></iframe>
+                </section>
 
 
         <section class="schedule-section section-padding blursection" id="section_4">
@@ -620,6 +628,8 @@ T e m p l a t e M o
     <script src="js/plugins.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/FancySlider.js"></script>
+    
     <script>
         let index = 0,
     interval = 1000;

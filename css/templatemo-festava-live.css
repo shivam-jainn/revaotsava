@@ -472,7 +472,7 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  height: calc(100vh );
+  height: calc(100vh);
 }
 
 .hero-section small {
@@ -777,7 +777,7 @@ strong {
 .google-map {
   border-radius: var(--border-radius-medium);
 }
-.contact-section{
+.contact-section {
   background-color: #191825;
 }
 
@@ -1015,9 +1015,11 @@ strong {
   }
 }
 .events-section {
-background-color:var(--dark-color);
+  background-color: var(--dark-color);
   text-align: center;
+  height: 125vh;
 }
+
 .carousel {
   position: relative;
 }
