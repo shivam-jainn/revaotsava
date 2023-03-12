@@ -366,7 +366,7 @@ strong {
 
 .navbar {
   background: transparent;
-  z-index: 9;
+  z-index: 99;
 }
 
 .navbar-brand,
