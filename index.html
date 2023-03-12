@@ -1,5 +1,39 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>REVOTHSAVA</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-festava-live.css" rel="stylesheet">
+        
+        <link href="css/revostava.css" rel="stylesheet">
+        
+        <link href="css/about.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <link rel="stylesheet" href="css/carousel.css.map">
+
+    </head>
+    
+    <body>
+
 
 <head>
     <meta charset="utf-8">
@@ -31,11 +65,26 @@
 </head>
 
 <body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+    <script>
+        VANTA.CLOUDS2({
+          el: "vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          texturePath: "./images/noise.png"
+        })
+        </script>
     <main>
 
         <!-- <header class="site-header">
-            <div class="container">
+
+            <div id="vanta">
+
                 <div class="row">
 
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
@@ -53,7 +102,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    Revostava
+                    REVOTHSAVA
                 </a>
 
                 <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
@@ -81,7 +130,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Events</a>
+                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
                         </li>
 
                         <li class="nav-item">
@@ -93,13 +142,13 @@
                         </li>
                     </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Register</a>
                 </div>
             </div>
         </nav>
 
 
-        <section class="hero-section" id="section_1">
+        <section class="hero-section" id="section_1 hbg">
 
             <div class="section-overlay"></div>
 
@@ -163,7 +212,7 @@
 
             <div class="video-wrap">
                 <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                    <source src="video/pexels-2022395.mp4" type="video/mp4">
+                    <source src="video/bgvideo.webm" type="video/webm">
 
                     Your browser does not support the video tag.
                 </video>
@@ -218,7 +267,7 @@
         </section>
 
 
-        <section  id="section_2">
+        <section  id="section_2" >
             <!-- <div class="container">
                     <div class="row">
 
@@ -259,26 +308,52 @@
 
                     </div>
                 </div> -->
-            <div class="about-section">
-
-               
-                <div class="about-imagee">
-                    <img src="/images/about/reva.png" >
-                    <!-- <img src="/images/about/Background.png" alt="" class="about-background">
-                        <img src="/images/about/Foreground.png" alt="" class="about-foreground"> -->
-                </div>  
-
-            <div class="about-text">
-                <div class="about-title">About Revostava</div>
-                <div class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure
-                    laudantium rem veniam optio officiis. Distinctio, vitae! In, veritatis officia doloremque iste
-                    magnam consequuntur ut, quo ab quod qui repellat!
-                    Quia vero velit rerum reprehenderit itaque beatae, laborum sequi odit, dignissimos reiciendis
-                    nihil placeat voluptatem mollitia, ipsum debitis totam quos recusandae. Repudiandae doloribus
-                    molestias facilis sunt quae mollitia eos fuga.
-                </div>
-            </div>
-        </div>
+                <div class="responsive-container-block big-container">
+                    <div class="responsive-container-block container">
+                      <div class="responsive-container-block">
+                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 img-one">
+                          <img alt="golden-lines.png" class="image-block bg-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/golden%20lines.png">
+                        </div>
+                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 content-one">
+                            <h1 class="arh">
+                                About  <span class="magic">
+                                    <span class="magic-star">
+                                      <svg viewBox="0 0 512 512">
+                                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                      </svg>
+                                    </span>
+                                    <span class="magic-star">
+                                      <svg viewBox="0 0 512 512">
+                                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                      </svg>
+                                    </span>
+                                    <span class="magic-star">
+                                      <svg viewBox="0 0 512 512">
+                                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                      </svg>
+                                    </span>
+                                    <span class="magic-text">Revotsava</span>
+                                  </span>
+                                </h1>
+                          <p class="text-blk section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                          </p>
+                          <p class="text-blk section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
         </section>
 
 
@@ -286,24 +361,33 @@
                 <div class="eventHeader">
                     <h1 class="text-center mb-4">EVENTS</h1 >
                 </div>
-                    <div class="carousel">
-                        <ul tabindex="0">
-                          <li id="c1_slide1" class="selected"><div><div></div>category 1<br /></div></li>  
-                          <li id="c1_slide2"><div><div></div>category 2<br /></div></li>  
-                          <li id="c1_slide3"><div><div></div>category 3<br /></div></li>  
-                          <li id="c1_slide4"><div><div></div>category 4<br /></div></li>  
-                          <li id="c1_slide5"><div><div></div>category 5<br /></div></li>  
-                        </ul>
-                        <ol>
-                          <li class="selected"><a href="#c1_slide1"></a></li>
-                          <li><a href="#c1_slide2"></a></li>
-                          <li><a href="#c1_slide3"></a></li>
-                          <li><a href="#c1_slide4"></a></li>
-                          <li><a href="#c1_slide5"></a></li>
-                        </ol>
-                        <div class="prev">&lsaquo;</div>
-                        <div class="next">&rsaquo;</div>
+                <div class="carouselEventContainer">
+                    
+                    <div class="carousel-wrapper-event">
+                      <div class="carouselEvent">
+                        <div class="slider" id="slider" tabindex="0">
+                          <div class="slide"><span>1<span></div>
+                          <div class="slide"><span>2<span></div>
+                          <div class="slide"><span>3<span></div>
+                          <div class="slide"><span>4<span></div>
+                          <div class="slide"><span>5<span></div>
+                          <div class="slide"><span>6<span></div>
+                          <div class="slide"><span>7<span></div>
+                          <div class="slide"><span>8<span></div>
+                          <div class="slide"><span>9<span></div>
+                          <div class="slide"><span>10<span></div>
+                        </div>
+                        <button class="slider-control arrow-left hide" id="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="15 6 9 12 15 18"></polyline>
+                          </svg></button>
+                        <button class="slider-control arrow-right" id="btn-next"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="9 6 15 12 9 18"></polyline>
+                          </svg></button>
                       </div>
+                    </div>
+                  </div>
             </section>
 
 
@@ -311,252 +395,63 @@
             <div class="container">
                 <div class="row">
 
+
                     <div class="col-12 text-center">
                         <h2 class="text-white mb-4">Event Schedule</h1>
 
-                            <div class="table-responsive">
-                                <table class="schedule-table table table-dark">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Date</th>
-
-                                            <th scope="col">Wednesday</th>
-
-                                            <th scope="col">Thursday</th>
-
-                                            <th scope="col">Friday</th>
-
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Day 1</th>
-
-                                            <td class="table-background-image-wrap pop-background-image">
-                                                <h3>Pop Night</h3>
-
-                                                <p class="mb-2">5:00 - 7:00 PM</p>
-
-                                                <p>By Adele</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-
-                                            <td style="background-color: #F3DCD4"></td>
-
-                                            <td class="table-background-image-wrap rock-background-image">
-                                                <h3>Rock & Roll</h3>
-
-                                                <p class="mb-2">7:00 - 11:00 PM</p>
-
-                                                <p>By Rihana</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">Day 2</th>
-
-                                            <td style="background-color: #ECC9C7"></td>
-
-                                            <td>
-                                                <h3>DJ Night</h3>
-
-                                                <p class="mb-2">6:30 - 9:30 PM</p>
-
-                                                <p>By Rihana</p>
-                                            </td>
-
-                                            <td style="background-color: #D9E3DA"></td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">Day 3</th>
-
-                                            <td class="table-background-image-wrap country-background-image">
-                                                <h3>Country Music</h3>
-
-                                                <p class="mb-2">4:30 - 7:30 PM</p>
-
-                                                <p>By Rihana</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-
-                                            <td style="background-color: #D1CFC0"></td>
-
-                                            <td>
-                                                <h3>Free Styles</h3>
-
-                                                <p class="mb-2">6:00 - 10:00 PM</p>
-
-                                                <p>By Members</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="pricing-section section-padding section-bg" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <h2 class="text-center mb-4">Plans, you' love</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="pricing-thumb">
-                            <div class="d-flex">
-                                <div>
-                                    <h3><small>Early Bird</small> $120</h3>
-
-                                    <p>Including good things:</p>
-                                </div>
-
-                                <p class="pricing-tag ms-auto">Save up to <span>50%</span></h2>
-                            </div>
-
-                            <ul class="pricing-list mt-3">
-                                <li class="pricing-list-item">platform for potential customers</li>
-
-                                <li class="pricing-list-item">digital experience</li>
-
-                                <li class="pricing-list-item">high-quality sound</li>
-
-                                <li class="pricing-list-item">standard content</li>
-                            </ul>
-
-                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                                <span>Buy Ticket</span>
-                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="16" cy="16" r="15.5"></circle>
-                                        <line x1="10" y1="18" x2="16" y2="12"></line>
-                                        <line x1="16" y1="12" x2="22" y2="18"></line>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mt-4 mt-lg-0">
-                        <div class="pricing-thumb">
-                            <div class="d-flex">
-                                <div>
-                                    <h3><small>Standard</small> $240</h3>
-
-                                    <p>What makes a premium festava?</p>
-                                </div>
-                            </div>
-
-                            <ul class="pricing-list mt-3">
-                                <li class="pricing-list-item">platform for potential customers</li>
-
-                                <li class="pricing-list-item">digital experience</li>
-
-                                <li class="pricing-list-item">high-quality sound</li>
-
-                                <li class="pricing-list-item">premium content</li>
-
-                                <li class="pricing-list-item">live chat support</li>
-                            </ul>
-
-                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                                <span>Buy Ticket</span>
-                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="16" cy="16" r="15.5"></circle>
-                                        <line x1="10" y1="18" x2="16" y2="12"></line>
-                                        <line x1="16" y1="12" x2="22" y2="18"></line>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="contact-section section-padding" id="section_6">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <h2 class="text-center mb-4">Interested? Let's talk</h2>
-
-                        <nav class="d-flex justify-content-center">
-                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
-                                role="tablist">
-                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
-                                    aria-controls="nav-ContactForm" aria-selected="false">
-                                    <h5>Contact Form</h5>
-                                </button>
-
-                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
-                                    aria-controls="nav-ContactMap" aria-selected="false">
-                                    <h5>Google Maps</h5>
-                                </button>
-                            </div>
-                        </nav>
-
-                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
-                                aria-labelledby="nav-ContactForm-tab">
-                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
-                                    role="form">
-                                    <div class="contact-form-body">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <input type="text" name="contact-name" id="contact-name"
-                                                    class="form-control" placeholder="Full name" required>
-                                            </div>
-
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <input type="email" name="contact-email" id="contact-email"
-                                                    pattern="[^ @]*@[^ @]*" class="form-control"
-                                                    placeholder="Email address" required>
-                                            </div>
-                                        </div>
-
-                                        <input type="text" name="contact-company" id="contact-company"
-                                            class="form-control" placeholder="Company" required>
-
-                                        <textarea name="contact-message" rows="3" class="form-control"
-                                            id="contact-message" placeholder="Message"></textarea>
-
-                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <button type="submit" class="form-control">Send message</button>
-                                        </div>
+                                <div class="container">
+                                    <div
+                                        class="slide"
+                                        style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1244&q=80');"
+                                    >
+                                      <h3>Nights</h3>
                                     </div>
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
-                                aria-labelledby="nav-ContactMap-tab">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7291172872892!2d77.63310401461366!3d13.116339290761022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19721a651fd3%3A0xdee225fe28f600f6!2sREVA%20University!5e0!3m2!1sen!2sin!4v1678509280707!5m2!1sen!2sin"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
-                            </div>
+                                    <div
+                                    class="slide"
+                                    style="
+                                            background-image: url('https://images.unsplash.com/photo-1585238326164-612cb4248873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80');
+                                            "
+                                    >
+                                    <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/WYqvnicSTDU9PfFEiXqYTq"></iframe>
+                                    <h3>????</h3>
+                                    </div>
+                                   
+                                  </div>
+                           
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </section>
+
+
+        <div class="wrap">
+            <h3 class="Sponsors-h3"><strong>SPONSORS</strong></h3>
+            <h3 class="s-title"><strong>PLATINUM </strong></h3>
+            <ul class="clients">
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+            </ul>
+            <h3 class="s-title"><strong>GOLD </strong></h3>
+            <ul class="clients">
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+            </ul>
+            </ul>
+            <h3 class="s-title"class="s-title"><strong>SILVER </strong></h3>
+            <ul class="clients">
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+              <li><a href=""><img src="images/logo.svg" alt="logo"></a></li>
+            </ul>
+          </div>
+
     </main>
 
 
@@ -711,7 +606,9 @@ T e m p l a t e M o
 
 -->
 
+
     <!-- JAVASCRIPT FILES -->
+   
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
@@ -720,6 +617,33 @@ T e m p l a t e M o
     <script src="js/plugins.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        let index = 0,
+    interval = 1000;
+
+const rand = (min, max) => 
+  Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = star => {
+  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
+
+  star.style.animation = "none";
+  star.offsetHeight;
+  star.style.animation = "";
+}
+
+for(const star of document.getElementsByClassName("magic-star")) {
+  setTimeout(() => {
+    animate(star);
+    
+    setInterval(() => animate(star), 1000);
+  }, index++ * (interval / 3))
+}
+    </script>
+   
+    
 </body>
+
 
 </html>
