@@ -882,12 +882,13 @@ strong {
   width: 35px;
   height: 35px;
   line-height: 36px;
-  transition: background 0.2s, color 0.2s;
+  transition: 0.2s;
 }
-
-.social-icon-link:hover {
-  background: var(--primary-color);
+.social-icon-link:hover 
+{
   color: var(--white-color);
+  box-shadow: 2px 2px 4px white;
+  transform: translateY(-5px);
 }
 
 .social-icon-link span {
@@ -900,15 +901,6 @@ strong {
 
 .padding-top {
   padding-top: 10%;
-}
-
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /*---------------------------------------
@@ -1164,4 +1156,25 @@ h2 {
 }
 h2 {
   margin-top: 30px;
+}
+.footerul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.footerul li
+{
+  float: left;
+}
+.social-icon-link-footer
+{
+  margin: 10px;
+  color: var(--white-color);
+}
+.social-icon-link-footer:hover
+{
+  color: var(--white-color);
+  filter: drop-shadow(0.5px 0.5px 1px  white);
 }
