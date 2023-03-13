@@ -822,3 +822,8 @@ h1 > .magic > .magic-text {
   font-family: "Rubik", sans-serif;
   transition: color 600ms;
 }
+
+
+.revalogo{
+  object-fit: cover;
+}
