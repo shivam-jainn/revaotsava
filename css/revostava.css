@@ -98,10 +98,11 @@ h2 {
 }
 
 .sub-title {
-  font-size: 18px;
+  font-size: 72px;
   margin-top: 5px;
   margin-bottom: 0px;
-  color: white;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /* =Content Styles
@@ -836,4 +837,9 @@ h1 > .magic > .magic-text {
   color: white;
   font-family: "Rubik", sans-serif;
   transition: color 600ms;
+}
+
+
+.revalogo{
+  object-fit: cover;
 }
