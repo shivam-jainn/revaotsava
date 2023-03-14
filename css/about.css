@@ -117,7 +117,9 @@
     font-size: rem;
   }
 }
-
+.eventHeader {
+  padding-top: 5%;
+}
 .fancyslider {
   overflow-y: hidden;
   height: 100%;
@@ -125,6 +127,7 @@
   margin: 0;
   padding-top: 0%;
   padding-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 600px) {
@@ -146,8 +149,4 @@
     text-align: center;
     height: 90vh;
   }
-}
-
-.eventHeader {
-  padding-top: 5%;
 }
