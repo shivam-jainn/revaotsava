@@ -170,7 +170,7 @@ h2 {
   top: 10%;
 }
 .depth-5 img {
-  scale: 2;
+  scale: 10;
 }
 
 /* =Responsive Styles
@@ -316,14 +316,14 @@ h2 {
 @media all and (max-width: 950px) {
   .depth-5 img {
     padding-top: 20%;
-    scale: 2;
+    scale: 6;
   }
 }
 
 @media all and (max-width: 600px) {
   .depth-5 img {
-    padding-top: 45%;
-    scale: 3;
+    padding-top: 25%;
+    scale: 10;
   }
 }
 
@@ -839,7 +839,6 @@ h1 > .magic > .magic-text {
   transition: color 600ms;
 }
 
-
-.revalogo{
+.revalogo {
   object-fit: cover;
 }
