@@ -217,7 +217,7 @@ h2 {
     -webkit-animation: wave 9s 0.1s infinite linear;
     -moz-animation: wave 9s 0.1s infinite linear;
     /* animation: wave 3.5s 0.1s infinite linear; */
-    animation: wave 15s 0.1s infinite linear;
+    animation: wave 14s 0.1s infinite linear;
   }
 }
 
@@ -242,6 +242,12 @@ h2 {
   }
   .contact {
     bottom: 10%;
+  }
+  .depth-5 {
+    -webkit-animation: wave 9s 0.1s infinite linear;
+    -moz-animation: wave 9s 0.1s infinite linear;
+    /* animation: wave 3.5s 0.1s infinite linear; */
+    animation: wave 15s 0.1s infinite linear;
   }
 }
 
@@ -347,7 +353,7 @@ h2 {
   .depth-5 img {
     padding-top: 30%;
     scale: 10;
-    opacity: 0.7;
+    opacity: 0.8;
   }
   /* .hero h1,
   h3 {
