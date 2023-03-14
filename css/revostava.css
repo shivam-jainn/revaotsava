@@ -168,6 +168,9 @@ h2 {
   z-index: 2;
   top: 10%;
 }
+.depth-5 img {
+  scale: 2;
+}
 
 /* =Responsive Styles
 -------------------------------------------------------------- */
@@ -307,6 +310,19 @@ h2 {
     font-size: 30px;
     line-height: 30px;
     margin-top: 30px;
+  }
+}
+@media all and (max-width: 950px) {
+  .depth-5 img {
+    padding-top: 20%;
+    scale: 2;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .depth-5 img {
+    padding-top: 45%;
+    scale: 3;
   }
 }
 
