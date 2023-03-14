@@ -327,15 +327,15 @@ h2 {
   .depth-5 img {
     padding-top: 20%;
     /* scale: 10; */
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
 @media all and (max-width: 600px) {
   .depth-5 img {
-    padding-top: 40%;
+    padding-top: 30%;
     scale: 10;
-    opacity: 0.65;
+    opacity: 0.7;
   }
   /* .hero h1,
   h3 {
