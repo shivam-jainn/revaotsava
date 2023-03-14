@@ -72,6 +72,8 @@ h1 {
   line-height: 80px;
   letter-spacing: -0.08em;
   color: #ff7722;
+  z-index: 1000;
+  /* text-shadow: 10px 10px 70px#000000; */
 }
 
 h2 {
@@ -207,6 +209,10 @@ h2 {
   .title {
     top: 10%;
   }
+  .hero h1,
+  h3 {
+    text-shadow: 10px 10px 20px#000000;
+  }
 }
 
 /* Tablet Portrait */
@@ -299,6 +305,10 @@ h2 {
     line-height: 25px;
     margin-top: 25px;
   }
+  .hero h1,
+  h3 {
+    text-shadow: 10px 10px 30px#000000;
+  }
 }
 
 @media all and (min-width: 1920px) {
@@ -316,15 +326,21 @@ h2 {
 @media all and (max-width: 950px) {
   .depth-5 img {
     padding-top: 20%;
-    scale: 6;
+    /* scale: 10; */
+    opacity: 0.5;
   }
 }
 
 @media all and (max-width: 600px) {
   .depth-5 img {
-    padding-top: 25%;
+    padding-top: 40%;
     scale: 10;
+    opacity: 0.65;
   }
+  /* .hero h1,
+  h3 {
+    text-shadow: 10px 10px 20px#000000;
+  } */
 }
 
 /* =404
@@ -842,3 +858,8 @@ h1 > .magic > .magic-text {
 .revalogo {
   object-fit: cover;
 }
+
+/* .hero h1,
+h3 {
+  text-shadow: 10px 10px 20px#000000;
+} */
