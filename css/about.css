@@ -153,4 +153,11 @@
 
 .height-placeholder {
   height: 100vh;
+  background-color: #191825;
+
+}
+
+.comingsoon{
+  font-size: 32px;
+  color: white;
 }
