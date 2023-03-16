@@ -5,7 +5,7 @@
     background-color: #1a1725;
   }
   
-  .carousel {
+  .epic-carousel {
     position: relative;
     z-index: 0;
     height: 100vh;
@@ -13,7 +13,7 @@
     pointer-events: none;
   }
   
-  .carousel-item {
+  .epic-carousel-item {
     --items: 6;
     --width: clamp(150px, 30vw,  300px);
     --height: clamp(200px, 40vw,  400px);
@@ -38,7 +38,7 @@
     transform:  translate(var(--x), var(--y)) rotate(var(--rot)) ;
     transition: transform .8s cubic-bezier(0, 0.02, 0, 1);
   
-    .carousel-box {
+    .epic-carousel-box {
       position: absolute;
       z-index: 1;
       top: 0;

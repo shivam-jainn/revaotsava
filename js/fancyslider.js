@@ -23,7 +23,7 @@ const getZindex = (array, index) =>
 /*--------------------
 Items
 --------------------*/
-const $items = document.querySelectorAll(".carousel-item");
+const $items = document.querySelectorAll(".epic-carousel-item");
 const $cursors = document.querySelectorAll(".cursor");
 
 const displayItems = (item, index, active) => {
