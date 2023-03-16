@@ -150,3 +150,7 @@
     height: 90vh;
   }
 }
+
+.height-placeholder {
+  height: 100vh;
+}
