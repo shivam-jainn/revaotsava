@@ -40,7 +40,6 @@
 .card-subheading {
   font-size: 2rem;
   text-align: center;
-
   font-weight: 450;
   margin-bottom: 2%;
 }
@@ -153,6 +152,12 @@
     border-radius: 6px 0 0 6px;
     border: 2px solid #5e4dcd;
     background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #cardWrap {
+    margin-top: 10%;
   }
 }
 /*//////////Fancy text////////////////////*/
