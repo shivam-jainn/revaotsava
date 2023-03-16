@@ -542,275 +542,6 @@ strong {
 }
 
 /*---------------------------------------
-  TICKET               
------------------------------------------*/
-.ticket-section {
-  background-image: url("../images/nicholas-green-unsplash-blur2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-position: bottom left;
-
-  /* padding-top: 130px; */
-}
-
-.ticket-form {
-  background: var(--white-color);
-  border-radius: var(--border-radius-medium);
-  padding: 50px;
-}
-
-.ticket-form .form-check {
-  position: relative;
-  min-height: 52px;
-  padding-left: 35px;
-}
-
-.ticket-form .form-check .form-check-label {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 12px;
-  margin-left: 35px;
-  width: 100%;
-  height: 100%;
-}
-
-/*---------------------------------------
-  ARTISTS              
------------------------------------------*/
-.artists-thumb {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.artists-image {
-  border-radius: var(--border-radius-medium);
-  display: block;
-  width: 100%;
-}
-
-.artists-thumb:hover .artists-hover {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.artists-hover {
-  background-color: var(--primary-color);
-  background-color: rgba(248, 203, 46, 0.75);
-  border-radius: var(--border-radius-medium);
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 20px;
-  padding: 35px;
-  transition: all 0.5s ease;
-  transform: translateY(100%);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.artists-hover p strong {
-  color: var(--white-color);
-  display: inline-block;
-  min-width: 180px;
-  margin-right: 20px;
-}
-
-.artists-hover p a {
-  color: var(--secondary-color);
-}
-
-.artists-hover p a:hover {
-  color: var(--white-color);
-}
-
-.artists-hover hr {
-  margin: 1.5rem 0;
-}
-
-/*---------------------------------------
-  SCHEDULE              
------------------------------------------*/
-.schedule-section {
-  background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg");
-  background-color: #242424;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.table-responsive {
-  filter: drop-shadow(2px 2px 4px #606060);
-}
-
-.schedule-table {
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.schedule-table .bg-warning {
-  background: #f0a5a5 !important;
-}
-
-.schedule-table thead th {
-  background-color: var(--secondary-color);
-}
-
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  border-bottom-color: #363a3e;
-  padding: 30px;
-}
-
-.schedule-table tr:last-child th,
-.schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  border-right: 1px solid #c7460a;
-  border-bottom-color: transparent;
-}
-
-.schedule-table th + td {
-  border-bottom: 0;
-}
-
-.schedule-table thead th:last-child {
-  border-right-color: transparent;
-}
-
-.schedule-table .pop-background-image {
-  background-image: url("../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg");
-}
-
-.schedule-table .rock-background-image {
-  background-image: url("../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg");
-}
-
-.schedule-table .country-background-image {
-  background-image: url("../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg");
-}
-
-.table-background-image-wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: none;
-  position: relative;
-}
-
-.schedule-table h3,
-.schedule-table p {
-  color: var(--white-color);
-  position: relative;
-  z-index: 2;
-}
-
-/*---------------------------------------
-  PRICING              
------------------------------------------*/
-.pricing-thumb {
-  border: 5px dotted var(--dark-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  padding: 50px;
-}
-
-.pricing-thumb h3 small {
-  display: inline-block;
-  font-size: var(--p-font-size);
-  margin-right: 15px;
-}
-
-.pricing-list {
-  column-count: 2;
-  padding-left: 20px;
-}
-
-.pricing-list-item {
-  line-height: normal;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.pricing-tag {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
-
-.pricing-tag span {
-  font-size: 180%;
-  line-height: normal;
-}
-
-.pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
-}
-
-.pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
-}
-
-/*---------------------------------------
-  CONTACT               
------------------------------------------*/
-.google-map {
-  border-radius: var(--border-radius-medium);
-}
-.contact-section {
-  background-color: #191825;
-}
-
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-.custom-form .form-control {
-  color: var(--p-color);
-  margin-bottom: 24px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  outline: none;
-}
-
-.custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
-  border: none;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-medium);
-  transition: all 0.3s;
-  margin-bottom: 0;
-}
-
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
-  border-color: transparent;
-}
-
-/*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
@@ -885,8 +616,7 @@ strong {
   line-height: 36px;
   transition: 0.2s;
 }
-.social-icon-link:hover 
-{
+.social-icon-link:hover {
   color: var(--white-color);
   box-shadow: 2px 2px 4px white;
   transform: translateY(-5px);
@@ -1158,24 +888,20 @@ h2 {
 h2 {
   margin-top: 30px;
 }
-.footerul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.footerul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.footerul li
-{
+.footerul li {
   float: left;
 }
-.social-icon-link-footer
-{
+.social-icon-link-footer {
   margin: 10px;
   color: var(--white-color);
 }
-.social-icon-link-footer:hover
-{
+.social-icon-link-footer:hover {
   color: var(--white-color);
-  filter: drop-shadow(0.5px 0.5px 1px  white);
+  filter: drop-shadow(0.5px 0.5px 1px white);
 }
