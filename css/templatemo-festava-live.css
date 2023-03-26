@@ -338,6 +338,7 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  /* filter: blur(3px); */
   /* filter:brightness(55%); */
 }
 
@@ -667,16 +668,17 @@ strong {
     padding-bottom: 50px;
   }
 
-  .navbar {
-    /* background-color: var(--dark-color); */
+  .navbar ul {
+    justify-content: center;
   }
 
   .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
+    padding: 0px;
   }
 
   .hero-section {
