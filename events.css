@@ -62,20 +62,14 @@ body{
 
 }
 
-.container1{
+
+/* .container1{
     display: flex;
     align-items: right;
     justify-content: right;
     height: 100%;
 }
 
-.container2{
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    height: 100%;
-  }
-  
   ul li {
     margin: 0 0 24px;
   }
@@ -83,11 +77,14 @@ body{
   .the-arrow {
     width: 64px;
     transition: all 0.2s;
+    rotate: 180deg;
+    
   }
   .the-arrow.-left {
     position: absolute;
     top: 60%;
     left: 0;
+    rotate: 180deg;
   }
   .the-arrow.-left > .shaft {
     width: 0;
@@ -206,4 +203,65 @@ body{
   }
   .animated-arrow > .main > .the-arrow {
     position: relative;
+  }
+   */
+
+  .bi-arrow-left{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+  }
+
+  .btn-bc{
+    border: transparent;
+    background-color: transparent;
+  }
+
+  .container-ptc{
+    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -30%);
+  }
+  
+  .btn-ptc{
+    color: white;
+    border: 1px solid white;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .btn-ptc span {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 100;
+  }
+  .btn-ptc:before, .btn1:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .btn-ptc:before {
+    transform: translate3d(-100%, 0, 0);
+    background-color: white;
+    border: 1px solid white;
+    transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .btn-ptc:after {
+    background-color: #ffd1d8;
+    border: 1px solid #ffd1d8;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+  }
+  .btn-ptc:hover:before {
+    transform: translate3d(0, 0, 0);
+  }
+  .btn-ptc:hover:after {
+    transform: translate3d(0, 0, 0);
   }
