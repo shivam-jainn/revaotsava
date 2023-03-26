@@ -78,6 +78,8 @@ for (let i = 0; i < data.length; i++) {
     img.className = 'card-img-top';
     img.src = imgsrc;
     img.alt = 'Card image cap';
+    img.style.width='250px';
+    img.style.height='auto';
     card.appendChild(img);
 
     let cardBody = document.createElement('div');
