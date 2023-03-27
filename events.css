@@ -45,16 +45,11 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
     text-decoration: none;
 }
 
-
-.pillnavi{
-    padding: 2%;
-
-}
 
 .container1{
     display: flex;
@@ -76,15 +71,6 @@ body{
   }
 
 
-/* margin wala */
-.margin-wala{
-  margin-bottom: -2%;
-}
-  
-  /* ul li {
-    margin: 0 0 24px;
-  } */
-  
   .the-arrow {
     width: 50px;
     transition: all 0.2s;
@@ -213,31 +199,19 @@ body{
     position: relative;
   } 
 
-/* stars wala navigation*/ 
 
-#stars-op{
-  height: auto;
-  position: sticky;
-  top:0px;
-  z-index: 5;
-  text-align: center;
-}
 
-#stars-nav{
-  display: inline-block;
-  text-align: left;
-}
 
 /* cards */
 .cards-bolte{
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
 .card{
   
   width: 90%;
-  height: 20%;
+  height: 30rem;
   display: inline-block;
   background-color: #000000;
   margin: 5%;
@@ -252,7 +226,16 @@ body{
 }
 
 aside{
+  display: inline-block;
   width: 45%;
- display: inline-block;
+  color: white;
 }
 
+/* header */
+
+#header{
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color:  #1a1725;
+}
