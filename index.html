@@ -30,6 +30,10 @@
     
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css.map">
+
+    <link rel="stylesheet" href="3dg.css">
+
     <link href="css/gallery.css" rel="stylesheet">
 
 
@@ -96,20 +100,16 @@
 
         <section class="hero-section" id="section_1">
 
-            <!-- <div class="section-overlay"></div> -->
+            <div class="section-overlay">
+
+            </div>
 
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row">
                 </div>
-                <!-- <div class="col-12 mt-auto mb-5 text-center">
-                            <small>Festava Live Presents</small>
+               
 
-                            <h1 class="text-white mb-5">Night Live 2023</h1>
--->
-                            <!-- <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
-                        </div>  -->
-
-                <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+ <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
                     <div class="date-wrap">
                         <h5 class="text-white">
                             <i class="custom-icon bi-clock me-2"></i>
@@ -119,7 +119,6 @@
                     </div>
 
                     <div class="location-wrap mx-auto py-3 py-lg-0">
-                        <!-- <i class="custom-icon bi-geo-alt me-2"></i> -->
                         <h5 class="text-white">
                             <a href="https://goo.gl/maps/xK7awKFF4LQE4b8R7" target="_blank" class="text-white">
                             <i class="custom-icon bi-geo-alt me-2"></i>
@@ -153,64 +152,63 @@
                     </div>
                 </div>
             </div>
-            </div>
+            </div> 
 
 
             <div class="video-wrap">
                 <!-- <img src="images/bgblur.jpg" alt="" class="custom-video"> -->
-                <img src="images/earth-bg-blur.png" alt="" class="custom-video">
+
+
+
+
+
                 <div class="fitkar">
+                    
                     <div class="wrapper ">
+                        <!-- <canvas id="scene"></canvas> -->
+                        <canvas
+                        id="cobe"
+                        style="width: 500px; height: 500px"
+                        width="1000"
+                        height="1000"
+                      ></canvas>     
+
                         <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25"
-                            data-scalar-y="15" id="scene">
-                            <li class="layer" data-depth="0.00">
-                            </li>
-                            <!-- BG -->
-
-                            <!-- <li class="layer" data-depth="0.10">
-                                    <div class="background">
-                                    </div>
-                                </li> -->
-
-                            <!-- REVOTHSAVA TEXT -->
-                            <li class="layer" data-depth="0.30">
-                                <div class="hero">
-                                    <h1 class="event-title">REVOTHSAVA</h1>
-                             
-                                        <h3 class="sub-title"> Vasudhaiva Kutumbakam</h3>
-                              
-                                </div>
-                            </li>
-                            <!-- Flakes -->
-
-
-                            <!-- cloud thingy -->
-                            <!-- <li class="layer" data-depth="1.00">
-                                    <div class="depth-5">
-                                        <img alt="flake" src="images/cloud.png"> -->
-                            
-                            
-                            
-                                    </div>
-                                </li>
-                            <!-- Contact -->
-
-
-                        </ul>
+                        data-scalar-y="15" id="scene">
+                        <li class="layer" data-depth="0.00">
+                        </li>
+                        
+                        
+                        <!-- REVOTHSAVA TEXT -->
+                        <li class="layer" data-depth="0.30">
+                            <div class="hero">
+                                <h1 class="event-title">REVOTHSAVA</h1>
+                                
+                                <h3 class="sub-title"> Let the reign begin </h3>
+                                
+                            </div>
+                        </li>
+                        
                     </div>
-                </div>
-            </div>
+                </li>
+                <!-- Contact -->
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 
 
 
-        </section>
+</section>
 
 
 <!-- ABOUT REVOTHSAVA -->
 
-        <section  id="section_2" >  
+<section  id="section_2" >  
                 <div class="responsive-container-block big-container">
                     <div class="responsive-container-block container">
                     <div class="responsive-container-block">
@@ -758,7 +756,7 @@
 
 
 <!-- JAVASCRIPT FILES -->
-   
+   <script src="three.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -768,9 +766,9 @@
     <script src="js/plugins.js"></script>
     <script src="js/fancyslider.js"></script>
 
+
     <script src="js/gallery.js"></script>
-    
-    
+  
     <script>
         let index = 0,
     interval = 1000;
@@ -797,6 +795,73 @@ for(const star of document.getElementsByClassName("magic-star")) {
     </script>
    
     
+   <script type="module">
+    import createGlobe from 'https://cdn.skypack.dev/pin/cobe@v0.6.3-Q6K1EGiYvzYD96Sn0bg1/mode=imports/optimized/cobe.js'
+  
+    let phi = 0
+    let canvas = document.getElementById("cobe")
+  
+    const globe = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: 1000,
+      height: 1000,
+      phi: 0,
+      theta: 0,
+      dark: 0,
+      diffuse: 1.2,
+      scale: 1,
+      mapSamples: 1000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [1, 0.5, 1],
+      glowColor: [1, 1, 1],
+      offset: [0, 0],
+      markers: [
+        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [40.7128, -74.006], size: 0.1 },
+      ],
+      onRender: (state) => {
+        // Called on every animation frame.
+        // `state` will be an empty object, return updated params.
+        state.phi = phi
+        phi += 0.01
+      },
+    })
+
+   canvas.addEventListener('mouseover',(e) =>{
+    console.log("in hover");
+
+    const globehov = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: 1000,
+      height: 1000,
+      phi: 0,
+      theta: 0,
+      dark: 0,
+      diffuse: 1.2,
+      scale: 1,
+      mapSamples: 8000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [1, 0.5, 1],
+      glowColor: [1, 1, 1],
+      offset: [0, 0],
+      markers: [
+        
+      ],
+
+      onRender: (state) => {
+        // Called on every animation frame.
+        // `state` will be an empty object, return updated params.
+        state.phi = phi
+        phi += 0.01
+      },
+    })
+
+    // globehov.destroy()
+   })
+  </script>
+
 </body>
 
 

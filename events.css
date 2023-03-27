@@ -10,6 +10,7 @@
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -39,6 +40,13 @@ color:black;text-decoration:none;cursor:pointer
 body{
     background-color: #1a1725;
 }
+.card{
+    background-color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white; 
+}
+
 
 
 .navhao{
@@ -56,12 +64,14 @@ body{
 
 }
 
+
 .container1{
     display: flex;
     align-items: right;
     justify-content: right;
     height: 100%;
 }
+
 
 /* css for back and ptc buttons */
 .nav-button-css{
@@ -93,6 +103,7 @@ body{
     position: absolute;
     top: 60%;
     left: 0;
+
   }
   .the-arrow.-left > .shaft {
     width: 0;
@@ -112,7 +123,9 @@ body{
     top: 3px;
   }
   .the-arrow.-right > .shaft {
+
     width: 50px;
+
     transition-delay: 0.2s;
   }
   .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
@@ -203,7 +216,9 @@ body{
   .animated-arrow > .main {
     display: flex;
     align-items: center;
+
     transition: all 0.7s;
+
   }
   .animated-arrow > .main > .text {
     margin: 0 16px 0 0;
@@ -211,6 +226,7 @@ body{
   }
   .animated-arrow > .main > .the-arrow {
     position: relative;
+
   } 
 
 /* stars wala navigation*/ 
