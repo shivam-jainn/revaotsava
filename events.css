@@ -39,12 +39,6 @@ color:black;text-decoration:none;cursor:pointer
 body{
     background-color: #1a1725;
 }
-.card{
-    background-color: #000000;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: white; 
-}
 
 
 .navhao{
@@ -69,19 +63,30 @@ body{
     height: 100%;
 }
 
+/* css for back and ptc buttons */
+.nav-button-css{
+  font-weight: 600;
+}
+
 .container2{
     display: flex;
     align-items: left;
     justify-content: left;
     height: 100%;
   }
+
+
+/* margin wala */
+.margin-wala{
+  margin-bottom: -2%;
+}
   
-  ul li {
+  /* ul li {
     margin: 0 0 24px;
-  }
+  } */
   
   .the-arrow {
-    width: 64px;
+    width: 50px;
     transition: all 0.2s;
   }
   .the-arrow.-left {
@@ -107,7 +112,7 @@ body{
     top: 3px;
   }
   .the-arrow.-right > .shaft {
-    width: 64px;
+    width: 50px;
     transition-delay: 0.2s;
   }
   .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
@@ -198,7 +203,7 @@ body{
   .animated-arrow > .main {
     display: flex;
     align-items: center;
-    transition: all 0.2s;
+    transition: all 0.7s;
   }
   .animated-arrow > .main > .text {
     margin: 0 16px 0 0;
@@ -206,4 +211,48 @@ body{
   }
   .animated-arrow > .main > .the-arrow {
     position: relative;
-  }
+  } 
+
+/* stars wala navigation*/ 
+
+#stars-op{
+  height: auto;
+  position: sticky;
+  top:0px;
+  z-index: 5;
+  text-align: center;
+}
+
+#stars-nav{
+  display: inline-block;
+  text-align: left;
+}
+
+/* cards */
+.cards-bolte{
+  width: 90%;
+  margin: auto;
+}
+
+.card{
+  
+  width: 90%;
+  height: 20%;
+  display: inline-block;
+  background-color: #000000;
+  margin: 5%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.card-image{
+  display: inline-block;  
+  width: 40%; 
+  padding: 3rem;
+}
+
+aside{
+  width: 45%;
+ display: inline-block;
+}
+
