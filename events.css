@@ -10,6 +10,7 @@
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -47,6 +48,7 @@ body{
 }
 
 
+
 .navhao{
     display: flex;
     justify-content: space-between;
@@ -63,28 +65,45 @@ body{
 }
 
 
-/* .container1{
+.container1{
     display: flex;
     align-items: right;
     justify-content: right;
     height: 100%;
 }
 
-  ul li {
-    margin: 0 0 24px;
+
+/* css for back and ptc buttons */
+.nav-button-css{
+  font-weight: 600;
+}
+
+.container2{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 100%;
   }
+
+
+/* margin wala */
+.margin-wala{
+  margin-bottom: -2%;
+}
+  
+  /* ul li {
+    margin: 0 0 24px;
+  } */
   
   .the-arrow {
-    width: 64px;
+    width: 50px;
     transition: all 0.2s;
-    rotate: 180deg;
-    
   }
   .the-arrow.-left {
     position: absolute;
     top: 60%;
     left: 0;
-    rotate: 180deg;
+
   }
   .the-arrow.-left > .shaft {
     width: 0;
@@ -104,7 +123,9 @@ body{
     top: 3px;
   }
   .the-arrow.-right > .shaft {
-    width: 64px;
+
+    width: 50px;
+
     transition-delay: 0.2s;
   }
   .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
@@ -195,7 +216,9 @@ body{
   .animated-arrow > .main {
     display: flex;
     align-items: center;
-    transition: all 0.2s;
+
+    transition: all 0.7s;
+
   }
   .animated-arrow > .main > .text {
     margin: 0 16px 0 0;
@@ -203,65 +226,49 @@ body{
   }
   .animated-arrow > .main > .the-arrow {
     position: relative;
-  }
-   */
 
-  .bi-arrow-left{
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-  }
+  } 
 
-  .btn-bc{
-    border: transparent;
-    background-color: transparent;
-  }
+/* stars wala navigation*/ 
 
-  .container-ptc{
-    margin-top: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -30%);
-  }
+#stars-op{
+  height: auto;
+  position: sticky;
+  top:0px;
+  z-index: 5;
+  text-align: center;
+}
+
+#stars-nav{
+  display: inline-block;
+  text-align: left;
+}
+
+/* cards */
+.cards-bolte{
+  width: 90%;
+  margin: auto;
+}
+
+.card{
   
-  .btn-ptc{
-    color: white;
-    border: 1px solid white;
-    padding: 20px 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .btn-ptc span {
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    z-index: 100;
-  }
-  .btn-ptc:before, .btn1:after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .btn-ptc:before {
-    transform: translate3d(-100%, 0, 0);
-    background-color: white;
-    border: 1px solid white;
-    transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  .btn-ptc:after {
-    background-color: #ffd1d8;
-    border: 1px solid #ffd1d8;
-    transform: translate3d(100%, 0, 0);
-    transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
-  }
-  .btn-ptc:hover:before {
-    transform: translate3d(0, 0, 0);
-  }
-  .btn-ptc:hover:after {
-    transform: translate3d(0, 0, 0);
-  }
+  width: 90%;
+  height: 20%;
+  display: inline-block;
+  background-color: #000000;
+  margin: 5%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.card-image{
+  display: inline-block;  
+  width: 40%; 
+  padding: 3rem;
+}
+
+aside{
+  width: 45%;
+ display: inline-block;
+}
+
