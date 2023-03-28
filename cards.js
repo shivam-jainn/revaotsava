@@ -1,6 +1,8 @@
+
 function showPopup() {
     document.getElementById("popup").style.display = "block";
 }
+
 
 function closePopup() {
     document.getElementById("popup").style.display = "none";
@@ -73,3 +75,4 @@ function createCard(event) {
   
   const card1 = createCard(eventdata[1]);
   cardContainer.appendChild(card1);
+
