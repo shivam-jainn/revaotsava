@@ -199,7 +199,7 @@
 }
 .content-section {
   /* background-color: aquamarine; */
-  width: 70vw;
+  width: vw;
   /* padding: 0% 5%; */
 }
 
@@ -251,5 +251,12 @@
   }
   .content-section p {
     font-size: 16px;
+  }
+  .about-reva-h1 {
+    padding-top: 5rem;
+  }
+  .arh {
+    padding: 0;
+    padding-top: 2rem;
   }
 }
