@@ -195,11 +195,11 @@
   display: flex;
   margin: auto;
   /* width: 80%; */
-  max-width: 75%;
+  max-width: 85%;
 }
 .content-section {
   /* background-color: aquamarine; */
-  width: vw;
+  width: 60vw;
   /* padding: 0% 5%; */
 }
 
