@@ -149,7 +149,7 @@
   .events-section {
     background-color: var(--dark-color);
     text-align: center;
-    height: 90vh;
+    /* height: 90vh; */
   }
 }
 

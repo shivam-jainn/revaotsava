@@ -182,6 +182,7 @@
   border: none;
   outline: none;
   color: white;
+  height: 100%;
 }
 
 .control-btns-epic-slider:hover {
@@ -189,6 +190,19 @@
 }
 .control-btns-epic-slider:active {
   scale: 0.75;
+}
+
+#slider-previous {
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+#slider-next {
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  display: none;
 }
 
 @media (pointer: fine) {
@@ -208,14 +222,27 @@
     --width: clamp(300px, 40vw, 400px);
     --height: clamp(450px, 50vw, 550px);
   }
+  #slider-previous {
+    display: block;
+  }
+  #slider-next {
+    display: block;
+  }
+  .control-btns-epic-slider {
+    margin-top: -20%;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .sexybody {
+    margin-bottom: -30%;
+  }
   .epic-carousel-item {
     --width: clamp(300px, 40vw, 400px);
     --height: clamp(450px, 50vw, 550px);
     --x: calc(var(--active) * 1%);
     --y: calc(var(--active) * 1%);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 1.75);
   }
 }
 
