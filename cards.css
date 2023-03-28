@@ -11,7 +11,16 @@
     transition: 0.2s ease-in-out;
   }
   
-  .imgcard {
+
+  .card-img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  
+
+
+  /* .imgcard {
     width: 100%;
     height: 50%;
     background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
@@ -25,7 +34,7 @@
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
-  }
+  } */
   
   .savecard {
     -webkit-transition: 0.2s ease-in-out;

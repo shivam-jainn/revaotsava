@@ -1,0 +1,8 @@
+root{
+    --main-bg-color : #191825;
+    --button-color : #ee5007;
+    --titles-color : #ff7722;
+    --navbar-transparent : #0000008c;
+    --navbar-bottom : #191825;
+    --footer-titles-color : #ee5007; /* same as button color */   
+}

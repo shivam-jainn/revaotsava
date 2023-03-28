@@ -57,6 +57,7 @@ body{
     text-decoration: none;
 } */
 
+
 .stars-op-back{
     display: flex;
     /* justify-content: space-between; */
@@ -71,8 +72,15 @@ body{
 
 .pillnavi{
     padding-top: 2%;
+    position: sticky;
+    top:0;
+    
+    
+    text-align: center;
+
 
 }
+
 
   .btn-bc{
     border: transparent;
@@ -184,7 +192,7 @@ body{
 
   #stars-op{
     height: auto;
-    position: fixed;
+    position: sticky;
     bottom:0;
     z-index: 5;
     width: 100%;
@@ -193,11 +201,15 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     
   }
 
+
  #stars-op-mobile{
     display: none;
+    position: sticky;
+
  }
 
 #stars-nav{
@@ -247,7 +259,5 @@ aside{
       width: 100%;
       text-align: center;
     }
-
-
   }
 
