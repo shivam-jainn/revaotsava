@@ -71,6 +71,12 @@ body{
 
 .pillnavi{
     padding-top: 2%;
+    position: sticky;
+    top:0;
+    
+    
+    text-align: center;
+
 
 }
 
@@ -184,7 +190,7 @@ body{
 
   #stars-op{
     height: auto;
-    position: fixed;
+    position: sticky;
     bottom:0;
     z-index: 5;
     width: 100%;
@@ -198,6 +204,8 @@ body{
 
  #stars-op-mobile{
     display: none;
+    position: sticky;
+
  }
 
 #stars-nav{
@@ -247,7 +255,5 @@ aside{
       width: 100%;
       text-align: center;
     }
-
-
   }
 
