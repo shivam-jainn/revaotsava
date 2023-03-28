@@ -11,6 +11,7 @@
     transition: 0.2s ease-in-out;
   }
   
+<<<<<<< HEAD
 
   .card-img {
     width: 100%;
@@ -21,6 +22,9 @@
 
 
   /* .imgcard {
+=======
+  .imgcard {
+>>>>>>> 1d0f0078ad8c7e32b9092e2feda5f41db2f182df
     width: 100%;
     height: 50%;
     background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
@@ -34,7 +38,11 @@
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
+<<<<<<< HEAD
   } */
+=======
+  }
+>>>>>>> 1d0f0078ad8c7e32b9092e2feda5f41db2f182df
   
   .savecard {
     -webkit-transition: 0.2s ease-in-out;
