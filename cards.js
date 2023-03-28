@@ -64,15 +64,26 @@ function createCard(event) {
     title: "Event Title",
     description: "Event description goes here."
   },
-  
+    
+]
+ 
 
+const eventdata4star = [{
+  imageSrc: "images/anya-rokenroll-yZ-yNUYXEp0-unsplash.jpg",
+  badges: ["Badge 1", "Badge 2"],
+  title: "4 star 1",
+  description: "Event description goes here."
+},
+{
+
+  imageSrc: "src/public/images/anya-rokenroll-yZ-yNUYXEp0-unsplash.jpg",
+  badges: ["Badge 1", "Badge 2"],
+  title: "4star 2",
+  description: "Event description goes here."
+},
   
 ]
-  
+
   const cardContainer = document.getElementById("card-container");
-  const card = createCard(eventdata[0]);
-  cardContainer.appendChild(card);
   
-  const card1 = createCard(eventdata[1]);
-  cardContainer.appendChild(card1);
 
