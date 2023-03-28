@@ -1,7 +1,7 @@
 /*--------------------
 Vars
 --------------------*/
-let progress = 50;
+let progress = 10;
 let startX = 0;
 let active = 0;
 let isDown = false;
@@ -33,6 +33,12 @@ const displayItems = (item, index, active) => {
 };
 
 /*--------------------
+Control Buttons
+--------------------*/
+const prevBtn = document.getElementById("slider-previous");
+const nextBtn = document.getElementById("slider-next");
+
+/*--------------------
 Animate
 --------------------*/
 const animate = () => {
@@ -48,9 +54,29 @@ Click on Items
 --------------------*/
 $items.forEach((item, i) => {
   item.addEventListener("click", () => {
-    progress = (i / $items.length) * 100 + 10;
+    progress = (i / $items.length) * 100 + 28;
     animate();
+    // console.log("progress=" + progress);
   });
+});
+
+/*--------------------
+Control buttanssss 😎
+--------------------*/
+
+prevBtn.addEventListener("click", (e) => {
+  progress = progress - 28;
+  animate();
+  if (progress <= 0) {
+    progress = 28;
+  }
+
+  // console.log("progress=" + progress);
+});
+nextBtn.addEventListener("click", (e) => {
+  progress = progress + 28;
+  animate();
+  // console.log("progress=" + progress);
 });
 
 /*--------------------

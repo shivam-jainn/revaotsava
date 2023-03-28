@@ -1,0 +1,15 @@
+.navprops{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+  .nav-link .fas {
+    font-size: 0.75rem;
+  }
