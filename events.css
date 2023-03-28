@@ -57,6 +57,7 @@ body{
     text-decoration: none;
 } */
 
+
 .stars-op-back{
     display: flex;
     /* justify-content: space-between; */
@@ -79,6 +80,7 @@ body{
 
 
 }
+
 
   .btn-bc{
     border: transparent;
@@ -199,8 +201,10 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     
   }
+
 
  #stars-op-mobile{
     display: none;
