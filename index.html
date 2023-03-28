@@ -12,6 +12,9 @@
     <title>REVOTHSAVA</title>
 
     <!-- CSS FILES -->              
+
+    <link rel="stylesheet" type="text/css" href="preloader.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,10 +57,26 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+     <!-- preloader animation -->
+    <script >
+
+      window.addEventListener('load', function() {
+      document.getElementById('preloader').style.display = 'none';
+      });
+      
+    </script>
+
 </head>
 
 
 <body>
+
+
+    <div id="preloader">
+      
+    </div>
+    
+  
     
     <main>
 <!-- NAVBAR -->
