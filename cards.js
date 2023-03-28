@@ -52,7 +52,7 @@ function createCard(event) {
   }
 
   const eventdata = [{
-    imageSrc: "src/public/images/anya-rokenroll-yZ-yNUYXEp0-unsplash.jpg",
+    imageSrc: "images/anya-rokenroll-yZ-yNUYXEp0-unsplash.jpg",
     badges: ["Badge 1", "Badge 2"],
     title: "Event Title",
     description: "Event description goes here."
