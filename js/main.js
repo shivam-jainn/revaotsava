@@ -7,6 +7,120 @@ $(window).load(function () {
 function initializeSite() {
   "use strict";
 
+  //JQuery for about section
+  $(document).ready(function() {
+    // Function to check if an element is in view
+    function isInView(elem) {
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).outerHeight();
+      return ((elemBottom >= windowTop) && (elemTop <= windowBottom));
+    }
+  
+    // Function to handle the scroll event
+    function handleScroll() {
+      var section = $('.responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-one');
+      var img = $('.bg-image');
+      if (isInView(section)) {
+        section.addClass('in-view');
+      } else {
+        section.removeClass('in-view');
+      }
+    }
+  
+    // Bind the scroll event to the handleScroll function
+    $(window).on('scroll', handleScroll);
+  
+    // Trigger the handleScroll function on page load
+    handleScroll();
+  });
+
+  $(document).ready(function() {
+    // Function to check if an element is in view
+    function isInView(elem) {
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).outerHeight();
+      return ((elemBottom >= windowTop) && (elemTop <= windowBottom));
+    }
+  
+    // Function to handle the scroll event
+    function handleScroll() {
+      var section = $('.responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-one');
+      
+      if (isInView(section)) {
+        section.addClass('in-view');
+      } else {
+        section.removeClass('in-view');
+      }
+    }
+  
+    // Bind the scroll event to the handleScroll function
+    $(window).on('scroll', handleScroll);
+  
+    // Trigger the handleScroll function on page load
+    handleScroll();
+  });
+
+  $(document).ready(function() {
+    // Function to check if an element is in view
+    function isInView(elem) {
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).outerHeight();
+      return ((elemBottom >= windowTop) && (elemTop <= windowBottom));
+    }
+  
+    // Function to handle the scroll event
+    function handleScroll() {
+      var section = $('.responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-two');
+      var img = $('.bg-image2');
+      if (isInView(section)) {
+        section.addClass('in-view');
+      } else {
+        section.removeClass('in-view');
+      }
+    }
+  
+    // Bind the scroll event to the handleScroll function
+    $(window).on('scroll', handleScroll);
+  
+    // Trigger the handleScroll function on page load
+    handleScroll();
+  });
+
+  $(document).ready(function() {
+    // Function to check if an element is in view
+    function isInView(elem) {
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).outerHeight();
+      return ((elemBottom >= windowTop) && (elemTop <= windowBottom));
+    }
+  
+    // Function to handle the scroll event
+    function handleScroll() {
+      var section = $('.responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-two');
+      
+      if (isInView(section)) {
+        section.addClass('in-view');
+      } else {
+        section.removeClass('in-view');
+      }
+    }
+  
+    // Bind the scroll event to the handleScroll function
+    $(window).on('scroll', handleScroll);
+  
+    // Trigger the handleScroll function on page load
+    handleScroll();
+  });
+  
+
   //OUTLINE DIMENSION AND CENTER
   (function () {
     function centerInit() {
