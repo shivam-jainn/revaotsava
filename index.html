@@ -11,7 +11,7 @@
 
     <title>REVOTHSAVA</title>
 
-    <!-- CSS FILES -->              
+    <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,16 +29,7 @@
     <link href="css/about.css" rel="stylesheet">
     
     <link href="css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css.map">
-
-    <link rel="stylesheet" href="3dg.css">
-
-    <link rel="stylesheet" href="mtt.css">
-
     <link href="css/gallery.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="faq.css">
 
     <link rel="stylesheet" href="css/style.css.map">
 
@@ -54,10 +45,26 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+     <!-- preloader animation -->
+    <script >
+
+      window.addEventListener('load', function() {
+      document.getElementById('preloader').style.display = 'none';
+      });
+      
+    </script>
+
 </head>
 
 
 <body>
+
+
+    <div id="preloader">
+      
+    </div>
+    
+  
     
     <main>
 <!-- NAVBAR -->
@@ -926,12 +933,15 @@
     <script src="js/custom.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/fancyslider.js"></script>
+
     <script src="faq.js"></script>
     <script src="/js/mobile-gallery.js"></script>
 
 
+
     <script src="js/gallery.js"></script>
-  
+    
+    
     <script>
         let index = 0,
     interval = 1000;
