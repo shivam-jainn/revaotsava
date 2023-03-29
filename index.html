@@ -48,8 +48,15 @@
      <!-- preloader animation -->
     <script >
 
-      window.addEventListener('load', function() {
-      document.getElementById('preloader').style.display = 'none';
+      // window.addEventListener('load', function() {
+      // document.getElementById('preloader').style.display = 'none';
+      // });
+
+      window.addEventListener('load', () => {
+        const preload = document.getElementById('preloader');
+        setTimeout( function() {
+            preload.classList.add('preload-finish');
+        }, 2900 );
       });
       
     </script>
@@ -60,7 +67,7 @@
 <body>
 
 
-    <div id="preloader">
+    <div id="preloader" class="">
       
     </div>
     
