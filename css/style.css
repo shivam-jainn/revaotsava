@@ -197,14 +197,14 @@
 #slider-previous {
   position: absolute;
   left: 0;
-  z-index: 999;
-  display: none;
+  z-index: 10;
+  /* display: none; */
 }
 #slider-next {
   position: absolute;
   right: 0;
-  z-index: 999;
-  display: none;
+  z-index: 10;
+  /* display: none; */
 }
 
 @media (pointer: fine) {

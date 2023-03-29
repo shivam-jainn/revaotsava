@@ -129,13 +129,13 @@ const cardContainer = document.getElementById("card-container");
 
 const current_page = document.location.pathname;
 
-if (current_page === "/try.html") {
+if (current_page === "revaotsava/try.html") {
   let data = all_start_event_data.filter((item) => item.stars === 3);
   data.map((item) => cardContainer.appendChild(createCard(item)));
-} else if (current_page === "/star_4.html") {
+} else if (current_page === "revaotsava/star_4.html") {
   let data = all_start_event_data.filter((item) => item.stars === 4);
   data.map((item) => cardContainer.appendChild(createCard(item)));
-} else if (current_page === "/star_5.html") {
+} else if (current_page === "revaotsava/star_5.html") {
   let data = all_start_event_data.filter((item) => item.stars === 5);
   data.map((item) => cardContainer.appendChild(createCard(item)));
 }
