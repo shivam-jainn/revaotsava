@@ -1,10 +1,10 @@
 
 function showPopup() {
-  document.getElementById("popup").style.display = "block";
+  document.querySelector(".popup").style.display = "block";
 }
 
 function closePopup() {
-  document.getElementById("popup").style.display = "none";
+  document.querySelector(".popup").style.display = "none";
 }
 
 function createCard(event) {
@@ -48,8 +48,96 @@ function createCard(event) {
   card.appendChild(cardImgContainer);
   card.appendChild(cardContent);
 
+  card.appendChild(createPopup(event));
+
   return card;
 }
+
+
+// function createCardPopup(event) {
+//   const popup = document.createElement("div");
+//   popup.classList.add("popup");
+//   popup.style.display = "none";
+//   popup.style.position = "fixed";
+//   popup.style.top = "50%";
+//   popup.style.left = "50%";
+//   popup.style.transform = "translate(-50%, -50%)";
+//   popup.style.width = "80%";
+//   popup.style.height = "80%";
+//   popup.style.backgroundColor = "#fff";
+//   popup.style.padding = "20px";
+//   popup.style.boxSizing = "border-box";
+  
+//   const styleatt = document.createAttribute("style");
+//   styleatt.value = "display: none";
+//   popup.setAttributeNode(styleatt);
+
+//   const closeButton = document.createElement("button");
+//   closeButton.textContent = "Close";
+//   closeButton.onclick = () => {
+//     popup.style.display = "none";
+//   };
+  
+//   const navbar = document.createElement("ul");
+//   navbar.style.listStyleType = "none";
+//   navbar.style.margin = "0";
+//   navbar.style.padding = "0";
+  
+//   const infoItem = document.createElement("li");
+//   infoItem.textContent = "Info";
+//   const rulesItem = document.createElement("li");
+//   rulesItem.textContent = "Rules";
+  
+//   navbar.appendChild(infoItem);
+//   navbar.appendChild(rulesItem);
+  
+//   const title = document.createElement("h3");
+//   title.textContent = event.title;
+  
+//   const description = document.createElement("p");
+//   description.textContent = event.description;
+  
+//   popup.appendChild(closeButton);
+//   popup.appendChild(navbar);
+//   popup.appendChild(title);
+//   popup.appendChild(description);
+  
+//   return popup;
+// }
+
+
+function createPopup() {
+  const popup = document.createElement("div");
+  popup.classList.add("popup");
+
+  const closeBtnDiv = document.createElement("div");
+  closeBtnDiv.classList.add("close-btn-div");
+
+  const closeButton = document.createElement("button");
+  closeButton.id = "close-button";
+  closeButton.classList.add("btn", "btn-danger");
+
+  const closeIcon = document.createElement("i");
+  closeIcon.classList.add("bi", "bi-x", "xbtn");
+
+  closeButton.appendChild(closeIcon);
+  closeBtnDiv.appendChild(closeButton);
+
+  const title = document.createElement("h3");
+  title.textContent = "Title";
+
+  const description = document.createElement("p");
+  description.textContent = "Description";
+
+  popup.appendChild(closeBtnDiv);
+  popup.appendChild(title);
+  popup.appendChild(description);
+
+  return popup;
+}
+
+
+
 
 const eventdata = [
   {
@@ -238,13 +326,13 @@ const cardContainer = document.getElementById("card-container");
 
 const current_page = document.location.pathname;
 
-if (current_page === "revaotsava/try.html") {
+if (current_page === "/try.html") {
   let data = all_start_event_data.filter((item) => item.stars === 3);
   data.map((item) => cardContainer.appendChild(createCard(item)));
-} else if (current_page === "revaotsava/star_4.html") {
+} else if (current_page === "/star_4.html") {
   let data = all_start_event_data.filter((item) => item.stars === 4);
   data.map((item) => cardContainer.appendChild(createCard(item)));
-} else if (current_page === "revaotsava/star_5.html") {
+} else if (current_page === "/star_5.html") {
   let data = all_start_event_data.filter((item) => item.stars === 5);
   data.map((item) => cardContainer.appendChild(createCard(item)));
 }
