@@ -48,201 +48,177 @@ body{
 }
 
 
-
-.navhao{
+/* .navhao{
     display: flex;
     justify-content: space-between;
     padding: 2%;
     margin-left: 8%;
     margin-right: 8%;
     text-decoration: none;
-}
+} */
 
+
+.stars-op-back{
+    display: flex;
+    /* justify-content: space-between; */
+    align-self: center;
+    padding: 2%;
+    /* margin-left: 8%;
+    margin-right: 8%; */
+    /* text-decoration: none; */
+    /* text-align: left; */
+    
+}
 
 .pillnavi{
-    padding: 2%;
+    padding-top: 2%;
+    position: sticky;
+    top:0;
+    
+    
+    text-align: center;
+
 
 }
 
 
-.container1{
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    height: 100%;
-}
-
-
-/* css for back and ptc buttons */
-.nav-button-css{
-  font-weight: 600;
-}
-
-.container2{
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    height: 100%;
+  .btn-bc{
+    border: transparent;
+    background-color: transparent;
+  }
+  .bi-arrow-left{
+    
+    font-size: 50px;
   }
 
-
-/* margin wala */
-.margin-wala{
-  margin-bottom: -2%;
-}
-  
-  /* ul li {
-    margin: 0 0 24px;
-  } */
-  
-  .the-arrow {
-    width: 50px;
-    transition: all 0.2s;
-  }
-  .the-arrow.-left {
-    position: absolute;
-    top: 60%;
-    left: 0;
-
-  }
-  .the-arrow.-left > .shaft {
-    width: 0;
-    background-color: #999;
-  }
-  .the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
-    width: 0;
-    background-color: #999;
-  }
-  .the-arrow.-left > .shaft:before {
-    transform: rotate(0);
-  }
-  .the-arrow.-left > .shaft:after {
-    transform: rotate(0);
-  }
-  .the-arrow.-right {
-    top: 3px;
-  }
-  .the-arrow.-right > .shaft {
-
-    width: 50px;
-
-    transition-delay: 0.2s;
-  }
-  .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
-    width: 8px;
-    transition-delay: 0.3s;
-    transition: all 0.5s;
-  }
-  .the-arrow.-right > .shaft:before {
-    transform: rotate(40deg);
-  }
-  .the-arrow.-right > .shaft:after {
-    transform: rotate(-40deg);
-  }
-  .the-arrow > .shaft {
-    background-color: #999;
-    display: block;
-    height: 1px;
+  .bi-arrow-left {
     position: relative;
-    transition: all 0.2s;
-    transition-delay: 0;
-    will-change: transform;
+    display: inline-block;
+    padding: 8px 0;
+    color: rgb(255, 255, 255);
+    rotate: 180deg;
   }
-  .the-arrow > .shaft:before, .the-arrow > .shaft:after {
-    background-color: #999;
+  .bi-arrow-left:before {
     content: "";
     display: block;
+    width: 50px;
     height: 1px;
+    background-color: #ffff;
+    top: 50%;
+    transition: width 0.5s ease-out;
+    color: rgb(255, 255, 255);
+  }
+  .bi-arrow-left:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #ffff;
+    border-right: 1px solid #ffff;
+    transform: rotate(45deg);
+    top: calc(50% - 5px);
     position: absolute;
-    top: 0;
-    right: 0;
-    transition: all 0.2s;
-    transition-delay: 0;
+    right: 1px;
+    
   }
-  .the-arrow > .shaft:before {
-    transform-origin: top right;
+  .bi-arrow-left:hover {
+    cursor: pointer;
   }
-  .the-arrow > .shaft:after {
-    transform-origin: bottom right;
+  .bi-arrow-left:hover:before {
+    width: 80px;
   }
+
+  .container-ptc{
+    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -30%);
   
-  .animated-arrow {
-    display: inline-block;
-    color: #999;
-    font-size: 1.25em;
-    font-style: italic;
-    text-decoration: none;
+  }
+
+  .btn-ptc{
+    color: white;
+    border: 1px solid white;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     position: relative;
-    transition: all 0.2s;
+    overflow: hidden;
+    cursor: pointer;
   }
-  .animated-arrow:hover {
-    color: #eaeaea;
-  }
-  .animated-arrow:hover > .the-arrow.-left > .shaft {
-    width: 64px;
-    transition-delay: 0.1s;
-    background-color: #eaeaea;
-  }
-  .animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-    width: 8px;
-    transition-delay: 0.1s;
-    background-color: #eaeaea;
-  }
-  .animated-arrow:hover > .the-arrow.-left > .shaft:before {
-    transform: rotate(40deg);
-  }
-  .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-    transform: rotate(-40deg);
-  }
-  .animated-arrow:hover > .main {
-    transform: translateX(80px);
-  }
-  .animated-arrow:hover > .main > .the-arrow.-right > .shaft {
-    width: 0;
-    transform: translateX(200%);
-    transition-delay: 0;
-  }
-  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-    width: 0;
-    transition-delay: 0;
-    transition: all 0.1s;
-  }
-  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
-    transform: rotate(0);
-  }
-  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-    transform: rotate(0);
-  }
-  .animated-arrow > .main {
-    display: flex;
-    align-items: center;
-
-    transition: all 0.7s;
-
-  }
-  .animated-arrow > .main > .text {
-    margin: 0 16px 0 0;
-    line-height: 1;
-  }
-  .animated-arrow > .main > .the-arrow {
+  .btn-ptc span {
+    font-family: "Roboto", sans-serif;
     position: relative;
-
-  } 
+    z-index: 100;
+  }
+  .btn-ptc:before, .btn1:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .btn-ptc:before {
+    transform: translate3d(-100%, 0, 0);
+    background-color: white;
+    border: 1px solid white;
+    transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .btn-ptc:after {
+    background-color: #ffd1d8;
+    border: 1px solid #ffd1d8;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+  }
+  .btn-ptc:hover:before {
+    transform: translate3d(0, 0, 0);
+  }
+  .btn-ptc:hover:after {
+    transform: translate3d(0, 0, 0);
+  }
 
 /* stars wala navigation*/ 
 
-#stars-op{
-  height: auto;
-  position: sticky;
-  top:0px;
-  z-index: 5;
-  text-align: center;
-}
+  /* #stars-op{
+    height: auto;
+    position: sticky;
+    top:0px;
+    z-index: 5;
+    text-align: center;
+  }  */
+
+
+  #stars-op{
+    height: auto;
+    position: sticky;
+    bottom:0;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    
+  }
+
+
+ #stars-op-mobile{
+    display: none;
+    position: sticky;
+
+ }
 
 #stars-nav{
   display: inline-block;
   text-align: left;
 }
+
+
+
 
 /* cards */
 .cards-bolte{
@@ -256,7 +232,7 @@ body{
   height: 20%;
   display: inline-block;
   background-color: #000000;
-  margin: 5%;
+  margin: 1% 5%;
   object-fit: contain;
   overflow: hidden;
 }
@@ -271,4 +247,17 @@ aside{
   width: 45%;
  display: inline-block;
 }
+
+
+
+  @media screen and (min-width: 801px){
+    #stars-op{
+      height: auto;
+      position: sticky;
+      top:0;
+      z-index: 5;
+      width: 100%;
+      text-align: center;
+    }
+  }
 
