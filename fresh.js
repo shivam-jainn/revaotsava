@@ -133,6 +133,6 @@ if (current_page === "/try.html") {
   three(eventData3Star);
 } else if (current_page === "/star_4.html") {
   three(eventData4Star);
-} else {
+} else  {
   three(eventData5Star);
 }
