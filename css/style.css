@@ -231,7 +231,7 @@
 
 @media screen and (max-width: 500px) {
   .sexybody {
-    margin-bottom: -30%;
+    margin-bottom: -50%;
   }
   .epic-carousel-item {
     --width: clamp(300px, 40vw, 400px);
