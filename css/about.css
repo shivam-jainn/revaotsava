@@ -46,112 +46,6 @@
     color: white;
   }
 } */
-.about-section {
-  display: flex;
-  flex-direction: column;
-  background-color: #191825;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%239C92AC' fill-opacity='0.11'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-.about-imagee {
-  flex-grow: 1.5;
-  background-color: aqua;
-  /* background-image: url(../images/about/reva.png);
-  background-size: cover; */
-}
-
-.about-imagee img {
-  min-height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.about-text {
-  flex-grow: 1.5;
-  background-color: black;
-  background-image: url(/images/about/text-bg.jpg);
-  background-size: cover;
-}
-.about-title {
-  font-size: 6rem;
-  text-align: center;
-  font-weight: 700;
-  color: rgb(255, 98, 0);
-  display: block;
-  padding: 2% 0;
-}
-.about-para {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 2rem;
-  font-size: 2rem;
-  text-align: center;
-
-  color: white;
-}
-.dektop-helptext {
-  display: block;
-}
-.mobile-helptext {
-  display: none;
-}
-@media screen and (max-width: 880px) {
-  .about-title {
-    font-size: 4rem;
-  }
-  .about-para {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 650px) {
-  .about-title {
-    font-size: 3rem;
-  }
-  .about-para {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .about-title {
-    font-size: 2.5rem;
-  }
-  .about-para {
-    font-size: rem;
-  }
-}
-.eventHeader {
-  padding-top: 5%;
-}
-.fancyslider {
-  overflow-y: hidden;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding-top: 0%;
-  /* padding-bottom: 10%; */
-  /* margin-bottom: 10%; */
-}
-
-@media screen and (max-width: 600px) {
-  .fancyslider {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .desktop-helptext {
-    display: none;
-  }
-  .mobile-helptext {
-    display: block;
-  }
-  .events-section {
-    background-color: var(--dark-color);
-    text-align: center;
-    /* height: 90vh; */
-  }
-}
 
 .height-placeholder {
   height: 100vh;
@@ -208,11 +102,15 @@
   /* background-color: aquamarine; */
   width: 60vw;
   /* padding: 0% 5%; */
+  margin: 5% 0;
 }
 
 .content-section p {
   text-align: center;
   color: white;
+  padding-right: 2%;
+  margin: auto;
+  /* min-width: 90%; */
 }
 
 .image {
@@ -222,13 +120,21 @@
 
 .image img {
   margin: auto;
-  padding-left: 2%;
+  margin-left: 2%;
   /* scale: 1.1; */
   /* border-radius: 5%; */
   box-shadow: 10px 10px 50px rgb(0, 0, 0);
   /* display: none; */
 }
 
+@media screen and (max-width: 1500px) {
+  .about-reva-container {
+    display: flex;
+    margin: auto;
+    /* width: 80%; */
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 1250px) {
   .about-reva-container {
     display: flex;
@@ -241,7 +147,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .content-section {
     /* background-color: aquamarine; */
     width: 100%;
@@ -255,10 +161,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
   }
   .content-section p {
     font-size: 16px;
+    padding: 0;
   }
+
   .about-reva-h1 {
     padding-top: 5rem;
   }
