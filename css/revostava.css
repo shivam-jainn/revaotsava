@@ -1002,6 +1002,7 @@ h1 > .magic > .magic-text {
 
 .revalogo {
   object-fit: cover;
+  max-width: 50%;
 }
 
 /* .hero h1,
