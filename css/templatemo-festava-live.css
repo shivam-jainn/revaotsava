@@ -836,7 +836,7 @@ strong {
   background: black;
 }
 
-.carousel ol {
+/* .carousel ol {
   position: absolute;
   bottom: 15px;
   display: flex;
@@ -876,10 +876,10 @@ strong {
 .carousel .next {
   left: auto;
   right: 0;
-}
+}*/
 
 /* DEMO CSS */
-.carousel ul li:nth-child(2) > div > div,
+/*.carousel ul li:nth-child(2) > div > div,
 .carousel ul li:nth-child(6) > div > div {
   background-image: url("/images/ee.jpg");
 }
@@ -890,7 +890,7 @@ strong {
 .carousel ul li:nth-child(4) > div > div,
 .carousel ul li:nth-child(8) > div > div {
   background-image: url("/images/ee.jpg");
-}
+} */
 p,
 h2 {
   margin: 15px auto;
