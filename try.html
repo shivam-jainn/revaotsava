@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add the latest compiled and minified CSS for Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="navprops.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="badges.css" />
+    <!-- <link rel="stylesheet" href="cards.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Add the latest compiled and minified CSS for Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="navprops.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="badges.css">
-  <!-- <link rel="stylesheet" href="cards.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <body>
+    <nav class="navbar navbar-expand  navprops">
+      <div class="nav-left">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-arrow-left-circle" style="font-size: 2rem;"></i>
+          </button>
+        </a>
+      </div>
 
-</head>
+      <div class="nav-in-nav">
+        <ul class="navbar-nav mr-auto">
+          <!-- Replace the text of the 3-star link with Font Awesome icons -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/try.html" id="3star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </a>
+          </li>
+          <!-- Replace the text of the 4-star link with Font Awesome icons -->
+          <li class="nav-item">
+            <a class="nav-link" href="/star_4.html" id="4star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </a>
+          </li>
+          <!-- Replace the text of the 5-star link with Font Awesome icons -->
+          <li class="nav-item">
+            <a class="nav-link" href="/star_5.html" id="5star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-<body>
+      <div class="nav-right">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Checkout <i class="bi bi-caret-right"></i></button
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand navbar-light bg-light navprops">
-    <div class="nav-left">
-      <a class="navbar-brand" href="index.html">Back</a>
-    </div>
+    <div style="margin: 2rem" id="card-container"></div>
 
-    <div class="nav-in-nav">
-      <ul class="navbar-nav mr-auto">
-        <!-- Replace the text of the 3-star link with Font Awesome icons -->
-        <li class="nav-item active">
-          <a class="nav-link" href="/try.html" id="3star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </a>
-        </li>
-        <!-- Replace the text of the 4-star link with Font Awesome icons -->
-        <li class="nav-item">
-          <a class="nav-link" href="/star_4.html" id="4star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </a>
-        </li>
-        <!-- Replace the text of the 5-star link with Font Awesome icons -->
-        <li class="nav-item">
-          <a class="nav-link" href="/star_5.html" id="5star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="nav-right">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Checkout</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div style="margin: 2rem;" id="card-container">
-
-  </div> 
-  
-  
-
-
-  <!-- Add the latest compiled and minified JavaScript for Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-<script src="fresh.js"></script>
-
+    <!-- Add the latest compiled and minified JavaScript for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  <script src="fresh.js"></script>
 </html>
