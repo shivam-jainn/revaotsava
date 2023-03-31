@@ -18,11 +18,5 @@ body {
 }
 .carousel{
   width:640px;
-  height:500px;
-  align-items: center;
-}
-.carousel img {
-
-  margin: auto;
-
+  height:510px;
 }
