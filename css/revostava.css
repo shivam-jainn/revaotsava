@@ -720,7 +720,7 @@ h2 {
 
 @media (max-width: 1024px) {
   .rev-typo-container {
-    margin-top: -6%;
+    margin-top: -15%;
   }
 
   .logo-contianer {
@@ -817,7 +817,7 @@ h2 {
     font-size: 18px;
   }
   .rev-typo-container {
-    margin-top: -12%;
+    margin-top: -18%;
   }
 
   .logo-contianer {
@@ -831,6 +831,13 @@ h2 {
 }
 
 @media (max-width: 500px) {
+  .rev-typo-container {
+    margin-top: -36%;
+  }
+
+  .logo-contianer {
+    padding: 0 5%;
+  }
   .text-blk.section-head {
     font-size: 30px;
     line-height: 35px;
