@@ -709,7 +709,9 @@ h2 {
   .responsive-container-block {
     flex-direction: column-reverse;
   }
-
+  .arh {
+    margin-top: 0;
+  }
   .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-one {
     display: flex;
     flex-direction: column;
@@ -898,7 +900,6 @@ h2 {
   font-family: "Rubik", sans-serif;
   font-size: clamp(2em, 2vw, 4em);
   font-weight: 400;
-  margin: 0px;
   padding: 20px;
   text-align: center;
 }
