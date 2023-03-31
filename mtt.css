@@ -16,21 +16,7 @@ body {
   color: #d2a545;
   text-align: center;
 }
-/* .carousel-item{
-  justify-content: auto;
-  align-content: center;
-  
-} */
-
-/* .p-24{
-  color: white;
-  text-align: center;
-} */
-
-/* #flex-team{
-  display: flex;
-  flex-direction: row;
+.carousel{
+  width:640px;
+  height:510px;
 }
-.text-gray-500{
-  text-align: center;
-} */
