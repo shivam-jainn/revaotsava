@@ -184,6 +184,13 @@
   white-space: nowrap;
 }
 
+.revostats {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 5%;
+}
+
 .about-reva-h1 {
   font-size: 3rem;
   text-align: center;
