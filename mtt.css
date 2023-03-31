@@ -11,6 +11,7 @@ body {
 .text-3xl{
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 .text-yellow-600{
   color: #d2a545;
@@ -19,4 +20,6 @@ body {
 .carousel{
   width:640px;
   height:510px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
