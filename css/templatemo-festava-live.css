@@ -15,7 +15,7 @@ https://templatemo.com/tm-583-festava-live
   --secondary-color: #ee5007;
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #ee5007;
-  --custom-btn-bg-hover-color: #c01f27;
+  --custom-btn-bg-hover-color: #ee5007;
   --dark-color: #191825;
   --p-color: #717275;
   --border-color: #7fffd4;
@@ -293,7 +293,7 @@ strong {
   background: var(--custom-btn-bg-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: white;
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
@@ -302,23 +302,28 @@ strong {
   z-index: 1000;
 }
 
-.custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
+#cus-btn{
+  background: #ee5007;
+  color: white;
 }
 
+/* .custom-btn:hover {
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+} */
+
 .custom-border-btn {
-  background: transparent;
+  /* background: transparent; */
   border: 2px solid var(--custom-btn-bg-color);
   color: var(--custom-btn-bg-color);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+/* .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
   color: var(--white-color);
-}
+} */
 
 .custom-btn-bg-white {
   border-color: var(--white-color);
@@ -356,6 +361,7 @@ strong {
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
+
 .sticky-wrapper {
   position: absolute;
   top: 0;
