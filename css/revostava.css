@@ -704,8 +704,28 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
+.rev-typo-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  margin-top: -9%;
+  position: absolute;
+}
+
+.logo-contianer {
+  padding: 0 20%;
+}
 
 @media (max-width: 1024px) {
+  .rev-typo-container {
+    margin-top: -6%;
+  }
+
+  .logo-contianer {
+    padding: 0 10%;
+  }
   .responsive-container-block {
     flex-direction: column-reverse;
   }
@@ -795,6 +815,13 @@ h2 {
 @media (max-width: 768px) {
   .text-blk.section-text {
     font-size: 18px;
+  }
+  .rev-typo-container {
+    margin-top: -12%;
+  }
+
+  .logo-contianer {
+    padding: 0 5%;
   }
 
   .text-blk.section-head {

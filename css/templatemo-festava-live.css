@@ -302,7 +302,7 @@ strong {
   z-index: 1000;
 }
 
-#cus-btn{
+#cus-btn {
   background: #ee5007;
   color: white;
 }
@@ -344,8 +344,9 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  z-index: -1;
   /* filter: blur(3px); */
-  /* filter:brightness(55%); */
+  filter: brightness(70%);
 }
 
 /*---------------------------------------
@@ -915,4 +916,8 @@ h2 {
 .social-icon-link-footer:hover {
   color: var(--white-color);
   filter: drop-shadow(0.5px 0.5px 1px white);
+}
+
+z-index-max {
+  z-index: 9999;
 }
