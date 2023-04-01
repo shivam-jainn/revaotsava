@@ -1,20 +1,20 @@
 import { eventData3Star, eventData4Star, eventData5Star } from "./eventData.js";
 
-// const cardData = [
-//   {
-//     title: "Title 1",
-//     description: "Description 1",
-//     imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-//     badgeText: ["badge1", "badge2", "badge3"],
-//   },
-//   {
-//     title: "Title 2",
-//     description: "Description 2",
-//     imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-//     badgeText: ["badge1", "badge2", "badge3"],
-//   },
-//   // add more card objects here
-// ];
+const cardData = [
+  {
+    title: "Title 1",
+    description: "Description 1",
+    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    badgeText: ["badge1", "badge2", "badge3"],
+  },
+  {
+    title: "Title 2",
+    description: "Description 2",
+    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    badgeText: ["badge1", "badge2", "badge3"],
+  },
+  // add more card objects here
+];
 
 const cardsContainer = document.getElementById("card-container");
 
@@ -78,7 +78,8 @@ function three(data) {
 function showPopup(cardData) {
   // create and display the popup here
   // for example:
-  console.log(cardData);
+
+
 
   const popup = document.createElement("div");
   popup.classList.add("popup");
@@ -113,17 +114,15 @@ function showPopup(cardData) {
   });
 
   document.body.appendChild(popup);
+
+
 }
 
 // idk wth is this , this is from chatgpt .
-cardsContainer.addEventListener("click", (event) => {
-  const eventdesc = event.target.closest(".card");
-  // console.log(eventdesc);
-  if (eventdesc) {
-    const cardIndex = [...cardsContainer.children].indexOf(eventdesc);
-    showPopup(cardData[cardIndex]);
-  }
-});
+
+
+
+
 
 // mapping pages
 const current_page = document.location.pathname;
@@ -131,8 +130,36 @@ const current_page = document.location.pathname;
 console.log(current_page);
 if (current_page === "/try.html") {
   three(eventData3Star);
+
+  cardsContainer.addEventListener("click", (event) => {
+    const eventdesc = event.target.closest(".card");
+    // console.log(eventdesc);
+    if (eventdesc) {
+      const cardIndex = [...cardsContainer.children].indexOf(eventdesc);
+      showPopup(eventData3Star[cardIndex]);
+    }
+  });
+
+  // cardsContainer.removeEventListener();
+  
 } else if (current_page === "/star_4.html") {
   three(eventData4Star);
+  cardsContainer.addEventListener("click", (event) => {
+    const eventdesc = event.target.closest(".card");
+    // console.log(eventdesc);
+    if (eventdesc) {
+      const cardIndex = [...cardsContainer.children].indexOf(eventdesc);
+      showPopup(eventData4Star[cardIndex]);
+    }
+  });
 } else  {
   three(eventData5Star);
+  cardsContainer.addEventListener("click", (event) => {
+    const eventdesc = event.target.closest(".card");
+    // console.log(eventdesc);
+    if (eventdesc) {
+      const cardIndex = [...cardsContainer.children].indexOf(eventdesc);
+      showPopup(eventData5Star[cardIndex]);
+    }
+  });
 }
