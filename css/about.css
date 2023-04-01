@@ -178,3 +178,35 @@
     /* padding-top: 2rem; */
   }
 }
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.left-hidden {
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.right-hidden {
+  transform: translateX(100%);
+  transition: all 2s;
+}
+
+.left-hidden-f {
+  transform: translateX(-50%);
+  transition: all 2s;
+}
+
+.right-hidden-f {
+  transform: translateX(50%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transition: all 2s;
+  filter: blur(0);
+  transform: translateX(0);
+}
