@@ -94,13 +94,14 @@
 
 .about-reva-container {
   display: flex;
+  justify-content: center;
   margin: auto;
   /* width: 80%; */
   max-width: 85%;
 }
 .content-section {
   /* background-color: aquamarine; */
-  width: 60vw;
+  /* width: 60vw; */
   /* padding: 0% 5%; */
   margin: 5% 0;
 }
@@ -121,6 +122,7 @@
 .image img {
   margin: auto;
   margin-left: 2%;
+  margin-right: 2%;
   /* scale: 1.1; */
   /* border-radius: 5%; */
   box-shadow: 10px 10px 50px rgb(0, 0, 0);
@@ -147,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .content-section {
     /* background-color: aquamarine; */
     width: 100%;
