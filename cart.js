@@ -104,7 +104,6 @@ const cardDataArray = [
           const buttonindex = removeButtons.indexOf(closeremove);
           const cardrem = event.target.closest(".card");
           cardrem.remove();
-          sum-=cardDataArray[buttonindex].price;
           const Totaltext = document.querySelector(".totalprice");
           Totaltext.innerText= sum;
           cardDataArray.splice(buttonindex, 1);
