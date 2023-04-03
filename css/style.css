@@ -14,7 +14,7 @@
 }
 
 .epic-carousel-item {
-  --items: 4;
+  --items: 10;
 
   --width: clamp(300px, 30vw, 500px);
   --height: clamp(450px, 40vw, 650px);

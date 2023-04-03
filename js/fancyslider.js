@@ -1,7 +1,7 @@
 /*--------------------
 Vars
 --------------------*/
-let progress = 10;
+let progress = 50;
 let startX = 0;
 let active = 0;
 let isDown = false;
@@ -54,7 +54,7 @@ Click on Items
 --------------------*/
 $items.forEach((item, i) => {
   item.addEventListener("click", () => {
-    progress = (i / $items.length) * 100 + 28;
+    progress = (i / $items.length) * 100 + 10;
     animate();
     // console.log("progress=" + progress);
   });
@@ -65,16 +65,16 @@ Control buttanssss 😎
 --------------------*/
 
 prevBtn.addEventListener("click", (e) => {
-  progress = progress - 28;
+  progress = progress - 10;
   animate();
   if (progress <= 0) {
-    progress = 28;
+    progress = 10;
   }
 
   // console.log("progress=" + progress);
 });
 nextBtn.addEventListener("click", (e) => {
-  progress = progress + 28;
+  progress = progress + 10;
   animate();
   // console.log("progress=" + progress);
 });
