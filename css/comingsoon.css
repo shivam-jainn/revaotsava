@@ -197,7 +197,7 @@
     transform: rotate(180deg);
   }
 }
-
+/* 
 h1 {
   color: white;
   font-family: "Rubik", sans-serif;
@@ -206,7 +206,7 @@ h1 {
   margin: 0px;
   padding-top: 20px;
   text-align: center;
-}
+} */
 
 h1 > .magic {
   display: inline-block;

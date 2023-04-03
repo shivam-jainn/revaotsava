@@ -11,10 +11,11 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #1a1f3a;
-  --secondary-color: #53365b;
-  --third-color: #a64a43;
-  --accent-color: #f57749;
+  --primary-color: #251e3e;
+  --secondary-color: #451e3e;
+  --third-color: #651e3e;
+  --accent-color: #851e3e;
+  --title-color: #ff7722;
 
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #ee5007;
@@ -54,13 +55,13 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-color);
+  color: var(--title-color);
 }
 
 h1,
@@ -69,15 +70,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold) !important;
 }
 
 h1 {
-  font-size: var(--h1-font-size);
+  /* font-size: var(--h1-font-size) !important; */
 }
 
 h2 {
-  font-size: var(--h2-font-size);
+  font-size: var(--h2-font-size) !important;
 }
 
 h3 {
@@ -731,7 +732,7 @@ strong {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 52px;
+    font-size: 32px;
   }
 
   h2 {
@@ -843,7 +844,7 @@ strong {
   position: absolute;
   bottom: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: center;l̥ōl̥ō
   left: 50%;
   transform: translateX(-50%);
   z-index: 9;
@@ -923,4 +924,8 @@ h2 {
 
 z-index-max {
   z-index: 9999;
+}
+
+#title-color {
+  color: var(--title-color);
 }
