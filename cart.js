@@ -12,6 +12,34 @@ const cardDataArray = [
       price: 15.00,
       quantity: 1,
       subtotal: 30.00
+    },
+    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00
+    },
+    {
+      title: "Product 2",
+      imageSrc: "product2.jpg",
+      price: 15.00,
+      quantity: 1,
+      subtotal: 30.00
+    },
+    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00
+    },
+    {
+      title: "Product 2",
+      imageSrc: "product2.jpg",
+      price: 15.00,
+      quantity: 1,
+      subtotal: 30.00
     }
   ];
   
