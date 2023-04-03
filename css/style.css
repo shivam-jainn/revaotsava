@@ -79,11 +79,27 @@
   z-index: 1;
   color: #fff;
   bottom: 20px;
-  left: 20px;
+  left: 30px;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   font-size: clamp(20px, 3vw, 30px);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+.epic-carousel-item .view-more {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: 20px;
+  right: 30px;
+  transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+  font-size: clamp(20px, 3vw, 30px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.epic-carousel-item .view-more:hover {
+  text-decoration: underline;
+}
+
 .epic-carousel-item .num {
   position: absolute;
   z-index: 1;
