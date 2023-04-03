@@ -525,7 +525,7 @@ section {
   height: 100%;
   z-index: -1;
 
-  filter: brightness(95%);
+  /* filter: brightness(95%); */
 }
 
 /* =Responsive Styles
