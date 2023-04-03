@@ -2,7 +2,7 @@ export const eventData4Star = [
   {
     title: "ClASSICAL SOLO DANCE",
     description: "Description 1",
-    imageSrc: "images/.png",
+    imageSrc: "images/CLASSICALSOLO.png",
     badgeText: ["DANCE", "5000", "3000"],
   },
   {
@@ -14,13 +14,13 @@ export const eventData4Star = [
   {
     title: "INDIAN CLASSICAL SOLO",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/IndianClassical.png",
     badgeText: ["MUSIC", "5000", "3000"],
   },
   {
     title: "WESTERN SOLO",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/WesternSolo.png",
     badgeText: ["MUSIC", "5000", "3000"],
   },
   {
@@ -32,13 +32,13 @@ export const eventData4Star = [
   {
     title: "DEBATE",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/DEBATE.png",
     badgeText: ["LITERARY", "3000", "1500"],
   },
   {
     title: "PHTOGRAPHY",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/Photography.png",
     badgeText: ["MEDIA", "5000", "3000"],
   },
   {
