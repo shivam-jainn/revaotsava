@@ -196,3 +196,13 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Meet the team cara-thingy
+
+// $$("#carousel-1").carousel({ interval: 4000, wrap: true, keyboard: true });
+
+/* 2 carousel */ $("#carousel-2").carousel({
+  interval: 6000,
+  wrap: true,
+  keyboard: true,
+});
