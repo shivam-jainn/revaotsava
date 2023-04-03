@@ -36,7 +36,7 @@ export const eventData4Star = [
     badgeText: ["LITERARY", "3000", "1500"],
   },
   {
-    title: "PHTOGRAPHY",
+    title: "PHOTOGRAPHY",
     description: "Description 1",
     imageSrc: "images/Photography.png",
     badgeText: ["MEDIA", "5000", "3000"],
@@ -44,19 +44,19 @@ export const eventData4Star = [
   {
     title: "SHORT FILM",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/ShortFilm.png",
     badgeText: ["MEDIA", "10000", "6000"],
   },
   {
     title: "FACE PAINTING",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/FacePainting.png",
     badgeText: ["FINE ARTS", "5000", "3000"],
   },
   {
     title: "ILLUSTRATION/DIGITAL ART",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/DigitalArt.png",
     badgeText: ["FINE ARTS", "3000", "1500"],
   },
   {
@@ -125,25 +125,25 @@ export const eventData5Star = [
   {
     title: "CLASSICAL GROUP DANCE",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/CLASSICALGROUPDANCE.png",
     badgeText: ["DANCE", "15000", "8000"],
   },
   {
     title: "WESTERN GROUP DANCE",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/WESTERNGROUPDANCE.png",
     badgeText: ["DANCE", "15000", "8000"],
   },
   {
     title: "FOLK GROUP DANCE",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/FOLKGROUPDANCE.png",
     badgeText: ["DANCE", "15000", "8000"],
   },
   {
     title: "BATTLE OF BANDS",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/BATTLEOFBANDS.png",
     badgeText: ["MUSIC", "15000", "8000"],
   },
   {
