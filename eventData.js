@@ -2,7 +2,7 @@ export const eventData4Star = [
   {
     title: "ClASSICAL SOLO DANCE",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/1.png",
     badgeText: ["DANCE", "5000", "3000"],
   },
   {
@@ -182,7 +182,7 @@ export const eventData3Star = [
   {
     title: "POETRY",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "images/madads.png",
     badgeText: ["LITERARY", "4000", "2000"],
   },
   {
