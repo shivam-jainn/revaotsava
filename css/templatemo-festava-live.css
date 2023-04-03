@@ -13,8 +13,8 @@ https://templatemo.com/tm-583-festava-live
   --white-color: #ffffff;
   --primary-color: #f8cb2e;
   --secondary-color: #ee5007;
+  --accent-color: #ee5007;
 
-  --accent-color: #851e3e;
   --title-color: #ff7722;
 
   --section-bg-color: #f0f8ff;
@@ -264,7 +264,7 @@ strong {
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  color: var(--primary-color);
+  color: var(--golden-accent-color);
 }
 
 .nav-tabs h5 {
@@ -302,7 +302,7 @@ strong {
 }
 
 #cus-btn {
-  background: #ee5007;
+  background: var(--accent-color);
   color: white;
 }
 
@@ -403,7 +403,7 @@ strong {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .navbar-toggler {
@@ -515,7 +515,7 @@ strong {
   background-size: cover;
   position: relative;
 } */
-
+/* 
 .about-image {
   border-radius: var(--border-radius-medium);
   display: block;
@@ -547,7 +547,7 @@ strong {
   left: 0;
   margin: 20px;
   padding: 35px;
-}
+} */
 
 /*---------------------------------------
   SITE FOOTER              
@@ -612,17 +612,18 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: var(--accent-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   display: block;
   margin-right: 10px;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: auto;
+  padding: 0 10px;
   line-height: 36px;
   transition: 0.2s;
+  letter-spacing: 0.15ch;
 }
 .social-icon-link:hover {
   color: var(--white-color);
