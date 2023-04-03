@@ -4,45 +4,77 @@ const cardDataArray = [
       imageSrc: "product1.jpg",
       price: 10.00,
       quantity: 1,
-      subtotal: 20.00
-    },
-    {
-      title: "Product 2",
-      imageSrc: "product2.jpg",
-      price: 15.00,
-      quantity: 1,
-      subtotal: 30.00
+      subtotal: 20.00,
+      included : true
     },
     {
       title: "Product 1",
       imageSrc: "product1.jpg",
       price: 10.00,
       quantity: 1,
-      subtotal: 20.00
-    },
-    {
-      title: "Product 2",
-      imageSrc: "product2.jpg",
-      price: 15.00,
-      quantity: 1,
-      subtotal: 30.00
+      subtotal: 20.00,
+      included : true
     },
     {
       title: "Product 1",
       imageSrc: "product1.jpg",
       price: 10.00,
       quantity: 1,
-      subtotal: 20.00
+      subtotal: 20.00,
+      included : true
     },
     {
-      title: "Product 2",
-      imageSrc: "product2.jpg",
-      price: 15.00,
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
       quantity: 1,
-      subtotal: 30.00
-    }
+      subtotal: 20.00,
+      included : true
+    },
+    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00,
+      included : true
+    },    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00,
+      included : true
+    },    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00,
+      included : true
+    },    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00,
+      included : true
+    },    {
+      title: "Product 1",
+      imageSrc: "product1.jpg",
+      price: 10.00,
+      quantity: 1,
+      subtotal: 20.00,
+      included : true
+    },
   ];
   
+  let sum = 0;
+
+  const cardsContainer = document.querySelector("#cart-container");
+  const Totaltext = document.querySelector(".totalprice");
+
+
   function createCard(cardData) {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -54,12 +86,31 @@ const cardDataArray = [
     title.textContent = cardData.title;
     cardHeader.appendChild(title);
   
-    const removeBtn = document.createElement("button");
+    const removeBtn = document.createElement("button"); 
     removeBtn.classList.add("remove-btn");
     removeBtn.textContent = "Remove";
-    removeBtn.addEventListener("click", () => {
-      card.remove();
-    });
+    
+    // removeBtn.addEventListener("click", () => {
+    //   card.remove();  
+    //   cardDataArray.included= false;  
+
+    //   changeTotal();
+    // });
+
+    cardsContainer.addEventListener("click", function(event) {
+      const closeremove = event.target.closest(".remove-btn");
+      if (closeremove) {
+          const removeButtons = [...cardsContainer.querySelectorAll(".remove-btn")];
+          const buttonindex = removeButtons.indexOf(closeremove);
+          const cardrem = event.target.closest(".card");
+          cardrem.remove();
+          sum-=cardDataArray[buttonindex].price;
+          const Totaltext = document.querySelector(".totalprice");
+          Totaltext.innerText= sum;
+          cardDataArray.splice(buttonindex, 1);
+        }
+  });
+
     cardHeader.appendChild(removeBtn);
   
     card.appendChild(cardHeader);
@@ -97,7 +148,8 @@ const cardDataArray = [
           let quantityValue = event.target.value;
           let newSubtotalValue = quantityValue * cardData.price;
           subtotal.textContent = `Subtotal: $${newSubtotalValue.toFixed(2)}`;
-     });
+          changeTotal();
+        });
      
      productInfo.appendChild(input);
   
@@ -112,7 +164,6 @@ const cardDataArray = [
      return card;
   }
   
-  const cardsContainer = document.querySelector("#cart-container");
   
   cardDataArray.forEach(cardData => {
      const cardElement = createCard(cardData);
@@ -129,7 +180,7 @@ const cardDataArray = [
   cardtotalbody.classList.add("card-body");
 
   const cartprice = document.createElement("h2");
-  cartprice.classList.add("price");
+  cartprice.classList.add("totalprice");
 
   cartprice.innerText= totalPriceFunc();
 
@@ -145,10 +196,11 @@ const cardDataArray = [
 
 
  function totalPriceFunc(){
-    let sum = 0;
-    cardDataArray.forEach(element => {
-        sum+= element.price;
+   cardDataArray.forEach(element => {
+     sum+= element.price;
     });
-
+    console.log(cardDataArray);
+    console.log(sum);
     return sum;
   }
+
