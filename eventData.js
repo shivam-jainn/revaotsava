@@ -182,7 +182,7 @@ export const eventData3Star = [
   {
     title: "POETRY",
     description: "Description 1",
-    imageSrc: "images/madads.png",
+    imageSrc: "images/poetry.png",
     badgeText: ["LITERARY", "4000", "2000"],
   },
   {
@@ -194,7 +194,7 @@ export const eventData3Star = [
   {
     title: "CLAY MODELING",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "/images/claymodelling.png",
     badgeText: ["FINE ARTS", "3000", "1500"],
   },
   {
@@ -206,13 +206,13 @@ export const eventData3Star = [
   {
     title: "AD REELS",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "/images/adreels.png",
     badgeText: ["MANAGEMENT", "S907", "S207"],
   },
   {
     title: "MAD ADS",
     description: "Description 1",
-    imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    imageSrc: "/images/madads.png",
     badgeText: ["MANAGEMENT", "S908", "S208"],
   },
 ];
