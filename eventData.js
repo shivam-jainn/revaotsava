@@ -2,7 +2,7 @@ export const eventData4Star = [
   {
     title: "ClASSICAL SOLO DANCE",
     description: "Description 1",
-    imageSrc: "images/1.png",
+    imageSrc: "images/.png",
     badgeText: ["DANCE", "5000", "3000"],
   },
   {
