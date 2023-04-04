@@ -228,7 +228,8 @@ var categories = Object.keys(data);
 var categoriesDiv = document.getElementById("categories");
 for (var i = 0; i < categories.length; i++) {
     var category = document.createElement("div");
-    category.className = "category";
+    category.className = "category underline";
+    // category.classList.add=""
     category.innerText = categories[i];
     category.onclick = function() {
         loadCards(this.innerText);
