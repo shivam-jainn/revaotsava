@@ -628,7 +628,12 @@ strong {
 .social-icon-link:hover {
   color: var(--white-color);
   box-shadow: 2px 2px 4px white;
-  transform: translateY(-5px);
+  transform: translateY(5px);
+  transform: translateX(5px);
+}
+
+.social-icon-link:active {
+  transform: scale(0.8);
 }
 
 .social-icon-link span {
