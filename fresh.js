@@ -38,13 +38,29 @@ function createCard(cardData) {
   const cardBadges = document.createElement("div");
   cardBadges.classList.add("card-badges");
 
-  cardData.badgeText.map((item) => {
-    const badge = document.createElement("div");
-    badge.classList.add("badge");
-    badge.textContent = item;
+  const badge = document.createElement("div");
+  badge.classList.add("badge");
+  badge.textContent = cardData.badgeText[0];
+
+  const badge1 = document.createElement("div");
+  badge1.classList.add("badge");
+  badge1.innerHTML = `1st:${cardData.badgeText[1]}`
+
+  const badge2 = document.createElement("div");
+  badge2.classList.add("badge");
+  badge2.innerHTML = `2<sup>nd<sup>:${cardData.badgeText[2]}`
+
+  // cardData.badgeText.map((item) => {
+  //   const badge = document.createElement("div");
+  //   badge.classList.add("badge");
+  //   badge.textContent = item;
+
+  //   cardBadges.appendChild(badge);
+  // });
 
     cardBadges.appendChild(badge);
-  });
+    cardBadges.appendChild(badge1);
+    cardBadges.appendChild(badge2);
 
   cardImgContainer.appendChild(cardBadges);
 
