@@ -28,12 +28,15 @@
 }
 
 .badge {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   padding: 5px 5px;
   background-color: #eee;
   border-radius: 5px;
   margin-right: 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -110,4 +113,9 @@
   .invi {
     font-size: small;
   }
+}
+
+
+.iconfirst{
+  font-size: large;
 }

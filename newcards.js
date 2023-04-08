@@ -300,12 +300,53 @@ function loadCards(category) {
     const cardBadges = document.createElement("div");
     cardBadges.classList.add("card-badges");
 
-    cardData[i].badgeText.map((item) => {
+    // console.log(cardData[0].badgeText[0]);
+
+    cardData[i].badgeText.map((item,index) => {
       const badge = document.createElement("div");
       badge.classList.add("badge");
-      // if(item)
       if(typeof(item)==="string"){
-        badge.textContent = item;
+        
+          if (index==1) {
+            // const firsticon = document.createElement("img")
+            // firsticon.classList.add("firsticon")
+            // firsticon.src = "./images/icon/first.png";
+            // console.log(firsticon);
+            // badge.appendChild(firsticon);
+             
+            const icon = document.createElement("span");
+            icon.innerText = `🥇`;
+            icon.classList.add("iconfirst")
+            badge.appendChild(icon);
+
+            const rate = document.createElement("span");
+            rate.innerText = item;
+            rate.classList.add("ratefirst")
+            badge.appendChild(rate);
+
+
+          } else if(index==2) {
+            // const secondicon = document.createElement("img")
+            // secondicon.classList.add("secondicon")
+            // secondicon.src = "./images/icon/first.png";
+     
+            // badge.appendChild(secondicon);
+             
+
+            const icon = document.createElement("span");
+            icon.innerText = `🥈`;
+            icon.classList.add("iconfirst")
+            badge.appendChild(icon);
+
+            const rate = document.createElement("span");
+            rate.innerText = item;
+            badge.appendChild(rate);
+
+          }
+        
+        // badge.textContent = item;
+
+
       }else{
 
        const staricon = document.createElement("span")
