@@ -1401,11 +1401,16 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .about-revo-container {
+    max-width: 70%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about-revo-container {
     display: flex;
     justify-content: center;
-    /* max-width: 70%; */
   }
   .about-revo-ani {
     width: 45%;
