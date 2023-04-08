@@ -5,31 +5,31 @@ var data = {
       title: "ClASSICAL SOLO DANCE",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "images/CLASSICALSOLO.png",
-      badgeText: ["DANCE", "5000", "3000"],
+      badgeText: [4, "5000", "3000"],
     },
     {
-      title: "WESTERN STREET SOLO",
+      title: "STREET DANCE FACEOFF",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["DANCE", "5000", "3000"],
+      badgeText: [4, "5000", "3000"],
     },
     {
       title: "CLASSICAL GROUP DANCE",
       description: "Description 1",
       imageSrc: "images/CLASSICALGROUPDANCE.png",
-      badgeText: ["DANCE", "15000", "8000"],
+      badgeText: [5, "15000", "8000"],
     },
     {
       title: "WESTERN GROUP DANCE",
       description: "Description 1",
       imageSrc: "images/WESTERNGROUPDANCE.png",
-      badgeText: ["DANCE", "15000", "8000"],
+      badgeText: [5, "15000", "8000"],
     },
     {
       title: "FOLK GROUP DANCE",
       description: "Description 1",
       imageSrc: "images/FOLKGROUPDANCE.png",
-      badgeText: ["DANCE", "15000", "8000"],
+      badgeText: [4, "15000", "8000"],
     },
   ],
   "MUSIC": [
@@ -37,19 +37,19 @@ var data = {
       title: "BATTLE OF BANDS",
       description: "Description 1",
       imageSrc: "images/BATTLEOFBANDS.png",
-      badgeText: ["MUSIC", "15000", "8000"],
+      badgeText: [5, "15000", "8000"],
     },
     {
-      title: "INDIAN CLASSICAL SOLO",
+      title: "CLASSICAL SOLO",
       description: "Description 1",
       imageSrc: "images/IndianClassical.png",
-      badgeText: ["MUSIC", "5000", "3000"],
+      badgeText: [3, "5000", "3000"],
     },
     {
       title: "WESTERN SOLO",
       description: "Description 1",
       imageSrc: "images/WesternSolo.png",
-      badgeText: ["MUSIC", "5000", "3000"],
+      badgeText: [3, "5000", "3000"],
     },
   ],
   "MEDIA": [
@@ -57,50 +57,66 @@ var data = {
       title: "PHOTOGRAPHY",
       description: "Description 1",
       imageSrc: "images/Photography.png",
-      badgeText: ["MEDIA", "5000", "3000"],
+      badgeText: [4, "5000", "3000"],
     },
     {
       title: "SHORT FILM",
       description: "Description 1",
       imageSrc: "images/ShortFilm.png",
-      badgeText: ["MEDIA", "10000", "6000"],
+      badgeText: [5, "10000", "6000"],
     },
   ],
   "FASHION": [
-
+      {
+        title: "FASHION SHOW",
+        description: "Description 1",
+        imageSrc: "images/ShortFilm.png",
+        badgeText: [5, "25000", "15000"],
+        regfee : 2500
+      }
   ],
   "SPORTS": [
     {
       title: "FOOTBALL",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["SPORTS", "S702", "S802"],
+      badgeText: [5,"10000", "6000"],
+      regfee : 1000
+
     },
     {
       title: "KABBADI",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["SPORTS", "S703", "S803"],
+      badgeText: [5, "10000", "6000"],
+      regfee : 1000
+
     },
   ],
   "TECHNICAL": [
     {
-      title: "RC RACING",
+      title: "RC DRAG AND ENDURANCE",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["TECHNICAL", "", ""],
+      badgeText: [5, "15000", "10000"],
+      regfee : 1000
+
     },
     {
       title: "LINE FOLLOW ROBOT",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["TECHNICAL", "", ""],
+      badgeText: [4, "3000", "200"],
+      regfee : 300
+
     },
     {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["TECHNICAL", "", ""],
+      badgeText: [4, "15000", "10000"],
+      regfee : 1500
+    
     },
   ],
   "MANAGEMENT": [
@@ -239,9 +255,6 @@ innerWrapper.classList.add("inner-wrapper");
 
 // category.classList.add("");
 
-const pesudoTrack = document.createElement("div");
-pesudoTrack.classList.add("pseduo-track");
-
 var categories = Object.keys(data);
 for (var i = 0; i < categories.length; i++) {
     const category = document.createElement("button");
@@ -257,7 +270,6 @@ for (var i = 0; i < categories.length; i++) {
 
 categoryBody.appendChild(categorySection);
 categorySection.appendChild(outerWrapper);
-categorySection.appendChild(pesudoTrack);
 
 outerWrapper.appendChild(innerWrapper);
 
@@ -308,6 +320,11 @@ function loadCards(category) {
 
     cardInfo.appendChild(cardTitle);
 
+
+    cardregistrationfee = document.createElement("div")
+    cardregistrationfee.innerText="$200";
+    cardregistrationfee.classList="regfees";
+
     const cardDesc = document.createElement("div");
     cardDesc.classList.add("card-desc");
     cardDesc.classList.add("truncate");
@@ -315,6 +332,8 @@ function loadCards(category) {
     // cardDesc.classList.add("card-desc");
 
     cardDesc.innerHTML = cardData[i].description;
+
+    cardInfo.appendChild(cardregistrationfee);
 
     cardInfo.appendChild(cardDesc);
 
