@@ -28,11 +28,20 @@
 }
 
 .badge {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 5px 5px;
   background-color: #eee;
   border-radius: 5px;
   margin-right: 5px;
+
+}
+
+.material-symbols-outlined{
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+
 }
 
 .card-info {

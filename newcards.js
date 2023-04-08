@@ -303,7 +303,22 @@ function loadCards(category) {
     cardData[i].badgeText.map((item) => {
       const badge = document.createElement("div");
       badge.classList.add("badge");
-      badge.textContent = item;
+      // if(item)
+      if(typeof(item)==="string"){
+        badge.textContent = item;
+      }else{
+
+       const staricon = document.createElement("span")
+       staricon.classList.add("material-symbols-outlined")
+       staricon.innerText="magic_button"
+
+       badge.appendChild(staricon);
+        
+       const rate = document.createElement("p");
+       rate.innerText = item;
+       badge.appendChild(rate);
+        
+      }
 
       cardBadges.appendChild(badge);
     });
