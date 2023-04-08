@@ -1,6 +1,6 @@
 // Sample JSON data
 var data = {
-  "Dance": [
+  "DANCE": [
     {
       title: "ClASSICAL SOLO DANCE",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
@@ -32,7 +32,7 @@ var data = {
       badgeText: ["DANCE", "15000", "8000"],
     },
   ],
-  "Music": [
+  "MUSIC": [
     {
       title: "BATTLE OF BANDS",
       description: "Description 1",
@@ -52,7 +52,7 @@ var data = {
       badgeText: ["MUSIC", "5000", "3000"],
     },
   ],
-  "Media": [
+  "MEDIA": [
     {
       title: "PHOTOGRAPHY",
       description: "Description 1",
@@ -66,10 +66,10 @@ var data = {
       badgeText: ["MEDIA", "10000", "6000"],
     },
   ],
-  "Fashion": [
+  "FASHION": [
 
   ],
-  "Sports": [
+  "SPORTS": [
     {
       title: "FOOTBALL",
       description: "Description 1",
@@ -83,7 +83,7 @@ var data = {
       badgeText: ["SPORTS", "S703", "S803"],
     },
   ],
-  "Technical": [
+  "TECHNICAL": [
     {
       title: "RC RACING",
       description: "Description 1",
@@ -103,7 +103,7 @@ var data = {
       badgeText: ["TECHNICAL", "", ""],
     },
   ],
-  "Management": [
+  "MANAGEMENT": [
     {
       title: "OPERATIONS",
       description: "Description 1",
@@ -165,7 +165,7 @@ var data = {
       badgeText: ["MANAGEMENT", "S909", "S209"],
     },
   ],
-  "Theater": [
+  "THEATER": [
     {
       title: "MIME",
       description: "Description 1",
@@ -179,7 +179,7 @@ var data = {
       badgeText: ["THEATRE", "8000", "5000"],
     },
   ],
-  "Arts": [
+  "ARTS": [
     {
       title: "FACE PAINTING",
       description: "Description 1",
@@ -199,7 +199,7 @@ var data = {
       badgeText: ["FINE ARTS", "3000", "1500"],
     },
   ],
-  "Literacy": [
+  "LITERACY": [
     {
       title: "POETRY",
       description: "Description 1",
@@ -245,7 +245,7 @@ pesudoTrack.classList.add("pseduo-track");
 var categories = Object.keys(data);
 for (var i = 0; i < categories.length; i++) {
     const category = document.createElement("button");
-    category.className = "category underline pseudo-item";
+    category.className = "category underline pseudo-item pop";
     // category.classList.add=""
     category.innerText = categories[i];
     category.onclick = function () {
@@ -264,10 +264,10 @@ outerWrapper.appendChild(innerWrapper);
 // Load cards for selected category
 function loadCards(category) {
   var cardData = data[category];
+  console.log(cardData);
   var cardsDiv = document.getElementById("cards");
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
-
 
     const cards = document.createElement("div");
     cards.classList.add("card");
@@ -319,15 +319,10 @@ function loadCards(category) {
     cardInfo.appendChild(cardDesc);
 
 
-    const cardbuttondiv = document.createElement("div");
 
-    const addToCartButton = document.createElement("button");
-    addToCartButton.classList.add("atc-btn");
-    addToCartButton.textContent = "add to cart";
-
+  
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
-    cards.appendChild(addToCartButton)
 
     cardsDiv.appendChild(cards);
   }
