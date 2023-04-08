@@ -113,9 +113,23 @@
   .invi {
     font-size: small;
   }
+
+  .regfees{
+    font-size: small;
+  }
 }
 
 
 .iconfirst{
   font-size: large;
 }
+
+
+.card-title{
+  font-weight: bold;
+}
+
+.regfees{
+  font-weight: 600;
+}
+

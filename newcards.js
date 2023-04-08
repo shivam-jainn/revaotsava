@@ -308,38 +308,27 @@ function loadCards(category) {
       if(typeof(item)==="string"){
         
           if (index==1) {
-            // const firsticon = document.createElement("img")
-            // firsticon.classList.add("firsticon")
-            // firsticon.src = "./images/icon/first.png";
-            // console.log(firsticon);
-            // badge.appendChild(firsticon);
-             
+    
             const icon = document.createElement("span");
             icon.innerText = `🥇`;
             icon.classList.add("iconfirst")
             badge.appendChild(icon);
 
             const rate = document.createElement("span");
-            rate.innerText = item;
+            rate.innerText = `₹${item}`;
             rate.classList.add("ratefirst")
             badge.appendChild(rate);
 
 
           } else if(index==2) {
-            // const secondicon = document.createElement("img")
-            // secondicon.classList.add("secondicon")
-            // secondicon.src = "./images/icon/first.png";
      
-            // badge.appendChild(secondicon);
-             
-
             const icon = document.createElement("span");
             icon.innerText = `🥈`;
             icon.classList.add("iconfirst")
             badge.appendChild(icon);
 
             const rate = document.createElement("span");
-            rate.innerText = item;
+            rate.innerText = `₹${item}`;
             badge.appendChild(rate);
 
           }
@@ -370,34 +359,34 @@ function loadCards(category) {
     const cardInfo = document.createElement("div");
     cardInfo.classList.add("card-info");
 
-    const cardTitle = document.createElement("div");
+    const cardTitle = document.createElement("h4");
     cardTitle.classList.add("card-title");
-    cardTitle.innerHTML = cardData[i].title;
+    cardTitle.innerText = cardData[i].title;
 
     cardInfo.appendChild(cardTitle);
 
-
-    cardregistrationfee = document.createElement("div")
-    cardregistrationfee.innerText="$200";
+    cardregistrationfee = document.createElement("h6")
+    cardregistrationfee.innerText=`Registration fees 💰: ₹${cardData[i].regfee}`;
     cardregistrationfee.classList="regfees";
 
     const cardDesc = document.createElement("div");
     cardDesc.classList.add("card-desc");
-    cardDesc.classList.add("truncate");
 
-    // cardDesc.classList.add("card-desc");
 
+   
     cardDesc.innerHTML = cardData[i].description;
 
     cardInfo.appendChild(cardregistrationfee);
 
-    cardInfo.appendChild(cardDesc);
+    // cardInfo.appendChild(cardDesc);
+
 
 
 
   
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
+
 
     cardsDiv.appendChild(cards);
   }
