@@ -225,18 +225,41 @@ var data = {
 
 
 // Generate categories
+const categoryBody = document.getElementById("bodytag");
+
+const categorySection = document.createElement("div");
+categorySection.classList.add("sectiontag");
+
+
+const outerWrapper = document.createElement("div");
+outerWrapper.classList.add("outer-wrapper");
+
+const innerWrapper = document.createElement("div");
+innerWrapper.classList.add("inner-wrapper");
+
+// category.classList.add("");
+
+const pesudoTrack = document.createElement("div");
+pesudoTrack.classList.add("pseduo-track");
+
 var categories = Object.keys(data);
-var categoriesDiv = document.getElementById("categories");
 for (var i = 0; i < categories.length; i++) {
-  var category = document.createElement("div");
-  category.className = "category underline";
-  // category.classList.add=""
-  category.innerText = categories[i];
-  category.onclick = function () {
-    loadCards(this.innerText);
-  };
-  categoriesDiv.appendChild(category);
+    const category = document.createElement("button");
+    category.className = "category underline pseudo-item";
+    // category.classList.add=""
+    category.innerText = categories[i];
+    category.onclick = function () {
+        loadCards(this.innerText);
+    };
+    innerWrapper.appendChild(category);
 }
+
+
+categoryBody.appendChild(categorySection);
+categorySection.appendChild(outerWrapper);
+categorySection.appendChild(pesudoTrack);
+
+outerWrapper.appendChild(innerWrapper);
 
 // Load cards for selected category
 function loadCards(category) {
