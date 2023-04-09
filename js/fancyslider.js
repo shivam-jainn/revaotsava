@@ -2,10 +2,11 @@
 Vars
 --------------------*/
 let progress = 10;
-let startX = 0;
+let startX = 10;
 let active = 0;
 let isDown = false;
-
+let windowWidth = window.innerWidth;
+var WIDTH_LIMIT = 820;
 /*--------------------
 Contants
 --------------------*/
@@ -71,44 +72,53 @@ prevBtn.addEventListener("click", (e) => {
     progress = 10;
   }
 
-  // console.log("progress=" + progress);
+  console.log("progress=" + progress);
+  console.log(windowWidth);
 });
 nextBtn.addEventListener("click", (e) => {
   progress = progress + 10;
   animate();
-  // console.log("progress=" + progress);
+  console.log("progress=" + progress);
 });
 
 /*--------------------
 Handlers
 --------------------*/
 const handleWheel = (e) => {
-  const wheelProgress = e.deltaY * speedWheel;
-  progress = progress + wheelProgress;
-  animate();
+  if (windowWidth <= WIDTH_LIMIT) {
+    const wheelProgress = e.deltaY * speedWheel;
+    progress = progress + wheelProgress;
+    animate();
+  }
 };
 
 const handleMouseMove = (e) => {
-  if (e.type === "mousemove") {
-    $cursors.forEach(($cursor) => {
-      $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-    });
+  if (windowWidth <= WIDTH_LIMIT) {
+    if (e.type === "mousemove") {
+      $cursors.forEach(($cursor) => {
+        $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      });
+    }
+    if (!isDown) return;
+    const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+    const mouseProgress = (x - startX) * speedDrag;
+    progress = progress + mouseProgress;
+    startX = x;
+    animate();
   }
-  if (!isDown) return;
-  const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
-  const mouseProgress = (x - startX) * speedDrag;
-  progress = progress + mouseProgress;
-  startX = x;
-  animate();
 };
 
 const handleMouseDown = (e) => {
-  isDown = true;
-  startX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+  if (windowWidth <= WIDTH_LIMIT) {
+    isDown = true;
+    startX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+  }
 };
 
 const handleMouseUp = () => {
-  isDown = false;
+  if (windowWidth <= WIDTH_LIMIT) {
+    isDown = false;
+  }
 };
 
 /*--------------------
