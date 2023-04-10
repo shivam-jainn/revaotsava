@@ -419,7 +419,7 @@ function loadCards(category) {
     cardInfo.appendChild(cardTitle);
 
     cardregistrationfee = document.createElement("h6")
-    cardregistrationfee.innerText=`Registration fees 💰: ₹${cardData[i].regfee}`;
+    cardregistrationfee.innerText=`Registration Fees 💰: ₹${cardData[i].regfee}`;
     cardregistrationfee.classList="regfees";
 
     const cardDesc = document.createElement("div");
