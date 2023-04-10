@@ -152,7 +152,7 @@ section {
   backface-visibility: hidden;
 }
 .logo-contianer img {
-  width: 70vw;
+  width: 60vw;
 }
 .custom-video {
   position: absolute;
@@ -168,13 +168,18 @@ section {
 
 @media all and (max-width: 1300px) {
   .logo-contianer img {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
 @media all and (min-width: 2000px) {
   .logo-contianer img {
     width: 75vw;
+  }
+  @media all and (max-width: 500px) {
+    .logo-contianer img {
+      width: 90vw;
+    }
   }
 }
 
@@ -567,7 +572,7 @@ h1 > .magic > .magic-text {
   );
 
   background-size: 200%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
@@ -650,7 +655,7 @@ h1 > .magic > .magic-text {
     rgb(255, 132, 0)
   );
   background-size: 200%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
@@ -758,11 +763,11 @@ h1 > .magic > .magic-text {
   => ABOUT REVOSTAVE STYLES             
 -----------------------------------------*/
 
-/* about revostava styles */
+/* about revostava styles 
 .section-2 {
   /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%239C92AC' fill-opacity='0.11'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-  /* background-color: #191825; */
-}
+/* background-color: #191825; 
+}*/
 
 #circle-container {
   /* margin: 5%; */
@@ -918,8 +923,8 @@ h1 > .magic > .magic-text {
 .epic-carousel-item {
   --items: 10;
 
-  --width: clamp(300px, 30vw, 500px);
-  --height: clamp(450px, 40vw, 650px);
+  --width: clamp(300px, 30vw, 450px);
+  --height: clamp(450px, 40vw, 600px);
 
   /* --x: calc(var(--active) * 225%); */
   --x: calc(var(--active) * 300%);
@@ -1140,7 +1145,16 @@ h1 > .magic > .magic-text {
     display: block;
   }
 }
-
+@media screen and (max-width: 1025px) {
+  .sexybody {
+    margin: -10% -20% 0 0;
+  }
+  .epic-carousel-item {
+    --width: clamp(300px, 40vw, 400px);
+    --height: clamp(450px, 50vw, 550px);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 1.75);
+  }
+}
 @media screen and (max-width: 650px) {
   .epic-carousel-item {
     margin: calc(var(--height) * -0.7) 0 0 calc(var(--width) * -0.5);
@@ -1382,7 +1396,7 @@ h1 > .magic > .magic-text {
     var(--one)
   );
   background-size: 200%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }

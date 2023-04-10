@@ -245,7 +245,7 @@ h1 > .magic > .magic-text {
     var(--purple)
   );
   background-size: 200%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
