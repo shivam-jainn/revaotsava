@@ -268,8 +268,17 @@ for (var i = 0; i < categories.length; i++) {
 }
 
 
+{/* <div class="pseduo-track"></div> */}
+
+const pseduotrack = document.createElement("div");
+pseduotrack.classList.add("pseduo-track")
+
+
+
 categoryBody.appendChild(categorySection);
 categorySection.appendChild(outerWrapper);
+categorySection.appendChild(pseduotrack);
+
 
 outerWrapper.appendChild(innerWrapper);
 
@@ -376,12 +385,18 @@ function loadCards(category) {
    
     cardDesc.innerHTML = cardData[i].description;
 
+
+    const rulesBtn = document.createElement("button");
+    rulesBtn.innerText="rules";
+    rulesBtn.classList.add("rulesbtn")
+
+    
     cardInfo.appendChild(cardregistrationfee);
 
     // cardInfo.appendChild(cardDesc);
 
 
-
+    cardInfo.appendChild(rulesBtn)
 
   
     cards.appendChild(cardImgContainer);
