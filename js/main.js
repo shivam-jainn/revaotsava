@@ -111,7 +111,6 @@ upButton.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (e) => {
-  console.log(e.key);
   if (e.key === "ArrowDown") {
     changeSlide("down");
   } else if (e.key === "ArrowUp") {
@@ -182,7 +181,6 @@ $items.forEach((item, i) => {
   item.addEventListener("click", () => {
     progress = (i / $items.length) * 100 + 10;
     animate();
-    // console.log("progress=" + progress);
   });
 });
 
@@ -197,13 +195,11 @@ prevBtn.addEventListener("click", (e) => {
     progress = 10;
   }
 
-  console.log("progress=" + progress);
-  console.log(windowWidth);
+  
 });
 nextBtn.addEventListener("click", (e) => {
   progress = progress + 10;
   animate();
-  console.log("progress=" + progress);
 });
 
 /*--------------------
@@ -261,7 +257,6 @@ document.addEventListener("touchend", handleMouseUp);
 // Animate on scroll JS:
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
