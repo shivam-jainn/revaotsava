@@ -404,35 +404,34 @@ function loadCards(category) {
   }
 
 
-  cardsDiv.addEventListener("click", (event) => {
-    const eventdesc = event.target.closest(".card");
-    console.log(eventdesc)
-    // console.log(event)
+  // cardsDiv.addEventListener("click", (event) => {
+  //   const eventdesc = event.target.closest(".card");
+  //   // console.log(event)
 
-    if (eventdesc) {
-      event.stopPropagation();
-      const cardIndex = [...cardsDiv.children].indexOf(eventdesc);
-      console.log(cardIndex);
-      console.log(cardData[cardIndex]);
-      showPopup(cardData[cardIndex]);
+  //   if (eventdesc) {
+  //     event.stopPropagation();
+  //     const cardIndex = [...cardsDiv.children].indexOf(eventdesc);
+  //     console.log(cardIndex);
+  //     console.log(cardData[cardIndex]);
+  //     showPopup(cardData[cardIndex]);
 
-    }
-  });
+  //   }
+  // });
 
-  cardsDiv.removeEventListener("click",(event) => {
-    const eventdesc = event.target.closest(".card");
-    console.log(eventdesc)
-    // console.log(event)
+  // cardsDiv.removeEventListener("click",(event) => {
+  //   const eventdesc = event.target.closest(".card");
+  //   console.log(eventdesc)
+  //   // console.log(event)
 
-    if (eventdesc) {
-      event.stopPropagation();
-      const cardIndex = [...cardsDiv.children].indexOf(eventdesc);
-      console.log(cardIndex);
-      console.log(cardData[cardIndex]);
-      showPopup(cardData[cardIndex]);
+  //   if (eventdesc) {
+  //     event.stopPropagation();
+  //     const cardIndex = [...cardsDiv.children].indexOf(eventdesc);
+  //     console.log(cardIndex);
+  //     console.log(cardData[cardIndex]);
+  //     showPopup(cardData[cardIndex]);
 
-    }
-  });
+  //   }
+  // });
 }
 
 
