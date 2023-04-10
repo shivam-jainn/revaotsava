@@ -280,8 +280,14 @@ for (var i = 0; i < categories.length; i++) {
 }
 
 
+const line = document.createElement("div");
+line.classList.add("pseduo-track");
+
+
 categoryBody.appendChild(categorySection);
 categorySection.appendChild(outerWrapper);
+categorySection.appendChild(line);
+
 
 outerWrapper.appendChild(innerWrapper);
 
