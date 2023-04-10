@@ -572,7 +572,7 @@ h1 > .magic > .magic-text {
   );
 
   background-size: 200%;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
@@ -655,7 +655,7 @@ h1 > .magic > .magic-text {
     rgb(255, 132, 0)
   );
   background-size: 200%;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
@@ -1396,13 +1396,13 @@ h1 > .magic > .magic-text {
     var(--one)
   );
   background-size: 200%;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
 
 /*---------------------------------------
-  => SPONSORS             
+  => SPONSORSs             
 -----------------------------------------*/
 
 .wrap {
