@@ -301,7 +301,10 @@ const innerWrapper = document.createElement("div");
 innerWrapper.classList.add("inner-wrapper");
 
 // category.classList.add("");
-
+window.onload = function() {
+  head.innerText= "ALL Events"
+  loadCards("DANCE");
+};
 var categories = Object.keys(data);
 for (var i = 0; i < categories.length; i++) {
     const category = document.createElement("button");
@@ -329,7 +332,6 @@ outerWrapper.appendChild(innerWrapper);
 // Load cards for selected category
 function loadCards(category) {
   var cardData = data[category];
-  console.log(cardData);
   var cardsDiv = document.getElementById("cards");
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
