@@ -2,75 +2,81 @@
 var data = {
   "DANCE": [
     {
-      title: "ClASSICAL SOLO DANCE",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
-      imageSrc: "images/CLASSICALSOLO.png",
-      badgeText: [4, "5000", "3000"],
-    },
-    {
-      title: "STREET DANCE FACEOFF",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: [4, "5000", "3000"],
-    },
-    {
       title: "CLASSICAL GROUP DANCE",
       description: "Description 1",
-      imageSrc: "images/CLASSICALGROUPDANCE.png",
+      imageSrc: "banner/classicalgroupdance.png",
       badgeText: [5, "15000", "8000"],
     },
     {
       title: "WESTERN GROUP DANCE",
       description: "Description 1",
-      imageSrc: "images/WESTERNGROUPDANCE.png",
+      imageSrc: "banner/westerndance.png",
       badgeText: [5, "15000", "8000"],
     },
     {
       title: "FOLK GROUP DANCE",
       description: "Description 1",
-      imageSrc: "images/FOLKGROUPDANCE.png",
-      badgeText: [4, "15000", "8000"],
+      imageSrc: "banner/folkgroup.png",
+      badgeText: [5, "15000", "8000"],
     },
+    {
+      title: "STREET DANCE FACEOFF",
+      description: "Description 1",
+      imageSrc: "banner/westernstreetdance.png",
+      badgeText: [4, "5000", "3000"],
+    },
+    {
+      title: "CLASSICAL SOLO DANCE",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
+      imageSrc: "banner/ClassicalSolo.png",
+      badgeText: [4, "5000", "3000"],
+    },  
   ],
   "MUSIC": [
     {
       title: "BATTLE OF BANDS",
       description: "Description 1",
-      imageSrc: "images/BATTLEOFBANDS.png",
+      imageSrc: "banner/battleofbands.png",
       badgeText: [5, "15000", "8000"],
     },
     {
       title: "CLASSICAL SOLO",
       description: "Description 1",
-      imageSrc: "images/IndianClassical.png",
+      imageSrc: "banner/classicalsolosinging.png",
       badgeText: [3, "5000", "3000"],
     },
     {
       title: "WESTERN SOLO",
       description: "Description 1",
-      imageSrc: "images/WesternSolo.png",
+      imageSrc: "banner/westernsolo.png",
       badgeText: [3, "5000", "3000"],
     },
   ],
   "MEDIA": [
     {
-      title: "PHOTOGRAPHY",
-      description: "Description 1",
-      imageSrc: "images/Photography.png",
-      badgeText: [4, "5000", "3000"],
-    },
-    {
       title: "SHORT FILM",
       description: "Description 1",
-      imageSrc: "images/ShortFilm.png",
+      imageSrc: "banner/ShortFilm.png",
       badgeText: [5, "10000", "6000"],
+    },
+    {
+      title: "PHOTOGRAPHY",
+      description: "Description 1",
+      imageSrc: "banner/photography.png",
+      badgeText: [3, "5000", "3000"],
+    },
+    {
+      title: "REELS",
+      description: "Description 1",
+      imageSrc: "banner/reel.png",
+      badgeText: [3, "5000", "3000"],
     },
   ],
   "FASHION": [
       {
         title: "FASHION SHOW",
         description: "Description 1",
-        imageSrc: "images/ShortFilm.png",
+        imageSrc: "banner/fashionshow.png",
         badgeText: [5, "25000", "15000"],
         regfee : 2500
       }
@@ -79,7 +85,7 @@ var data = {
     {
       title: "FOOTBALL",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+      imageSrc: "banner/football.png",
       badgeText: [5,"10000", "6000"],
       regfee : 1000
 
@@ -87,7 +93,7 @@ var data = {
     {
       title: "KABBADI",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+      imageSrc: "banner/kabbadi.png",
       badgeText: [5, "10000", "6000"],
       regfee : 1000
 
@@ -97,7 +103,7 @@ var data = {
     {
       title: "RC DRAG AND ENDURANCE",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+      imageSrc: "banner/rcdragandendurance.png",
       badgeText: [5, "15000", "10000"],
       regfee : 1000
 
@@ -105,7 +111,7 @@ var data = {
     {
       title: "LINE FOLLOW ROBOT",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+      imageSrc: "banner/linefollowrobot.png",
       badgeText: [4, "3000", "200"],
       regfee : 300
 
@@ -113,126 +119,132 @@ var data = {
     {
       title: "DRONE",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+      imageSrc: "banner/drone.png",
       badgeText: [4, "15000", "10000"],
       regfee : 1500
     
     },
   ],
+  "THEATER": [
+    // {
+    //   title: "MIME",
+    //   description: "Description 1",
+    //   imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
+    //   badgeText: ["THEATRE", "5000", "3000"],
+    // },
+    {
+      title: "SKIT",
+      description: "Description 1",
+      imageSrc: "banner/Theatre.png",
+      badgeText: [5, "10000", "5000"],
+    },
+    {
+      title: "STREET PLAY",
+      description: "Description 1",
+      imageSrc: "banner/streetplay.png",
+      badgeText: [4, "10000", "5000"],
+    },
+  ],
   "MANAGEMENT": [
     {
-      title: "OPERATIONS",
+      title: "TREASURE HUNT",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S905", "S205"],
-    },
-    {
-      title: "AD REELS",
-      description: "Description 1",
-      imageSrc: "/images/adreels.png",
-      badgeText: ["MANAGEMENT", "S907", "S207"],
-    },
-    {
-      title: "MAD ADS",
-      description: "Description 1",
-      imageSrc: "/images/madads.png",
-      badgeText: ["MANAGEMENT", "S908", "S208"],
+      imageSrc: "banner/treasurehunt.png",
+      badgeText: [4, "15000", "10000"],
     },
     {
       title: "BEST MANAGEMENT",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S900", "S200"],
-    },
-    {
-      title: "HR",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S901", "S201"],
-    },
-    {
-      title: "FINANCE",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S902", "S202"],
-    },
-    {
-      title: "TREASURE HUNT",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S903", "S203"],
+      imageSrc: "banner/bestmanagement.png",
+      badgeText: [4, "15000", "10000"],
     },
     {
       title: "BEST MANAGER",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S904", "S204"],
+      imageSrc: "banner/bestmanager.png",
+      badgeText: [4, "15000", "10000"],
     },
     {
       title: "MARKETING",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S906", "S206"],
+      imageSrc: "banner/marketing.png",
+      badgeText: [4, "15000", "10000"],
     },
     {
       title: "BEST ENTREPRENEUR",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["MANAGEMENT", "S909", "S209"],
-    },
-  ],
-  "THEATER": [
-    {
-      title: "MIME",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["THEATRE", "5000", "3000"],
+      imageSrc: "banner/entrepreneur.png",
+      badgeText: [4, "15000", "10000"],
     },
     {
-      title: "SKIT",
+      title: "OPERATIONS",
       description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["THEATRE", "8000", "5000"],
+      imageSrc: "banner/operations.png",
+      badgeText: [3, "15000", "10000"],
+    },
+    {
+      title: "AD REELS",
+      description: "Description 1",
+      imageSrc: "banner/AdReels.png",
+      badgeText: [3, "15000", "10000"],
+    },
+    // {
+    //   title: "MAD ADS",
+    //   description: "Description 1",
+    //   imageSrc: "/images/madads.png",
+    //   badgeText: [4, "15000", "10000"],
+    // },
+    {
+      title: "HR",
+      description: "Description 1",
+      imageSrc: "banner/HR.png",
+      badgeText: [3, "15000", "10000"],
+    },
+    {
+      title: "FINANCE",
+      description: "Description 1",
+      imageSrc: "banner/finance.png",
+      badgeText: [3, "15000", "10000"],
     },
   ],
-  "ARTS": [
+  "VISUAL ARTS": [
+    {
+      title: "APPAREL PAINTING",
+      description: "Description 1",
+      imageSrc: "banner/apparelpainting.png",
+      badgeText: [4, "15000", "10000"],
+    },
     {
       title: "FACE PAINTING",
       description: "Description 1",
-      imageSrc: "images/FacePainting.png",
-      badgeText: ["FINE ARTS", "5000", "3000"],
+      imageSrc: "banner/FacePainting.png",
+      badgeText: [3, "15000", "10000"],
     },
     {
-      title: "ILLUSTRATION/DIGITAL ART",
+      title: "ILLUSTRATION",
       description: "Description 1",
-      imageSrc: "images/DigitalArt.png",
-      badgeText: ["FINE ARTS", "3000", "1500"],
+      imageSrc: "banner/illustration.png",
+      badgeText: [3, "15000", "10000"],
     },
     {
       title: "CLAY MODELING",
       description: "Description 1",
-      imageSrc: "/images/claymodelling.png",
-      badgeText: ["FINE ARTS", "3000", "1500"],
+      imageSrc: "banner/claymodelling.png",
+      badgeText: [3, "15000", "10000"],
     },
   ],
-  "LITERACY": [
+  "LITERATURE": [
     {
       title: "POETRY",
       description: "Description 1",
-      imageSrc: "images/poetry.png",
-      badgeText: ["LITERARY", "4000", "2000"],
-    },
-    {
-      title: "JAM",
-      description: "Description 1",
-      imageSrc: "images/a-l-ya631mqQ7Ng-unsplash.jpg",
-      badgeText: ["LITERARY", "3000", "1500"],
+      imageSrc: "banner/poetry.png",
+      badgeText: [3, "15000", "10000"],
     },
     {
       title: "DEBATE",
       description: "Description 1",
-      imageSrc: "images/DEBATE.png",
-      badgeText: ["LITERARY", "3000", "1500"],
+      imageSrc: "banner/debate.png",
+      badgeText: [3, "15000", "10000"],
     },
   ]
 
@@ -268,17 +280,8 @@ for (var i = 0; i < categories.length; i++) {
 }
 
 
-{/* <div class="pseduo-track"></div> */}
-
-const pseduotrack = document.createElement("div");
-pseduotrack.classList.add("pseduo-track")
-
-
-
 categoryBody.appendChild(categorySection);
 categorySection.appendChild(outerWrapper);
-categorySection.appendChild(pseduotrack);
-
 
 outerWrapper.appendChild(innerWrapper);
 
@@ -385,18 +388,12 @@ function loadCards(category) {
    
     cardDesc.innerHTML = cardData[i].description;
 
-
-    const rulesBtn = document.createElement("button");
-    rulesBtn.innerText="rules";
-    rulesBtn.classList.add("rulesbtn")
-
-    
     cardInfo.appendChild(cardregistrationfee);
 
     // cardInfo.appendChild(cardDesc);
 
 
-    cardInfo.appendChild(rulesBtn)
+
 
   
     cards.appendChild(cardImgContainer);
