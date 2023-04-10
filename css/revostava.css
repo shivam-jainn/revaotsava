@@ -1416,7 +1416,8 @@ h1 > .magic > .magic-text {
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: white;
   margin-bottom: 30px;
 }
 .clients {
