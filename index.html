@@ -127,7 +127,7 @@
               <!-- NEW HTML WITH GYRO -->
 
               <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                <source src="./video/bg.mp4" type="video/mp4" />
+                <source src="./video/party.webm" type="video/webm" />
           
                 Your browser does not support the video tag.
               </video>
@@ -155,7 +155,7 @@
                   <li class="layer" data-depth="0.30">
                     <div class="hero">
                       <div class="logo-contianer">
-                        <img src="./images/rev-typo.png" />
+                        <img src="./images/rev-typo2.png" />
                       </div>
                     </div>
                   </li>
@@ -219,7 +219,7 @@
 
 
   </section>
-
+<div class="background-image"></div>
  <!-- About REVA-->
  <section class= "about-reva" id="section_# hidden">  
   <div class="about-reva-container" >
@@ -440,13 +440,52 @@
           </section>
 
   <!-- SCHEDULE -->
-          <section class="  height-placeholder" id="section_4">
+          <section class=" " id="section_4">
               <div class="eventHeader">
                   <h1 class="text-center mb-4">Schedule</h1 >
               </div>
-              <div class="eventHeader">
+              <div id="cardWrap">
+                <div class="card-schedule">
+                  <div class="cardContent">
+                    <div class="content card-title">
+                      <h1>
+                         <span class="magic">
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-text">Coming Soon!!!!</span>
+                          </span>
+                        </h1>
+                        
+                        
+                        
+                    </div>
+                    <div class="content card-subheading">
+                      Follow to get all updates 
+                    </div>  
+                    <div class="big-insta-button" >
+                      <a href="https://www.instagram.com/revothsava2023/" class="social-icon-link" style="display: flex;" target=”_blank”>
+                        <i class="bi bi-instagram"></i>
+                        <span style="padding-left: 10px;">@revothsava2023</span>
+                      </a>
+                    </div>
+                  </div>
+                      
+              <!-- <div class="eventHeader">
                   <h3 class="text-center mb-4 comingsoon">Coming Soon</h3 >
-              </div>
+              </div> -->
               
           </section>
 
@@ -616,7 +655,7 @@
       
 
   <!-- FAQ Section -->
-  <section class="faq" id="section_7">
+  <!-- <section class="faq" id="section_7">
     <h1 class="h1faq">FAQ's</h1>
 
   <div class="wrapperfaq">
@@ -685,7 +724,7 @@
 
   </div>
 
-  </section>
+  </section> -->
 
   <!-- Meet The Team -->
   <!-- <section class="meet-the-team">
@@ -883,98 +922,7 @@
       <script src="js/gallery.js"></script>
       
       
-      <!-- <script>
-          let index = 0,
-      interval = 1000;
-
-  const rand = (min, max) => 
-    Math.floor(Math.random() * (max - min + 1)) + min;
-
-  const animate = star => {
-    star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
-    star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
-
-    star.style.animation = "none";
-    star.offsetHeight;
-    star.style.animation = "";
-  }
-
-  for(const star of document.getElementsByClassName("magic-star")) {
-    setTimeout(() => {
-      animate(star);
-      
-      setInterval(() => animate(star), 1000);
-    }, index++ * (interval / 3))
-  }
-      </script> -->
-    
-      
-    <!-- <script type="module">
-      import createGlobe from 'https://cdn.skypack.dev/pin/cobe@v0.6.3-Q6K1EGiYvzYD96Sn0bg1/mode=imports/optimized/cobe.js'
-    
-      let phi = 0
-      let canvas = document.getElementById("cobe")
-    
-      const globe = createGlobe(canvas, {
-        devicePixelRatio: 2,
-        width: 1000,
-        height: 1000,
-        phi: 0,
-        theta: 0,
-        dark: 0,
-        diffuse: 1.2,
-        scale: 1,
-        mapSamples: 1000,
-        mapBrightness: 6,
-        baseColor: [1, 1, 1],
-        markerColor: [1, 0.5, 1],
-        glowColor: [1, 1, 1],
-        offset: [0, 0],
-        markers: [
-          { location: [37.7595, -122.4367], size: 0.03 },
-          { location: [40.7128, -74.006], size: 0.1 },
-        ],
-        onRender: (state) => {
-          // Called on every animation frame.
-          // `state` will be an empty object, return updated params.
-          state.phi = phi
-          phi += 0.01
-        },
-      })
-
-    canvas.addEventListener('mouseover',(e) =>{
-      console.log("in hover");
-
-      const globehov = createGlobe(canvas, {
-        devicePixelRatio: 2,
-        width: 1000,
-        height: 1000,
-        phi: 0,
-        theta: 0,
-        dark: 0,
-        diffuse: 1.2,
-        scale: 1,
-        mapSamples: 8000,
-        mapBrightness: 6,
-        baseColor: [1, 1, 1],
-        markerColor: [1, 0.5, 1],
-        glowColor: [1, 1, 1],
-        offset: [0, 0],
-        markers: [
-          
-        ],
-
-        onRender: (state) => {
-          // Called on every animation frame.
-          // `state` will be an empty object, return updated params.
-          state.phi = phi
-          phi += 0.01
-        },
-      })
-
-      // globehov.destroy()
-    })
-    </script> -->
+     
 
   </body>
 

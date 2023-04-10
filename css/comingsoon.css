@@ -162,9 +162,9 @@
 }
 /*//////////Fancy text////////////////////*/
 :root {
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
+  --purple: rgb(162, 31, 31);
+  --violet: rgb(212, 134, 24);
+  --pink: rgb(241, 244, 143);
 }
 
 @keyframes background-pan {
