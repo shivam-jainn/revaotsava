@@ -15,7 +15,8 @@ https://templatemo.com/tm-583-festava-live
   --secondary-color: #ee5007;
   --accent-color: #ee5007;
 
-  --title-color: #ff7722;
+  /* --title-color: #ff7722; */
+  --title-color: white;
 
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #ee5007;

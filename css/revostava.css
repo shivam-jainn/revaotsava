@@ -1147,7 +1147,7 @@ h1 > .magic > .magic-text {
 }
 @media screen and (max-width: 1025px) {
   .sexybody {
-    margin: -10% -20% 0 0;
+    margin: -2% -20% 0 0;
   }
   .epic-carousel-item {
     --width: clamp(300px, 40vw, 400px);
@@ -1202,14 +1202,6 @@ h1 > .magic > .magic-text {
   => Schedule             
 -----------------------------------------*/
 
-.register-section {
-  background-image: url("../images/nicholas-green-unsplash-blur2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-position: bottom left;
-}
-
 #cardWrap {
   display: flex;
   justify-content: center;
@@ -1228,6 +1220,7 @@ h1 > .magic > .magic-text {
   width: 100%;
   border-radius: 30px;
   box-sizing: border-box;
+  padding: 0 5%;
 }
 .content {
   font-family: arial;
@@ -1251,7 +1244,7 @@ h1 > .magic > .magic-text {
 .card-schedule {
   margin: 0 10%;
   height: clamp(200px, 350px, 400px);
-  width: clamp(400px, 55vw, 650px);
+  width: clamp(400px, 60vw, 650px);
   background: rgb(255, 255, 255);
   background: linear-gradient(
     145deg,
@@ -1284,7 +1277,7 @@ h1 > .magic > .magic-text {
     margin: 0 5%;
   }
   .card-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: 5%;
     font-weight: 900;
@@ -1349,7 +1342,7 @@ h1 > .magic > .magic-text {
   }
 }
 
-h1 {
+.h1 {
   color: white;
   font-family: "Rubik", sans-serif;
   font-size: clamp(1.2em, 0.5vw, 2em);
@@ -1359,12 +1352,12 @@ h1 {
   text-align: center;
 }
 
-h1 > .magic {
+.h1 > .magic {
   display: inline-block;
   position: relative;
 }
 
-h1 > .magic > .magic-star {
+.h1 > .magic > .magic-star {
   --size: clamp(20px, 1.5vw, 30px);
 
   animation: scale 700ms ease forwards;
@@ -1376,17 +1369,17 @@ h1 > .magic > .magic-star {
   width: var(--size);
 }
 
-h1 > .magic > .magic-star > svg {
+.h1 > .magic > .magic-star > svg {
   animation: rotate 1000ms linear infinite;
   display: block;
   opacity: 0.7;
 }
 
-h1 > .magic > .magic-star > svg > path {
+.h1 > .magic > .magic-star > svg > path {
   fill: var(--violet);
 }
 
-h1 > .magic > .magic-text {
+.h1 > .magic > .magic-text {
   animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
