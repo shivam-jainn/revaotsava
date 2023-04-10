@@ -1616,7 +1616,7 @@ article img {
 /*---- SET UP CONTROL ----*/
 
 .mobile-carousel {
-  min-width: 100%;
+  min-width: 70%;
 }
 
 mobile-gallery img {
