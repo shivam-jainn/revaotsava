@@ -71,136 +71,7 @@ question.forEach((question) => {
   });
 });
 
-// //JQuery for about section
-// $(document).ready(function() {
-//   // Function to check if an element is in view
-//   function isInView(elem) {
-//     var windowTop = $(window).scrollTop();
-//     var windowBottom = windowTop + $(window).height();
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).outerHeight();
-//     return ((elemBottom >= windowTop) && (elemTop <= windowBottom));
-//   }
 
-//   // Function to handle the scroll event
-//   function handleScroll() {
-//     var section = $('.responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-one');
-//     var img = $('.bg-image');
-//     if (isInView(section)) {
-//       section.addClass('in-view');
-//     } else {
-//       section.removeClass('in-view');
-//     }
-//   }
-
-// Bind the scroll event to the handleScroll function
-//   $(window).on('scroll', handleScroll);
-
-//   // Trigger the handleScroll function on page load
-//   handleScroll();
-// });
-
-// $(document).ready(function () {
-//   // Function to check if an element is in view
-//   function isInView(elem) {
-//     var windowTop = $(window).scrollTop();
-//     var windowBottom = windowTop + $(window).height();
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).outerHeight();
-//     return elemBottom >= windowTop && elemTop <= windowBottom;
-//   }
-
-//   // Function to handle the scroll event
-//   function handleScroll() {
-//     var section = $(
-//       ".responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-one"
-//     );
-
-//     if (isInView(section)) {
-//       section.addClass("in-view");
-//     } else {
-//       section.removeClass("in-view");
-//     }
-//   }
-
-//   // Bind the scroll event to the handleScroll function
-//   $(window).on("scroll", handleScroll);
-
-//   // Trigger the handleScroll function on page load
-//   handleScroll();
-// });
-
-// $(document).ready(function () {
-//   // Function to check if an element is in view
-//   function isInView(elem) {
-//     var windowTop = $(window).scrollTop();
-//     var windowBottom = windowTop + $(window).height();
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).outerHeight();
-//     return elemBottom >= windowTop && elemTop <= windowBottom;
-//   }
-
-//   // Function to handle the scroll event
-//   function handleScroll() {
-//     var section = $(
-//       ".responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-two"
-//     );
-//     var img = $(".bg-image2");
-//     if (isInView(section)) {
-//       section.addClass("in-view");
-//     } else {
-//       section.removeClass("in-view");
-//     }
-//   }
-
-//   // Bind the scroll event to the handleScroll function
-//   $(window).on("scroll", handleScroll);
-
-//   // Trigger the handleScroll function on page load
-//   handleScroll();
-// });
-
-// $(document).ready(function () {
-//   // Function to check if an element is in view
-//   function isInView(elem) {
-//     var windowTop = $(window).scrollTop();
-//     var windowBottom = windowTop + $(window).height();
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).outerHeight();
-//     return elemBottom >= windowTop && elemTop <= windowBottom;
-//   }
-
-//   // Function to handle the scroll event
-//   function handleScroll() {
-//     var section = $(
-//       ".responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-two"
-//     );
-
-//     if (isInView(section)) {
-//       section.addClass("in-view");
-//     } else {
-//       section.removeClass("in-view");
-//     }
-//   }
-
-//   // Bind the scroll event to the handleScroll function
-//   $(window).on("scroll", handleScroll);
-
-//   // Trigger the handleScroll function on page load
-//   handleScroll();
-// });
-
-//OUTLINE DIMENSION AND CENTER
-
-/* END ------------------------------------------------------- */
-
-// const card = document.getElementById("cardWrap");
-
-// window.addEventListener("mousemove", (e) => {
-//   let x = e.pageX - innerWidth / 2;
-//   let y = e.pageY - innerHeight / 2;
-//   card.style.transform = `translate(${x / 40}px, ${y / 40}px)`;
-// });
 /*---------------------------------------
 GALLERY JS
 -----------------------------------------*/
@@ -407,14 +278,15 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // $$("#carousel-1").carousel({ interval: 4000, wrap: true, keyboard: true });
 
-/* 2 carousel */ $("#carousel-2").carousel({
-  interval: 6000,
-  wrap: true,
-  keyboard: true,
-});
+/* 2 carousel */ 
+// $("#carousel-2").carousel({
+//   interval: 6000,
+//   wrap: true,
+//   keyboard: true,
+// });
 
 
-
+// FAQ
 $(document).ready(function(){
   // Add minus icon for collapse element which is open by default
   $(".collapse.show").each(function(){
