@@ -245,13 +245,6 @@ var data = {
       regfee : 500
     },
     {
-      title: "FACE PAINTING",
-      description: "Description 1",
-      imageSrc: "banner/FacePainting.png",
-      badgeText: [3, "3000", "1000"],
-      regfee : 300
-    },
-    {
       title: "ILLUSTRATION",
       description: "Description 1",
       imageSrc: "banner/illustration.png",
@@ -263,7 +256,14 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/claymodelling.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 2500
+      regfee : 300
+    },
+    {
+      title: "FACE PAINTING",
+      description: "Description 1",
+      imageSrc: "banner/FacePainting.png",
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
   ],
   "LITERATURE": [
