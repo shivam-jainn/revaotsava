@@ -2,34 +2,39 @@
 var data = {
   "DANCE": [
     {
-      title: "CLASSICAL GROUP DANCE",
+      title: "CLASSICAL DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/classicalgroupdance.png",
-      badgeText: [5, "15000", "8000"],
+      badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
-      title: "WESTERN GROUP DANCE",
+      title: "WESTERN DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/westerndance.png",
-      badgeText: [5, "15000", "8000"],
+      badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
-      title: "FOLK GROUP DANCE",
+      title: "FOLK DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/folkgroup.png",
-      badgeText: [5, "15000", "8000"],
+      badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
-      title: "STREET DANCE FACEOFF",
+      title: "STREET DANCE FACE-OFF",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
-      title: "CLASSICAL SOLO DANCE",
+      title: "CLASSICAL DANCE (SOLO)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "banner/ClassicalSolo.png",
       badgeText: [4, "5000", "3000"],
+      regfee : 500
     },  
   ],
   "MUSIC": [
@@ -37,19 +42,29 @@ var data = {
       title: "BATTLE OF BANDS",
       description: "Description 1",
       imageSrc: "banner/battleofbands.png",
-      badgeText: [5, "15000", "8000"],
+      badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
-      title: "CLASSICAL SOLO",
+      title: "CLASSICAL SINGING (SOLO)",
       description: "Description 1",
       imageSrc: "banner/classicalsolosinging.png",
-      badgeText: [3, "5000", "3000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
-      title: "WESTERN SOLO",
+      title: "WESTERN SINGING (SOLO)",
+      description: "Description 1",
+      imageSrc: "banner/beatboxing.png",
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
+    },
+    {
+      title: "BEAT BOXING",
       description: "Description 1",
       imageSrc: "banner/westernsolo.png",
-      badgeText: [3, "5000", "3000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
   ],
   "MEDIA": [
@@ -57,19 +72,22 @@ var data = {
       title: "SHORT FILM",
       description: "Description 1",
       imageSrc: "banner/ShortFilm.png",
-      badgeText: [5, "10000", "6000"],
+      badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
       title: "PHOTOGRAPHY",
       description: "Description 1",
       imageSrc: "banner/photography.png",
       badgeText: [3, "5000", "3000"],
+      regfee : 300
     },
     {
       title: "REELS",
       description: "Description 1",
       imageSrc: "banner/reel.png",
-      badgeText: [3, "5000", "3000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
   ],
   "FASHION": [
@@ -77,8 +95,8 @@ var data = {
         title: "FASHION SHOW",
         description: "Description 1",
         imageSrc: "banner/fashionshow.png",
-        badgeText: [5, "25000", "15000"],
-        regfee : 2500
+        badgeText: [5, "10000", "5000"],
+        regfee : 1000
       }
   ],
   "SPORTS": [
@@ -86,7 +104,7 @@ var data = {
       title: "FOOTBALL",
       description: "Description 1",
       imageSrc: "banner/football.png",
-      badgeText: [5,"10000", "6000"],
+      badgeText: [5,"10000", "5000"],
       regfee : 1000
 
     },
@@ -94,7 +112,7 @@ var data = {
       title: "KABBADI",
       description: "Description 1",
       imageSrc: "banner/kabbadi.png",
-      badgeText: [5, "10000", "6000"],
+      badgeText: [5, "10000", "5000"],
       regfee : 1000
 
     },
@@ -104,7 +122,7 @@ var data = {
       title: "RC DRAG AND ENDURANCE",
       description: "Description 1",
       imageSrc: "banner/rcdragandendurance.png",
-      badgeText: [5, "15000", "10000"],
+      badgeText: [5, "10000", "5000"],
       regfee : 1000
 
     },
@@ -112,16 +130,16 @@ var data = {
       title: "LINE FOLLOW ROBOT",
       description: "Description 1",
       imageSrc: "banner/linefollowrobot.png",
-      badgeText: [4, "3000", "200"],
-      regfee : 300
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
 
     },
     {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "banner/drone.png",
-      badgeText: [4, "15000", "10000"],
-      regfee : 1500
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     
     },
   ],
@@ -137,12 +155,14 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/Theatre.png",
       badgeText: [5, "10000", "5000"],
+      regfee : 1000
     },
     {
       title: "STREET PLAY",
       description: "Description 1",
       imageSrc: "banner/streetplay.png",
-      badgeText: [4, "10000", "5000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
   ],
   "MANAGEMENT": [
@@ -150,43 +170,50 @@ var data = {
       title: "TREASURE HUNT",
       description: "Description 1",
       imageSrc: "banner/treasurehunt.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000"],
+      regfee : 500
     },
     {
       title: "BEST MANAGEMENT",
       description: "Description 1",
       imageSrc: "banner/bestmanagement.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
       title: "BEST MANAGER",
       description: "Description 1",
       imageSrc: "banner/bestmanager.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000"],
+      regfee : 500
     },
     {
       title: "MARKETING",
       description: "Description 1",
       imageSrc: "banner/marketing.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
       title: "BEST ENTREPRENEUR",
       description: "Description 1",
       imageSrc: "banner/entrepreneur.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
       title: "OPERATIONS",
       description: "Description 1",
       imageSrc: "banner/operations.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
     {
       title: "AD REELS",
       description: "Description 1",
       imageSrc: "banner/AdReels.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
     // {
     //   title: "MAD ADS",
@@ -198,13 +225,15 @@ var data = {
       title: "HR",
       description: "Description 1",
       imageSrc: "banner/HR.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
     {
       title: "FINANCE",
       description: "Description 1",
       imageSrc: "banner/finance.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
   ],
   "VISUAL ARTS": [
@@ -212,25 +241,29 @@ var data = {
       title: "APPAREL PAINTING",
       description: "Description 1",
       imageSrc: "banner/apparelpainting.png",
-      badgeText: [4, "15000", "10000"],
+      badgeText: [4, "5000", "3000"],
+      regfee : 500
     },
     {
       title: "FACE PAINTING",
       description: "Description 1",
       imageSrc: "banner/FacePainting.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
     {
       title: "ILLUSTRATION",
       description: "Description 1",
       imageSrc: "banner/illustration.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "5000", "3000"],
+      regfee : 300
     },
     {
       title: "CLAY MODELING",
       description: "Description 1",
       imageSrc: "banner/claymodelling.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "5000", "3000"],
+      regfee : 2500
     },
   ],
   "LITERATURE": [
@@ -238,13 +271,15 @@ var data = {
       title: "POETRY",
       description: "Description 1",
       imageSrc: "banner/poetry.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
     {
       title: "DEBATE",
       description: "Description 1",
       imageSrc: "banner/debate.png",
-      badgeText: [3, "15000", "10000"],
+      badgeText: [3, "3000", "1000"],
+      regfee : 300
     },
   ]
 
