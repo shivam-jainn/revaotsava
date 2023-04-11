@@ -24,7 +24,7 @@ textarea {
 
 img {
   vertical-align: middle;
-  max-width: 100%;
+  max-width: 70%;
   height: 100%;
 }
 
@@ -81,6 +81,14 @@ ANIMATION STYLES
   transition: all 2s;
   filter: blur(0);
   transform: translateX(0);
+}
+
+/* Nav Bar */
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
 /* =Typography
