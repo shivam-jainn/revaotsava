@@ -700,6 +700,7 @@ h1 > .magic > .magic-text {
 .image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .image img {
@@ -850,9 +851,23 @@ h1 > .magic > .magic-text {
   font-size: 16px;
   color: white;
 }
-.revostats2 {
+.flex-container{
+  display: block;
+}
+.para{
+  margin-left: 25px;
+}
+/* .revostats{
+  flex: 1;
+}
+.revostats:first-child{
+  margin-right: 10px;
+} */
+.revostats-image {
   transform: scale(0.9);
 }
+
+
 
 @media screen and (min-width: 850px) {
   #circle {
@@ -860,7 +875,7 @@ h1 > .magic > .magic-text {
     padding-bottom: 50%;
     margin-top: -5%;
   }
-
+  
   #circle svg {
     position: absolute;
     left: 0;
@@ -881,6 +896,10 @@ h1 > .magic > .magic-text {
     display: flex;
     justify-content: center;
   }
+  .flex-container {
+    display: flex;
+}
+  
   .about-revo-ani {
     width: 45%;
     max-height: 100%;
