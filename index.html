@@ -49,6 +49,14 @@
   z-index: 1000;
   background-size: 50%;
 }
+.navbar-nav {
+            margin-left: auto;
+            padding-right: 60px;
+        }
+        .nb{
+          /* padding-right: 100; */
+          margin-right: 20px;
+        }
  </style>
 
 </head>
@@ -66,12 +74,13 @@
     <main class="">
 <!-- NAVBAR -->
         <nav class="autohide navbar navbar-expand-lg">
-            <div class="container">
-                <div class="revalogo" >
-                <a class="navbar-brand" href="index.html">
-                    <img class ="rlogo"src="images/reva-logo2.png" alt=""> 
-                </a>
-              </div>
+          <a class="navbar-brand" href="index.html">
+            <img class ="rlogo"src="images/reva-logo2.png" alt=""> 
+        </a>
+          
+                
+                
+         
                 <a href="events.html" id="cus-btn" class="btn custom-btn d-lg-none ms-auto me-4">Register</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -80,7 +89,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center me-lg-5">
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_1">Home</a>
                         </li>
@@ -111,10 +120,11 @@
                           <a class="nav-link click-scroll" href="#section_7">FAQ's</a>
                       </li> -->
                     </ul>
-
-                    <a href="events.html" id="cus-btn" class="btn custom-btn d-lg-block d-none">Register</a>
+                  <div class="nb">
+                    <a href="events.html" id="cus-btn" class="btn custom-btn d-lg-block d-none nb">Register</a>
+                  </div>
                 </div>
-            </div>
+           
         </nav>
 
 
@@ -995,7 +1005,7 @@
       var loader =   document.getElementById("preloader")
       window.addEventListener('load', function(load) {
         window.removeEventListener('load', load, false);               
-        setTimeout(function(){loader.style.display = 'none'},4500);
+        setTimeout(function(){loader.style.display = 'none'},500);
       
       },false);
             </script>
