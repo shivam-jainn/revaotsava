@@ -22,6 +22,16 @@ textarea {
   line-height: inherit;
 }
 
+#preloader{
+  background: #000 url("/images/pll.gif") no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed
+
+  ;
+  z-index: 1000;
+  background-size: 50%;
+}
 img {
   vertical-align: middle;
   max-width: 100%;
