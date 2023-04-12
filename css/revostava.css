@@ -867,9 +867,7 @@ h1 > .magic > .magic-text {
   display: block;
   justify-content: center;
 }
-.para {
-  margin-left: 25px;
-}
+
 /* .revostats{
   flex: 1;
 }
