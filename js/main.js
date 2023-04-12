@@ -52,25 +52,23 @@ $(window).load(function () {
 
 //Nav bar
 
-el_autohide = document.querySelector('.autohide');
+el_autohide = document.querySelector(".autohide");
 
-
-  if(el_autohide){
-    var last_scroll_top = 0;
-    window.addEventListener('scroll', function() {
-          let scroll_top = window.scrollY;
-         if(scroll_top < last_scroll_top) {
-              el_autohide.classList.remove('scrolled-down');
-              el_autohide.classList.add('scrolled-up');
-          }
-          else {
-              el_autohide.classList.remove('scrolled-up');
-              el_autohide.classList.add('scrolled-down');
-          }
-          last_scroll_top = scroll_top;
-    }); 
-    // window.addEventListener
-  }
+if (el_autohide) {
+  var last_scroll_top = 0;
+  window.addEventListener("scroll", function () {
+    let scroll_top = window.scrollY;
+    if (scroll_top < last_scroll_top) {
+      el_autohide.classList.remove("scrolled-down");
+      el_autohide.classList.add("scrolled-up");
+    } else {
+      el_autohide.classList.remove("scrolled-up");
+      el_autohide.classList.add("scrolled-down");
+    }
+    last_scroll_top = scroll_top;
+  });
+  // window.addEventListener
+}
 
 ///FAQ section JS
 
@@ -92,7 +90,6 @@ question.forEach((question) => {
     }
   });
 });
-
 
 /*---------------------------------------
 GALLERY JS
@@ -191,7 +188,17 @@ Animate
 const animate = () => {
   progress = Math.max(0, Math.min(progress, 100));
   active = Math.floor((progress / 100) * ($items.length - 1));
-
+  let i = 0;
+  for (i = 0; i < 10; i++) {
+    if (i != active) {
+      const anchor = document.getElementById(i.toString());
+      anchor.classList.remove("clickable");
+      anchor.classList.add("unclickable");
+    } else {
+      const anchor = document.getElementById(i.toString());
+      anchor.classList.add("clickable");
+    }
+  }
   $items.forEach((item, index) => displayItems(item, index, active));
 };
 animate();
@@ -216,8 +223,6 @@ prevBtn.addEventListener("click", (e) => {
   if (progress <= 0) {
     progress = 10;
   }
-
-  
 });
 nextBtn.addEventListener("click", (e) => {
   progress = progress + 10;
@@ -295,25 +300,26 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // $$("#carousel-1").carousel({ interval: 4000, wrap: true, keyboard: true });
 
-/* 2 carousel */ 
+/* 2 carousel */
 // $("#carousel-2").carousel({
 //   interval: 6000,
 //   wrap: true,
 //   keyboard: true,
 // });
 
-
 // FAQ
-$(document).ready(function(){
+$(document).ready(function () {
   // Add minus icon for collapse element which is open by default
-  $(".collapse.show").each(function(){
-  $(this).siblings(".card-header").find(".btn i").html("remove");
-  $(this).prev(".card-header").addClass("highlight");
+  $(".collapse.show").each(function () {
+    $(this).siblings(".card-header").find(".btn i").html("remove");
+    $(this).prev(".card-header").addClass("highlight");
   });
   // Toggle plus minus icon on show hide of collapse element
-  $(".collapse").on('show.bs.collapse', function(){
-  $(this).parent().find(".card-header .btn i").html("remove");
-  }).on('hide.bs.collapse', function(){
-  $(this).parent().find(".card-header .btn i").html("add");
-  });
-  });
+  $(".collapse")
+    .on("show.bs.collapse", function () {
+      $(this).parent().find(".card-header .btn i").html("remove");
+    })
+    .on("hide.bs.collapse", function () {
+      $(this).parent().find(".card-header .btn i").html("add");
+    });
+});
