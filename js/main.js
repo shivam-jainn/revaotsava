@@ -53,10 +53,7 @@ $(window).load(function () {
 //Nav bar
 
 el_autohide = document.querySelector('.autohide');
-  
-  // add padding-top to bady (if necessary)
-  navbar_height = document.querySelector('.navbar').offsetHeight;
-  document.body.style.paddingTop = navbar_height + 'px';
+
 
   if(el_autohide){
     var last_scroll_top = 0;
