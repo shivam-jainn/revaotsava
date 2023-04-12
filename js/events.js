@@ -73,7 +73,7 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/ShortFilm.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 500
     },
     {
       title: "PHOTOGRAPHY",
