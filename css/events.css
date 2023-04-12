@@ -141,6 +141,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+.rulebook a:link { 
+  text-decoration: none; 
+}
+
+.rulebook a:visited {
+  text-decoration: none; 
+}
+
+.rulebook a:hover {
+  color: black; 
+  text-decoration: none; 
+}
+
+.rulebook a:active { 
+  text-decoration: none; 
+}
 
 #body {
   box-sizing: border-box;
