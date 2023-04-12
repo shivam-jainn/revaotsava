@@ -302,7 +302,6 @@ innerWrapper.classList.add("inner-wrapper");
 
 // category.classList.add("");
 window.onload = function() {
-  head.innerText= "ALL Events"
   loadCards("DANCE");
 };
 var categories = Object.keys(data);
