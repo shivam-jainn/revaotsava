@@ -361,31 +361,31 @@ function loadCards(category) {
       badge.classList.add("badge");
       if(typeof(item)==="string"){
         
-          if (index==1) {
+          // if (index==1) {
     
-            const icon = document.createElement("span");
-            icon.innerText = `🥇`;
-            icon.classList.add("iconfirst")
-            badge.appendChild(icon);
+          //   const icon = document.createElement("span");
+          //   icon.innerText = `🥇`;
+          //   icon.classList.add("iconfirst")
+          //   badge.appendChild(icon);
 
-            const rate = document.createElement("span");
-            rate.innerText = `₹${item}`;
-            rate.classList.add("ratefirst")
-            badge.appendChild(rate);
+          //   const rate = document.createElement("span");
+          //   rate.innerText = `₹${item}`;
+          //   rate.classList.add("ratefirst")
+          //   badge.appendChild(rate);
 
 
-          } else if(index==2) {
+          // } else if(index==2) {
      
-            const icon = document.createElement("span");
-            icon.innerText = `🥈`;
-            icon.classList.add("iconfirst")
-            badge.appendChild(icon);
+          //   const icon = document.createElement("span");
+          //   icon.innerText = `🥈`;
+          //   icon.classList.add("iconfirst")
+          //   badge.appendChild(icon);
 
-            const rate = document.createElement("span");
-            rate.innerText = `₹${item}`;
-            badge.appendChild(rate);
+          //   const rate = document.createElement("span");
+          //   rate.innerText = `₹${item}`;
+          //   badge.appendChild(rate);
 
-          }
+          // }
         
         // badge.textContent = item;
 
