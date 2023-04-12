@@ -27,12 +27,12 @@ img {
   max-width: 70%;
   height: 100%;
 }
-.rlogo{
+.rlogo {
   vertical-align: middle;
   max-width: 70%;
   height: 100%;
 }
-.rlogo{
+.rlogo {
   vertical-align: middle;
   max-width: 70%;
   height: 100%;
@@ -94,11 +94,13 @@ ANIMATION STYLES
 }
 
 /* Nav Bar */
-.scrolled-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 
 /* =Typography
@@ -861,10 +863,11 @@ h1 > .magic > .magic-text {
   font-size: 16px;
   color: white;
 }
-.flex-container{
+.flex-container {
   display: block;
+  justify-content: center;
 }
-.para{
+.para {
   margin-left: 25px;
 }
 /* .revostats{
@@ -877,15 +880,13 @@ h1 > .magic > .magic-text {
   transform: scale(0.9);
 }
 
-
-
 @media screen and (min-width: 850px) {
   #circle {
     width: 100%;
     padding-bottom: 50%;
     margin-top: -5%;
   }
-  
+
   #circle svg {
     position: absolute;
     left: 0;
@@ -908,8 +909,8 @@ h1 > .magic > .magic-text {
   }
   .flex-container {
     display: flex;
-}
-  
+  }
+
   .about-revo-ani {
     width: 45%;
     max-height: 100%;
