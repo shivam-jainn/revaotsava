@@ -143,7 +143,7 @@ var data = {
     
     },
   ],
-  "THEATER": [
+  "THEATRE": [
     // {
     //   title: "MIME",
     //   description: "Description 1",
@@ -331,7 +331,7 @@ divopt.classList.add("option")
 
 selectcont.appendChild(selectdiv)
 selectcont.appendChild(optCont)
-selectmenu.appendChild(selectcont)
+// selectmenu.appendChild(selectcont)
 
 
 selectdiv.onclick = () => {
@@ -347,60 +347,60 @@ optCont.querySelectorAll('.option').forEach((e) => {
     });
 });
 
-const categoryBody = document.getElementById("bodytag");
+// const categoryBody = document.getElementById("bodytag");
 
-const categorySection = document.createElement("div");
-categorySection.classList.add("sectiontag");
-
-
-const outerWrapper = document.createElement("div");
-outerWrapper.classList.add("outer-wrapper");
-
-const innerWrapper = document.createElement("div");
-innerWrapper.classList.add("inner-wrapper");
+// const categorySection = document.createElement("div");
+// categorySection.classList.add("sectiontag");
 
 
-var categories = Object.keys(data);
-for (var i = 0; i < categories.length; i++) {
-    const category = document.createElement("button");
-    category.className = "category underline pseudo-item pop";
-    // category.classList.add=""
-    category.innerText = categories[i];
-    category.onclick = function () {
-        loadCards(this.innerText);
-    };
-    innerWrapper.appendChild(category);
-}
+// const outerWrapper = document.createElement("div");
+// outerWrapper.classList.add("outer-wrapper");
+
+// const innerWrapper = document.createElement("div");
+// innerWrapper.classList.add("inner-wrapper");
 
 
-const line = document.createElement("div");
-line.classList.add("pseduo-track");
-
-const mediaQuery = window.matchMedia('(max-width: 600px)')
-
-mediaQuery.addEventListener('change', (event) => {
-  if (event.matches) {
-    // console.log("ok")
-    outerWrapper.appendChild(selectmenu);
-
-
-  } 
-})
-
-outerWrapper.appendChild(innerWrapper);
+// var categories = Object.keys(data);
+// for (var i = 0; i < categories.length; i++) {
+//     const category = document.createElement("button");
+//     category.className = "category underline pseudo-item pop";
+//     // category.classList.add=""
+//     category.innerText = categories[i];
+//     category.onclick = function () {
+//         loadCards(this.innerText);
+//     };
+//     innerWrapper.appendChild(category);
+// }
 
 
-categoryBody.appendChild(categorySection);
-categorySection.appendChild(outerWrapper);
-categorySection.appendChild(line);
+// const line = document.createElement("div");
+// line.classList.add("pseduo-track");
+
+// const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+// mediaQuery.addEventListener('change', (event) => {
+//   if (event.matches) {
+//     // console.log("ok")
+//     outerWrapper.appendChild(selectmenu);
+
+
+//   } 
+// })
+
+// outerWrapper.appendChild(innerWrapper);
+
+
+// categoryBody.appendChild(categorySection);
+// categorySection.appendChild(outerWrapper);
+// categorySection.appendChild(line);
 
 
 
 
-// category.classList.add("");
-window.onload = function() {
-  loadCards("DANCE");
-};
+// // category.classList.add("");
+// window.onload = function() {
+//   loadCards("DANCE");
+// };
 
 
 
@@ -605,3 +605,36 @@ function showPopup(cardData) {
   
 }
 
+
+
+
+document.getElementById("dancenav").addEventListener('click',()=>{
+  loadCards("DANCE");
+})
+document.getElementById("musicnav").addEventListener('click',()=>{
+  loadCards("MUSIC");
+})
+document.getElementById("medianav").addEventListener('click',()=>{
+  loadCards("MEDIA");
+})
+document.getElementById("fashionnav").addEventListener('click',()=>{
+  loadCards("FASHION");
+})
+document.getElementById("sportsnav").addEventListener('click',()=>{
+  loadCards("SPORTS");
+})
+document.getElementById("technicalnav").addEventListener('click',()=>{
+  loadCards("TECHNICAL");
+})
+document.getElementById("theatrenav").addEventListener('click',()=>{
+  loadCards("THEATRE");
+})
+document.getElementById("managementnav").addEventListener('click',()=>{
+  loadCards("MANAGEMENT");
+})
+document.getElementById("visualartsnav").addEventListener('click',()=>{
+  loadCards("VISUAL ARTS");
+})
+document.getElementById("literaturenav").addEventListener('click',()=>{
+  loadCards("LITERATURE");
+})
