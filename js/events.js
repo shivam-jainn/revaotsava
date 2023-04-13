@@ -1,4 +1,4 @@
-// Sample JSON data
+  // Sample JSON data
 var data = {
   "DANCE": [
     {
@@ -288,6 +288,66 @@ var data = {
 
 
 // Generate categories
+
+
+
+// mobile menu drope downe
+let selectmenu = document.querySelector(".selectmenu")
+
+let selectcont = document.createElement("div")
+selectcont.classList.add("select-container")
+
+let selectdiv = document.createElement("div")
+selectdiv.classList.add("select")
+
+
+const input = document.createElement('input');
+input.type = 'text';
+input.id = 'input';
+input.placeholder = 'select';
+input.addEventListener('focus', () => {
+  input.blur();
+});
+
+selectdiv.appendChild(input);
+
+const optCont = document.createElement("div")
+optCont.classList.add("option-container")
+
+
+
+var categories = Object.keys(data);
+for (let index = 0; index < categories.length; index++) {
+  const divopt = document.createElement("div")
+divopt.classList.add("option") 
+  const label = document.createElement("label")
+    label.innerText = categories[index];
+    divopt.appendChild(label)
+    optCont.appendChild(divopt)
+
+}
+
+
+
+selectcont.appendChild(selectdiv)
+selectcont.appendChild(optCont)
+selectmenu.appendChild(selectcont)
+
+
+
+selectdiv.onclick = () => {
+    selectcont.classList.toggle("active");
+};
+
+
+optCont.querySelectorAll('.option').forEach((e) => {
+  e.addEventListener("click", () => {
+      input.value = e.querySelector('label').innerText;
+     
+      selectcont.classList.remove("active");
+    });
+});
+
 const categoryBody = document.getElementById("bodytag");
 
 const categorySection = document.createElement("div");
@@ -300,10 +360,7 @@ outerWrapper.classList.add("outer-wrapper");
 const innerWrapper = document.createElement("div");
 innerWrapper.classList.add("inner-wrapper");
 
-// category.classList.add("");
-window.onload = function() {
-  loadCards("DANCE");
-};
+
 var categories = Object.keys(data);
 for (var i = 0; i < categories.length; i++) {
     const category = document.createElement("button");
@@ -320,13 +377,41 @@ for (var i = 0; i < categories.length; i++) {
 const line = document.createElement("div");
 line.classList.add("pseduo-track");
 
+const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+mediaQuery.addEventListener('change', (event) => {
+  if (event.matches) {
+    // console.log("ok")
+    outerWrapper.appendChild(selectmenu);
+    // outerWrapper.remove(innerWrapper);
+
+  } 
+})
+
+outerWrapper.appendChild(innerWrapper);
+
 
 categoryBody.appendChild(categorySection);
 categorySection.appendChild(outerWrapper);
 categorySection.appendChild(line);
 
 
-outerWrapper.appendChild(innerWrapper);
+
+
+// category.classList.add("");
+window.onload = function() {
+  loadCards("DANCE");
+};
+
+
+
+
+
+
+
+
+
+
 
 // Load cards for selected category
 function loadCards(category) {
@@ -516,7 +601,8 @@ function showPopup(cardData) {
     // close the popup when the close button is clicked
     popup.remove();
   });
-
+  
   document.body.appendChild(popup);
-
+  
 }
+
