@@ -292,61 +292,61 @@ var data = {
 
 
 // mobile menu drope downe
-let selectmenu = document.querySelector(".selectmenu")
+// let selectmenu = document.querySelector(".selectmenu")
 
-let selectcont = document.createElement("div")
-selectcont.classList.add("select-container")
+// let selectcont = document.createElement("div")
+// selectcont.classList.add("select-container")
 
-let selectdiv = document.createElement("div")
-selectdiv.classList.add("select")
-
-
-const input = document.createElement('input');
-input.type = 'text';
-input.id = 'input';
-input.placeholder = 'select';
-input.addEventListener('focus', () => {
-  input.blur();
-});
-
-selectdiv.appendChild(input);
-
-const optCont = document.createElement("div")
-optCont.classList.add("option-container")
+// let selectdiv = document.createElement("div")
+// selectdiv.classList.add("select")
 
 
+// const input = document.createElement('input');
+// input.type = 'text';
+// input.id = 'input';
+// input.placeholder = 'select';
+// input.addEventListener('focus', () => {
+//   input.blur();
+// });
 
-var categories = Object.keys(data);
-for (let index = 0; index < categories.length; index++) {
-  const divopt = document.createElement("div")
-divopt.classList.add("option") 
-  const label = document.createElement("label")
-    label.innerText = categories[index];
-    divopt.appendChild(label)
-    optCont.appendChild(divopt)
+// selectdiv.appendChild(input);
 
-}
+// const optCont = document.createElement("div")
+// optCont.classList.add("option-container")
 
 
 
-selectcont.appendChild(selectdiv)
-selectcont.appendChild(optCont)
-selectmenu.appendChild(selectcont)
+// var categories = Object.keys(data);
+// for (let index = 0; index < categories.length; index++) {
+//   const divopt = document.createElement("div")
+// divopt.classList.add("option") 
+//   const label = document.createElement("label")
+//     label.innerText = categories[index];
+//     divopt.appendChild(label)
+//     optCont.appendChild(divopt)
+
+// }
 
 
 
-selectdiv.onclick = () => {
-    selectcont.classList.toggle("active");
-};
+// selectcont.appendChild(selectdiv)
+// selectcont.appendChild(optCont)
+// selectmenu.appendChild(selectcont)
 
 
-optCont.querySelectorAll('.option').forEach((e) => {
-  e.addEventListener("click", () => {
-      input.value = e.querySelector('label').innerText;
+
+// selectdiv.onclick = () => {
+//     selectcont.classList.toggle("active");
+// };
+
+
+// optCont.querySelectorAll('.option').forEach((e) => {
+//   e.addEventListener("click", () => {
+//       input.value = e.querySelector('label').innerText;
      
-      selectcont.classList.remove("active");
-    });
-});
+//       selectcont.classList.remove("active");
+//     });
+// });
 
 const categoryBody = document.getElementById("bodytag");
 
@@ -379,14 +379,14 @@ line.classList.add("pseduo-track");
 
 const mediaQuery = window.matchMedia('(max-width: 600px)')
 
-mediaQuery.addEventListener('change', (event) => {
-  if (event.matches) {
-    // console.log("ok")
-    outerWrapper.appendChild(selectmenu);
-    // outerWrapper.remove(innerWrapper);
+// mediaQuery.addEventListener('change', (event) => {
+//   if (event.matches) {
+//     // console.log("ok")
+//     outerWrapper.appendChild(selectmenu);
+//     // outerWrapper.remove(innerWrapper);
 
-  } 
-})
+//   } 
+// })
 
 outerWrapper.appendChild(innerWrapper);
 
