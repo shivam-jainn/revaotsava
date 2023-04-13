@@ -5,7 +5,7 @@ var sectionArray = [1, 2, 3, 4, 5, 6];
 
 $.each(sectionArray, function (index, value) {
   $(document).scroll(function () {
-    var offsetSection = $("#" + "section_" + value).offset().top - 83;
+    // var offsetSection = $("#" + "section_" + value).offset().top - 83;
     var docScroll = $(document).scrollTop();
     var docScroll1 = docScroll + 1;
 
