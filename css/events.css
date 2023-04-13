@@ -339,6 +339,9 @@ justify-content: space-evenly;
   font-family: 'Poppins', sans-serif;
   
 }
+/* .button:active{
+  width: 210px;
+} */
 
 .wrapper{
   margin-left: 12%;
