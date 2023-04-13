@@ -293,6 +293,7 @@ var data = {
 
 // mobile menu drope downe
 let selectmenu = document.querySelector(".selectmenu")
+// selectmenu.classList
 
 let selectcont = document.createElement("div")
 selectcont.classList.add("select-container")
@@ -331,7 +332,7 @@ divopt.classList.add("option")
 
 selectcont.appendChild(selectdiv)
 selectcont.appendChild(optCont)
-// selectmenu.appendChild(selectcont)
+selectmenu.appendChild(selectcont)
 
 
 selectdiv.onclick = () => {
@@ -346,6 +347,10 @@ optCont.querySelectorAll('.option').forEach((e) => {
       selectcont.classList.remove("active");
     });
 });
+
+
+const wrapper = document.querySelector(".wrapper");
+wrapper.appendChild(optCont)
 
 // const categoryBody = document.getElementById("bodytag");
 

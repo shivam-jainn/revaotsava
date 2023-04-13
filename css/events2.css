@@ -90,3 +90,12 @@
     color: white;
     cursor: pointer;
 }
+
+
+.selectmenu{
+    display: none;
+}
+
+.normalnav{
+    display: none;
+}
