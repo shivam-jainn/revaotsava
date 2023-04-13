@@ -150,7 +150,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .rulebook a:hover {
-  color: black; 
+  color: #fff; 
   text-decoration: none; 
 }
 
@@ -204,7 +204,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   right: 0;
   width: 0;
   height: 3px;
-  background-color: #e20c41;
+  background-color: #Bf2303;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -283,7 +283,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .outer-wrapper::-webkit-scrollbar-thumb {
   height: 5px;
-  background-color: #b4062c;
+  background-color: #Bf2303;
   border-radius: 50px;
 }
 
@@ -310,7 +310,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .pop:focus{
-  background-color: #e20c41;
+  background-color: #Bf2303;
   border: none;
 }
 
@@ -319,7 +319,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   width: 100%;
   border: none;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background: #e20c41;
+  background: #Bf2303;
   color: white;
   font-weight: bold;
 }
@@ -328,4 +328,107 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .navbar{
 display: flex;
 justify-content: space-evenly;
+}
+
+/* navbar hover effect css */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.wrapper{
+  margin-left: 9.25%;
+  margin-top: 8%;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  float: left;
+  margin: 0 20px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 210px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 0px;
+  box-sizing: border-box;
+  line-height: 65px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(6):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(7):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(8):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(9):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button:nth-child(10):hover .icon{
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+  
+}
+.wrapper .button:nth-child(1) span{
+  color: #000;
+}
+.wrapper .button:nth-child(2) span{
+  color: #000;
+}
+.wrapper .button:nth-child(3) span{
+  color: #000;
+}
+.wrapper .button:nth-child(4) span{
+  color: #000;
+}
+.wrapper .button:nth-child(5) span{
+  color: #000;
 }
