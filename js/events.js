@@ -349,8 +349,8 @@ optCont.querySelectorAll('.option').forEach((e) => {
 });
 
 
-const wrapper = document.querySelector(".wrapper");
-wrapper.appendChild(optCont)
+// const wrapper = document.querySelector(".wrapper");
+// wrapper.appendChild(optCont)
 
 // const categoryBody = document.getElementById("bodytag");
 
