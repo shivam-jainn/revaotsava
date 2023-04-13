@@ -346,6 +346,7 @@ justify-content: space-evenly;
 .wrapper{
   margin-left: 12%;
   margin-top: 1%;
+  margin-bottom: 5%;
 }
 
 .wrapper .button{
