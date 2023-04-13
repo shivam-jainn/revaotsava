@@ -341,14 +341,14 @@ justify-content: space-evenly;
 }
 
 .wrapper{
-  margin-left: 9.25%;
-  margin-top: 8%;
+  margin-left: 12%;
+  margin-top: 1%;
 }
 
 .wrapper .button{
   display: inline-block;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   float: left;
   margin: 0 20px;
   overflow: hidden;
@@ -363,8 +363,8 @@ justify-content: space-evenly;
 }
 .wrapper .button .icon{
   display: inline-block;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   text-align: center;
   border-radius: 0px;
   box-sizing: border-box;
