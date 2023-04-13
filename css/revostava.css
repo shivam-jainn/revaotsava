@@ -962,7 +962,7 @@ h1 > .magic > .magic-text {
 .epic-carousel {
   position: relative;
   z-index: 0;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   pointer-events: none;
 }
@@ -1240,7 +1240,7 @@ h1 > .magic > .magic-text {
 @media screen and (max-width: 500px) {
   .sexybody {
     margin-top: 15%;
-    margin-bottom: -40%;
+    margin-bottom: -30%;
   }
   .epic-carousel-item {
     --width: clamp(300px, 40vw, 400px);
