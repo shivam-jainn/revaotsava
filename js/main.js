@@ -144,7 +144,7 @@ EVENT SLIDER JS
 /*--------------------
 Vars
 --------------------*/
-let progress = 10;
+let progress = 50;
 let startX = 10;
 let active = 0;
 let isDown = false;
@@ -286,10 +286,9 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
-    // else {
-    //   entry.target.classList.remove("show");
-    // }
   });
 });
 
