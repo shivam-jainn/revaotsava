@@ -90,3 +90,21 @@
     color: white;
     cursor: pointer;
 }
+
+
+.selectmenu{
+    display: none;
+}
+
+.normalnav{
+    display: block;
+}
+
+@media screen and (max-width:780px) {
+    .selectmenu{
+        display: block;
+    }
+    .normalnav{
+        display: none;
+    }
+}
