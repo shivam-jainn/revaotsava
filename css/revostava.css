@@ -856,6 +856,7 @@ h1 > .magic > .magic-text {
 }
 .about-revo-text {
   text-align: center;
+  justify-content: center;
 }
 .revo-p {
   font-size: 16px;
@@ -863,10 +864,9 @@ h1 > .magic > .magic-text {
 }
 .flex-container{
   display: block;
+  justify-content: center;
 }
-.para{
-  margin-left: 25px;
-}
+
 /* .revostats{
   flex: 1;
 }
