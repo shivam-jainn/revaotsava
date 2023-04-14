@@ -103,8 +103,27 @@
 @media screen and (max-width: 850px) {
   .selectmenu {
     display: block;
-  }
-  .normalnav {
-    display: none;
-  }
+}
+
+@media screen and (max-width:780px) {
+    .selectmenu{
+        display: block;
+    }
+    .normalnav{
+        display: none;
+    }
+}
+
+.button-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f03838;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.a:hover{
+    text-decoration: none;
 }

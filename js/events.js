@@ -6,35 +6,44 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/classicalgroupdance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memdsdsedroid.com/memes/random"
     },
     {
       title: "WESTERN DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/westerndance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memaaaaaedroid.com/memes/random"
+    
     },
     {
       title: "FOLK DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/folkgroup.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },
     {
       title: "STREET DANCE FACE-OFF",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500
+      regfee : 500,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },
     {
       title: "CLASSICAL DANCE (SOLO)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "banner/ClassicalSolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500
+      regfee : 500,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },  
   ],
   "MUSIC": [
@@ -424,6 +433,7 @@ function loadCards(category) {
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
 
+    console.log(cardData[i].anchorlink)
     const cards = document.createElement("div");
     cards.classList.add("card");
 
@@ -525,10 +535,18 @@ function loadCards(category) {
 
 
 
-
-  
+    // const regbutton = document.createElement("button");
+    const anch = document.createElement("a");
+    anch.classList.add("button-link");
+    anch.href = cardData[i].anchorlink;
+    anch.innerText="register now";
+    
+    console.log(`yessss ${cardData[i].anchorlink}`)
+    
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
+    cards.appendChild(anch);
+    // cards.appendChild(regbutton);
 
 
     cardsDiv.appendChild(cards);
