@@ -343,7 +343,7 @@ selectdiv.onclick = () => {
 optCont.querySelectorAll('.option').forEach((e) => {
   e.addEventListener("click", () => {
       input.value = e.querySelector('label').innerText;
-     
+      loadCards(e.querySelector('label').innerText);
       selectcont.classList.remove("active");
     });
 });
@@ -643,3 +643,4 @@ document.getElementById("visualartsnav").addEventListener('click',()=>{
 document.getElementById("literaturenav").addEventListener('click',()=>{
   loadCards("LITERATURE");
 })
+
