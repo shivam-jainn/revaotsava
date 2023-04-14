@@ -3730,6 +3730,7 @@ fieldset:disabled .btn {
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
+  justify-content: end;
   align-items: center;
 }
 .navbar-toggler {
@@ -4111,16 +4112,16 @@ fieldset:disabled .btn {
   border-top: 0;
 }
 .card-body {
-  display:flex;
+  display: flex;
   flex-direction: row;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
 }
 
-.imgbox{
-  width:20%;
-  height:20%;
-  object-fit: cover; 
+.imgbox {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
 }
 
 .card-title {

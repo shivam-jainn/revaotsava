@@ -1,4 +1,4 @@
-// Sample JSON data
+  // Sample JSON data
 var data = {
   "DANCE": [
     {
@@ -6,35 +6,44 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/classicalgroupdance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memdsdsedroid.com/memes/random"
     },
     {
       title: "WESTERN DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/westerndance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memaaaaaedroid.com/memes/random"
+    
     },
     {
       title: "FOLK DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/folkgroup.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000
+      regfee : 1000,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },
     {
       title: "STREET DANCE FACE-OFF",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500
+      regfee : 500,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },
     {
       title: "CLASSICAL DANCE (SOLO)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "banner/ClassicalSolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500
+      regfee : 500,
+      anchorlink : "https://www.memedroid.com/memes/random"
+
     },  
   ],
   "MUSIC": [
@@ -143,7 +152,7 @@ var data = {
     
     },
   ],
-  "THEATER": [
+  "THEATRE": [
     // {
     //   title: "MIME",
     //   description: "Description 1",
@@ -288,46 +297,134 @@ var data = {
 
 
 // Generate categories
-const categoryBody = document.getElementById("bodytag");
-
-const categorySection = document.createElement("div");
-categorySection.classList.add("sectiontag");
 
 
-const outerWrapper = document.createElement("div");
-outerWrapper.classList.add("outer-wrapper");
 
-const innerWrapper = document.createElement("div");
-innerWrapper.classList.add("inner-wrapper");
+// mobile menu drope downe
+let selectmenu = document.querySelector(".selectmenu")
+// selectmenu.classList
 
-// category.classList.add("");
-window.onload = function() {
-  head.innerText= "ALL Events"
-  loadCards("DANCE");
-};
+let selectcont = document.createElement("div")
+selectcont.classList.add("select-container")
+
+let selectdiv = document.createElement("div")
+selectdiv.classList.add("select")
+
+
+const input = document.createElement('input');
+input.type = 'text';
+input.id = 'input';
+input.placeholder = 'select';
+input.addEventListener('focus', () => {
+  input.blur();
+});
+
+selectdiv.appendChild(input);
+
+const optCont = document.createElement("div")
+optCont.classList.add("option-container")
+
+
+
 var categories = Object.keys(data);
-for (var i = 0; i < categories.length; i++) {
-    const category = document.createElement("button");
-    category.className = "category underline pseudo-item pop";
-    // category.classList.add=""
-    category.innerText = categories[i];
-    category.onclick = function () {
-        loadCards(this.innerText);
-    };
-    innerWrapper.appendChild(category);
+for (let index = 0; index < categories.length; index++) {
+  const divopt = document.createElement("div")
+divopt.classList.add("option") 
+  const label = document.createElement("label")
+    label.innerText = categories[index];
+    divopt.appendChild(label)
+    optCont.appendChild(divopt)
+
 }
 
 
-const line = document.createElement("div");
-line.classList.add("pseduo-track");
+
+selectcont.appendChild(selectdiv)
+selectcont.appendChild(optCont)
+selectmenu.appendChild(selectcont)
 
 
-categoryBody.appendChild(categorySection);
-categorySection.appendChild(outerWrapper);
-categorySection.appendChild(line);
+selectdiv.onclick = () => {
+    selectcont.classList.toggle("active");
+};
 
 
-outerWrapper.appendChild(innerWrapper);
+optCont.querySelectorAll('.option').forEach((e) => {
+  e.addEventListener("click", () => {
+      input.value = e.querySelector('label').innerText;
+      loadCards(e.querySelector('label').innerText);
+      selectcont.classList.remove("active");
+    });
+});
+
+
+// const wrapper = document.querySelector(".wrapper");
+// wrapper.appendChild(optCont)
+
+// const categoryBody = document.getElementById("bodytag");
+
+// const categorySection = document.createElement("div");
+// categorySection.classList.add("sectiontag");
+
+
+// const outerWrapper = document.createElement("div");
+// outerWrapper.classList.add("outer-wrapper");
+
+// const innerWrapper = document.createElement("div");
+// innerWrapper.classList.add("inner-wrapper");
+
+
+// var categories = Object.keys(data);
+// for (var i = 0; i < categories.length; i++) {
+//     const category = document.createElement("button");
+//     category.className = "category underline pseudo-item pop";
+//     // category.classList.add=""
+//     category.innerText = categories[i];
+//     category.onclick = function () {
+//         loadCards(this.innerText);
+//     };
+//     innerWrapper.appendChild(category);
+// }
+
+
+// const line = document.createElement("div");
+// line.classList.add("pseduo-track");
+
+// const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+// mediaQuery.addEventListener('change', (event) => {
+//   if (event.matches) {
+//     // console.log("ok")
+//     outerWrapper.appendChild(selectmenu);
+
+
+//   } 
+// })
+
+// outerWrapper.appendChild(innerWrapper);
+
+
+// categoryBody.appendChild(categorySection);
+// categorySection.appendChild(outerWrapper);
+// categorySection.appendChild(line);
+
+
+
+
+// // category.classList.add("");
+// window.onload = function() {
+//   loadCards("DANCE");
+// };
+
+
+
+
+
+
+
+
+
+
 
 // Load cards for selected category
 function loadCards(category) {
@@ -336,6 +433,7 @@ function loadCards(category) {
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
 
+    console.log(cardData[i].anchorlink)
     const cards = document.createElement("div");
     cards.classList.add("card");
 
@@ -362,31 +460,31 @@ function loadCards(category) {
       badge.classList.add("badge");
       if(typeof(item)==="string"){
         
-          if (index==1) {
+          // if (index==1) {
     
-            const icon = document.createElement("span");
-            icon.innerText = `🥇`;
-            icon.classList.add("iconfirst")
-            badge.appendChild(icon);
+          //   const icon = document.createElement("span");
+          //   icon.innerText = `🥇`;
+          //   icon.classList.add("iconfirst")
+          //   badge.appendChild(icon);
 
-            const rate = document.createElement("span");
-            rate.innerText = `₹${item}`;
-            rate.classList.add("ratefirst")
-            badge.appendChild(rate);
+          //   const rate = document.createElement("span");
+          //   rate.innerText = `₹${item}`;
+          //   rate.classList.add("ratefirst")
+          //   badge.appendChild(rate);
 
 
-          } else if(index==2) {
+          // } else if(index==2) {
      
-            const icon = document.createElement("span");
-            icon.innerText = `🥈`;
-            icon.classList.add("iconfirst")
-            badge.appendChild(icon);
+          //   const icon = document.createElement("span");
+          //   icon.innerText = `🥈`;
+          //   icon.classList.add("iconfirst")
+          //   badge.appendChild(icon);
 
-            const rate = document.createElement("span");
-            rate.innerText = `₹${item}`;
-            badge.appendChild(rate);
+          //   const rate = document.createElement("span");
+          //   rate.innerText = `₹${item}`;
+          //   badge.appendChild(rate);
 
-          }
+          // }
         
         // badge.textContent = item;
 
@@ -437,10 +535,18 @@ function loadCards(category) {
 
 
 
-
-  
+    // const regbutton = document.createElement("button");
+    const anch = document.createElement("a");
+    anch.classList.add("button-link");
+    anch.href = cardData[i].anchorlink;
+    anch.innerText="register now";
+    
+    console.log(`yessss ${cardData[i].anchorlink}`)
+    
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
+    cards.appendChild(anch);
+    // cards.appendChild(regbutton);
 
 
     cardsDiv.appendChild(cards);
@@ -517,7 +623,42 @@ function showPopup(cardData) {
     // close the popup when the close button is clicked
     popup.remove();
   });
-
+  
   document.body.appendChild(popup);
-
+  
 }
+
+
+
+
+document.getElementById("dancenav").addEventListener('click',()=>{
+  loadCards("DANCE");
+})
+document.getElementById("musicnav").addEventListener('click',()=>{
+  loadCards("MUSIC");
+})
+document.getElementById("medianav").addEventListener('click',()=>{
+  loadCards("MEDIA");
+})
+document.getElementById("fashionnav").addEventListener('click',()=>{
+  loadCards("FASHION");
+})
+document.getElementById("sportsnav").addEventListener('click',()=>{
+  loadCards("SPORTS");
+})
+document.getElementById("technicalnav").addEventListener('click',()=>{
+  loadCards("TECHNICAL");
+})
+document.getElementById("theatrenav").addEventListener('click',()=>{
+  loadCards("THEATRE");
+})
+document.getElementById("managementnav").addEventListener('click',()=>{
+  loadCards("MANAGEMENT");
+})
+document.getElementById("visualartsnav").addEventListener('click',()=>{
+  loadCards("VISUAL ARTS");
+})
+document.getElementById("literaturenav").addEventListener('click',()=>{
+  loadCards("LITERATURE");
+})
+
