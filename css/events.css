@@ -422,3 +422,21 @@ body {
 .wrapper .button:nth-child(5) span {
   color: #000;
 }
+
+
+.button-link:link {
+  text-decoration: none;
+}
+
+.button-link:visited {
+  text-decoration: none;
+}
+
+.button-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-link:active {
+  text-decoration: none;
+}
