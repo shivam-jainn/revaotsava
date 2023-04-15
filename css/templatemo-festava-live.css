@@ -551,6 +551,23 @@ strong {
   margin-right: 15px;
 }
 
+.site-footer a:link {
+  text-decoration: none;
+}
+
+.site-footer a:visited {
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+.site-footer a:active {
+  text-decoration: none;
+}
+
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
