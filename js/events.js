@@ -751,16 +751,13 @@ function loadCards(category) {
 
       }else{
 
-       const staricon = document.createElement("span")
-       staricon.classList.add("material-symbols-outlined")
-       staricon.innerText="magic_button"
+      
+       const stars = document.createElement("span")
+       stars.innerText=`${item}★` 
 
-       badge.appendChild(staricon);
+       badge.appendChild(stars);
         
-       const rate = document.createElement("p");
-       rate.innerText = item;
-       badge.appendChild(rate);
-        
+     
       }
 
       cardBadges.appendChild(badge);
