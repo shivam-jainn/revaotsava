@@ -100,6 +100,7 @@
 
 .navbar {
   margin-bottom: 20px;
+  background-color: #000;
 }
 
 .close-btn-div {
@@ -470,5 +471,16 @@ html::-webkit-scrollbar-track{
   margin-bottom: -6px;
   position: absolute;
   left: 50px;
-  top: 8px;
+  top: 5px;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: var(--white-color);
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  
 }

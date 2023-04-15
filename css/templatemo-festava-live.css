@@ -384,6 +384,8 @@ strong {
   color: var(--white-color);
   font-size: var(--h5-font-size);
   font-weight: var(--font-weight-bold);
+  display: inline-block;
+  text-align: center;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
