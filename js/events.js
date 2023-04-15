@@ -693,7 +693,6 @@ function loadCards(category) {
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
 
-    console.log(cardData[i].anchorlink)
     const cards = document.createElement("div");
     cards.classList.add("card");
 
@@ -751,13 +750,15 @@ function loadCards(category) {
 
       }else{
 
-      
-       const stars = document.createElement("span")
-       stars.innerText=`${item}★` 
+       const staricon = document.createElement("span")
 
-       badge.appendChild(stars);
+       let string = ""
+for (let i = 0; i < item; i++) {
+  string+="★"
+}
+staricon.innerText=string;
+       badge.appendChild(staricon);
         
-     
       }
 
       cardBadges.appendChild(badge);
@@ -796,9 +797,8 @@ function loadCards(category) {
     const anch = document.createElement("a");
     anch.classList.add("button-link");
     anch.href = cardData[i].anchorlink;
-    anch.innerText="register now";
+    anch.innerText="Register Now";
     
-    console.log(`yessss ${cardData[i].anchorlink}`)
     
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
