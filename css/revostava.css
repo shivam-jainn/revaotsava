@@ -1920,3 +1920,12 @@ Responsive styles
   background-color: none;
   background-image: none;
 }
+
+footer{
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 40px;
+  bottom: 30px;
+}
