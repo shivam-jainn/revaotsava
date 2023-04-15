@@ -1193,6 +1193,71 @@ h1 > .magic > .magic-text {
 .view-more a:hover {
   filter: brightness(50%);
 }
+
+/* Meet the crew styles */
+
+.crew-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.convenor img,
+.sub-convenor img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.convenor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-convenors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.sub-convenor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crew-container p{
+  color: rgb(255,255,255,0.5)
+}
+
+.show-team-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  /* color: #ff5100; */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.show-team-btn:hover {
+  color: var(--white-color);
+  box-shadow: 2px 2px 4px white;
+  transform: translateY(5px);
+  transform: translateX(5px);
+}
+
+
 @media (pointer: fine) {
   .cursor {
     display: block;
