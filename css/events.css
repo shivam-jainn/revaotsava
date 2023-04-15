@@ -460,3 +460,15 @@ html::-webkit-scrollbar-track{
   background-color: #000;
   border-radius: 25px;
 }
+.event-nav-img{
+  align-items: left;
+  width: 100px;
+  height: 60px;
+  border-radius: 300%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: -6px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+}
