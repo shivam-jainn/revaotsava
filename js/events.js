@@ -797,7 +797,7 @@ staricon.innerText=string;
     const anch = document.createElement("a");
     anch.classList.add("button-link");
     anch.href = cardData[i].anchorlink;
-    anch.innerText="register now";
+    anch.innerText="Register Now";
     
     
     cards.appendChild(cardImgContainer);
