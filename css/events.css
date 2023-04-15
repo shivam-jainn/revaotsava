@@ -484,3 +484,9 @@ html::-webkit-scrollbar-track{
   border: 0;
   
 }
+
+.event-home{
+  align-items: right;
+  padding: 5px;
+  padding-inline-start: 700%;
+}
