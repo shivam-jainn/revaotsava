@@ -751,13 +751,16 @@ function loadCards(category) {
 
       }else{
 
-      
-       const stars = document.createElement("span")
-       stars.innerText=`${item}★` 
+       const staricon = document.createElement("span")
 
-       badge.appendChild(stars);
+       let string = ""
+for (let i = 0; i < item; i++) {
+  string+="★"
+}
+console.log(string)
+staricon.innerText=string;
+       badge.appendChild(staricon);
         
-     
       }
 
       cardBadges.appendChild(badge);
@@ -798,7 +801,6 @@ function loadCards(category) {
     anch.href = cardData[i].anchorlink;
     anch.innerText="register now";
     
-    console.log(`yessss ${cardData[i].anchorlink}`)
     
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
