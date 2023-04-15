@@ -495,3 +495,39 @@ html::-webkit-scrollbar-track{
 .custom-nav{
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width: 1000px) {
+  .event-nav-img{
+    align-items: left;
+    width: 150px;
+    height: 100px;
+    border-radius: 200%;
+    overflow: hidden;
+    margin-top: -6px;
+    margin-bottom: -6px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+
+  .navbar-brand,
+.navbar-brand:hover {
+  color: var(--white-color);
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  
+}
+.event-home{
+  font-size: 18px;
+  align-items: right;
+  padding: 5px;
+  padding-inline-start: 200%;
+}
+
+.custom-nav{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+}
