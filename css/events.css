@@ -463,8 +463,8 @@ html::-webkit-scrollbar-track{
 }
 .event-nav-img{
   align-items: left;
-  width: 100px;
-  height: 60px;
+  width: 200px;
+  height: 120px;
   border-radius: 300%;
   overflow: hidden;
   margin-top: -6px;
@@ -486,7 +486,12 @@ html::-webkit-scrollbar-track{
 }
 
 .event-home{
+  font-size: 18px;
   align-items: right;
   padding: 5px;
-  padding-inline-start: 700%;
+  padding-inline-start: 600%;
+}
+
+.custom-nav{
+  background-color: rgba(0, 0, 0, 0.7);
 }
