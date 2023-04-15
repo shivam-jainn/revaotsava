@@ -757,7 +757,6 @@ function loadCards(category) {
 for (let i = 0; i < item; i++) {
   string+="★"
 }
-console.log(string)
 staricon.innerText=string;
        badge.appendChild(staricon);
         
