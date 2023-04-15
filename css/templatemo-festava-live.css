@@ -12,16 +12,16 @@ https://templatemo.com/tm-583-festava-live
 :root {
   --white-color: #ffffff;
   --primary-color: #f8cb2e;
-  --secondary-color: #ee5007;
-  --accent-color: #ee5007;
+  --secondary-color: #bf2303;
+  --accent-color: #bf2303;
 
   /* --title-color: #ff7722; */
   --title-color: white;
 
   --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #ee5007;
-  --custom-btn-bg-hover-color: #ee5007;
-  --dark-color: #191825;
+  --custom-btn-bg-color: #bf2303;
+  --custom-btn-bg-hover-color: #bf2303;
+  --dark-color: #000;
   --p-color: #717275;
   --border-color: #7fffd4;
   --link-hover-color: #f8cb2e;
@@ -551,6 +551,23 @@ strong {
   margin-right: 15px;
 }
 
+.site-footer a:link {
+  text-decoration: none;
+}
+
+.site-footer a:visited {
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+.site-footer a:active {
+  text-decoration: none;
+}
+
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
@@ -747,3 +764,29 @@ h2 {
   color: var(--white-color);
   filter: drop-shadow(0.5px 0.5px 1px white);
 }
+
+html{
+  scrollbar-width: 1px;
+  scrollbar-color: #bf2303 #000;
+}
+
+html::-webkit-scrollbar{
+  width: 9px;
+  border-radius: 25px;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #bf2303;
+  border-radius: 25px;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: #000;
+  border-radius: 25px;
+}
+
+/* html::-webkit-scrollbar-track:hover{
+  background-color: #000;
+  border-radius: 25px;
+  opacity: 100;
+} */
