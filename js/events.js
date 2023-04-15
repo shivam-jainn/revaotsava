@@ -693,7 +693,6 @@ function loadCards(category) {
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
 
-    console.log(cardData[i].anchorlink)
     const cards = document.createElement("div");
     cards.classList.add("card");
 
