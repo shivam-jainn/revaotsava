@@ -489,7 +489,7 @@ html::-webkit-scrollbar-track{
   font-size: 18px;
   align-items: right;
   padding: 5px;
-  padding-inline-start: 600%;
+  padding-inline-start: 400%;
 }
 
 .custom-nav{
@@ -506,7 +506,7 @@ html::-webkit-scrollbar-track{
     margin-top: -6px;
     margin-bottom: -6px;
     position: absolute;
-    left: 20px;
+    left: 29px;
     top: 10px;
   }
 
@@ -521,10 +521,10 @@ html::-webkit-scrollbar-track{
   
 }
 .event-home{
-  font-size: 18px;
+  font-size: 15px;
   align-items: right;
   padding: 5px;
-  padding-inline-start: 200%;
+  padding-inline-start: 155%;
 }
 
 .custom-nav{
