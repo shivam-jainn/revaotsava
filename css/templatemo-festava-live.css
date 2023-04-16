@@ -792,3 +792,129 @@ html::-webkit-scrollbar-track{
   border-radius: 25px;
   opacity: 100;
 } */
+
+/* css for artist */
+section {
+  display: flex;
+  width: 100%;
+}
+.tile {
+  
+  display: inline-block;
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border-radius: 3px;
+  margin: 15px;
+  overflow: hidden;
+}
+.tile:hover > .text {
+  opacity: 1;
+  transition: 0.3s ease-in-out all;
+}
+.tile:hover > .text .title {
+  bottom: 10px;
+}
+.tile:hover > .text .create {
+  bottom: 10px;
+}
+.tile:hover > .text + .image {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.tile .text {
+  opacity: 0;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out all;
+  z-index: 2;
+}
+.tile .text .title {
+  position: absolute;
+  bottom: -100px;
+  left: 10px;
+  transition: 0.3s ease-in-out all;
+}
+.tile .text .title h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.tile .text .title h2 {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 200;
+  font-style: italic;
+  padding-top: 3px;
+  margin: 0;
+}
+.tile .text .create {
+  cursor: pointer;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: -100px;
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: 0.4s ease-in-out all;
+}
+.tile .text .create:hover {
+  color: #000;
+  box-shadow: inset 0 -100px 0 0 #fff;
+}
+.tile .text .create h2 {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+}
+.tile .image {
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  z-index: 1;
+}
+.face1 {
+  background-image: url("https://s27.postimg.org/jifjfmw9t/screenshot_visuals_zoomph_com_2015_12_09_14_20_1.png");
+}
+.face2 {
+  background-image: url("https://s27.postimg.org/6w0j524f5/screenshot_visuals_zoomph_com_2015_12_09_14_31_5.png");
+}
+.face3 {
+  background-image: url("https://s4.postimg.org/9j7t7e72j/screenshot_visuals_zoomph_com_2015_12_10_12_49_1.png");
+}
+.face4 {
+  background-image: url("http://fillmurray.com/600/200");
+}
+.face5 {
+  background-image: url("http://fillmurray.com/601/200");
+}
+.face6 {
+  background-image: url("http://fillmurray.com/602/200");
+}
+.face7 {
+  background-image: url("http://fillmurray.com/603/200");
+}
+.face8 {
+  background-image: url("http://fillmurray.com/604/200");
+}
+.face9 {
+  background-image: url("http://fillmurray.com/608/200");
+}
