@@ -2578,3 +2578,8 @@ footer {
     width: 100%;
   }
 }
+
+
+.schedule{
+  display: inline-block;
+}
