@@ -1863,14 +1863,14 @@ color:#fff;
   }
 }
 
-.intro {
+/* .intro {
   font-size: 16px;
   max-width: 500px;
   margin: 0 auto;
 }
 .intro p {
   margin-bottom: 0;
-}
+} */
 
 .people {
   padding: 50px 0;
@@ -1956,11 +1956,7 @@ color:#fff;
   height: 1px;
   background: #ccc;
 }
-@media all and (max-width: 768px) {
-  .tcb-product-item {
-    margin-bottom: 30px;
-  }
-}
+
 .tcb-product-photo {
   text-align: center;
   height: 180px;
@@ -2015,7 +2011,14 @@ color:#fff;
   vertical-align: text-top;
   display: inline-block;
 }
-
+@media all and (max-width: 768px) {
+  .tcb-product-item {
+    margin-bottom: 30px;
+  }
+  .item .box {
+    margin: 0 10%;
+  }
+}
 /*---------------------------------------
  => FAQ SYTLES
 -----------------------------------------*/
