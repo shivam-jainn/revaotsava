@@ -2268,12 +2268,18 @@ footer {
 }
 
 .swiper-pagination {
-  position: static;
+  position: relative !important;
   text-align: left;
   margin-top: 30px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+}
+.swiper-pagination-bullet {
+  background: var(
+    --swiper-pagination-bullet-inactive-color,
+    #fffefe
+  ) !important;
 }
 
 .team-swiper {
