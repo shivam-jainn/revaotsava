@@ -1872,7 +1872,7 @@ color:#fff;
 } */
 
 .people {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   cursor: pointer;
 }
 .item {
@@ -2116,10 +2116,9 @@ footer {
   margin-top: 40px;
   bottom: 30px;
 }
-
-
-
-
+* {
+  font-family: Nunito, sans-serif;
+}
 
 .swiper-container {
   width: 100%;
@@ -2151,21 +2150,25 @@ footer {
   margin-bottom: 0px;
   margin-left: auto;
   justify-content: flex-start;
+  flex-direction: column-reverse;
 }
 
-.swiper-outer-container {
-  padding-top: 10px;
+.outer-container {
+  /* padding-top: 10px; */
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
+
+  /* flex-direction: column !important; */
 }
 
-.swiper-inner-container {
+.inner-container {
   max-width: 1320px;
   flex-direction: column;
-  margin-top: 80px;
+  /* margin-top: 80px;
   margin-right: 0px;
   margin-bottom: 0px;
+  margin-left: 200px; */
 }
 
 .card-container {
@@ -2185,6 +2188,7 @@ footer {
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 0px;
+  color: white !important;
 }
 
 .name {
@@ -2199,9 +2203,11 @@ footer {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+  color: white !important;
 }
 
 .team-member-image {
+  object-fit: cover;
   height: 230px;
   margin-top: 0px;
   margin-right: 0px;
@@ -2210,8 +2216,9 @@ footer {
   width: 270px;
 }
 
-.card {
+.swiper-card {
   display: block;
+  text-align: center !important;
 }
 
 .position {
@@ -2231,7 +2238,8 @@ footer {
 }
 
 .arrow-right {
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1)
+    scaleZ(1);
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -2243,21 +2251,24 @@ footer {
 
 .arrow-left {
   height: 14px;
-  transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) scaleX(1) scaleY(1)
+    scaleZ(1);
   cursor: pointer;
 }
 
 .swiper-btn {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  gap: 6rem;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 30px;
   margin-left: 0px;
-  flex-direction: row-reverse;
 }
 
 .swiper-pagination {
-  position: relative !important;
+  position: static;
   text-align: left;
   margin-top: 30px;
   margin-right: 0px;
@@ -2270,7 +2281,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .swiper-inner-container {
+  .inner-container {
     margin-top: 80px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -2297,16 +2308,16 @@ footer {
     text-align: center;
   }
 
-  .arrow-left {
+  /* .arrow-left {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
-  }
+  } */
 
-  .arrow-right {
+  /* .arrow-right {
     height: 14px;
-  }
+  } */
 
   .swiper-slide.empty {
     display: none;
@@ -2314,7 +2325,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-  .swiper-inner-container {
+  .inner-container {
     margin-top: 80px;
     margin-right: auto;
     margin-bottom: 0px;
@@ -2337,15 +2348,6 @@ footer {
     align-items: flex-start;
   }
 
-  .btn {
-    justify-content: flex-start;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    text-align: left;
-  }
-
   .arrow-left {
     margin-top: 0px;
     margin-right: 0px;
@@ -2358,22 +2360,13 @@ footer {
     height: 200px;
   }
 
-  .swiper-outer-container {
+  .outer-container {
     padding-top: 10px;
     padding-right: 0px;
     padding-bottom: 10px;
     padding-left: 20px;
   }
-
-  .swiper-btn {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-  }
 }
-
-
 
 .wk-desk-1 {
   width: 8.333333%;
