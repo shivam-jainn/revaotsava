@@ -590,7 +590,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--accent-color);
+  background: var();
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
