@@ -28,7 +28,7 @@ var data = {
 
     },
     {
-      title: "STREET DANCE (SOLO)",
+      title: "WESTERN STREET (SOLO)",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
