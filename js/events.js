@@ -28,7 +28,7 @@ var data = {
 
     },
     {
-      title: "STREET DANCE FACE-OFF",
+      title: "STREET DANCE (SOLO)",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
@@ -319,7 +319,7 @@ var data = {
 
     },
     {
-      title: "STREET DANCE FACE-OFF",
+      title: "WESTERN STREET SOLO",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
