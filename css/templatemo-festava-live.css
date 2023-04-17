@@ -284,6 +284,7 @@ strong {
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
+  font-size: 1.5rem;
 }
 
 /*---------------------------------------
@@ -517,7 +518,6 @@ strong {
   overflow: hidden;
   padding-bottom: 30px;
   padding-top: 30px;
-
 }
 
 .site-footer-top {
@@ -603,7 +603,7 @@ strong {
   transition: 0.2s;
   letter-spacing: 0.15ch;
 }
- .social-icon-link:hover {
+.social-icon-link:hover {
   color: var(--white-color);
 }
 /*
@@ -764,22 +764,22 @@ h2 {
   filter: drop-shadow(0.5px 0.5px 1px white);
 }
 
-html{
+html {
   scrollbar-width: 1px;
   scrollbar-color: #bf2303 #000;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   width: 9px;
   border-radius: 25px;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background-color: #bf2303;
   border-radius: 25px;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background-color: #000;
   border-radius: 25px;
 }
@@ -796,7 +796,6 @@ section {
   width: 100%;
 }
 .tile {
-  
   display: inline-block;
   position: relative;
   width: 450px;
