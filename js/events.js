@@ -147,8 +147,8 @@ var data = {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "banner/drone.png",
-      badgeText: [4, "5000", "3000"],
-      regfee : 500
+      badgeText: [5, "5000", "3000"],
+      regfee : 1000
     
     },
   ],
@@ -211,7 +211,7 @@ var data = {
       regfee : 500
     },
     {
-      title: "OPERATIONS",
+      title: "OPERATION",
       description: "Description 1",
       imageSrc: "banner/operations.png",
       badgeText: [3, "3000", "1000"],
@@ -368,7 +368,7 @@ var data = {
       title: "SHORT FILM",
       description: "Description 1",
       imageSrc: "banner/ShortFilm.png",
-      badgeText: [5, "10000", "5000"],
+      badgeText: [4, "10000", "5000"],
       regfee : 500
     },
     {
@@ -428,8 +428,8 @@ var data = {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "banner/drone.png",
-      badgeText: [4, "5000", "3000"],
-      regfee : 500
+      badgeText: [5, "5000", "3000"],
+      regfee : 1000
     
     },
     {
@@ -481,7 +481,7 @@ var data = {
       regfee : 500
     },
     {
-      title: "OPERATIONS",
+      title: "OPERATION",
       description: "Description 1",
       imageSrc: "banner/operations.png",
       badgeText: [3, "3000", "1000"],
