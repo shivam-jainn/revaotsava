@@ -1370,9 +1370,9 @@ h1 > .magic > .magic-text {
 
 /* frosted glass effect */
 .card-schedule {
-  margin: 0 10%;
-  height: clamp(200px, 350px, 400px);
-  width: clamp(400px, 60vw, 650px);
+  margin: 0 5%;
+  height: clamp(100px, 350px, 300px);
+  width: clamp(300px, 50vw, 550px);
   background: rgb(255, 255, 255);
   background: linear-gradient(
     145deg,
