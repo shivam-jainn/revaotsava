@@ -942,6 +942,13 @@ h1 > .magic > .magic-text {
   }
 }
 
+.hero-insta-link {
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Nunito, sans-serif;
+  word-spacing: normal;
+}
+
 /*---------------------------------------
   => EVENTS SECTION STYLES             
 -----------------------------------------*/
