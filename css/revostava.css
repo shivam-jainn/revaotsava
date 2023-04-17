@@ -1830,6 +1830,191 @@ Responsive styles
     display: none;
   }
 }
+/*---------------------------------------
+ => Meet the team SYTLES
+-----------------------------------------*/
+
+/* Meet the team section */
+
+/* body{
+  background-image: linear-gradient(#3F51B5, #1A237E);
+background-repeat: no-repeat;
+color: #000;
+overflow-x: hidden
+}
+
+
+p {
+color:#fff;
+}
+
+h2 {
+font-weight:bold;
+margin-bottom:40px;
+padding-top:40px;
+color:#fff;
+} */
+
+@media (max-width: 767px) {
+  h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.intro p {
+  margin-bottom: 0;
+}
+
+.people {
+  padding: 50px 0;
+  cursor: pointer;
+}
+.item {
+  margin-bottom: 30px;
+}
+
+.item .box {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 31, 31, 0.75);
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .cover {
+  opacity: 1;
+}
+
+.item .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbd8fb;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.social {
+  font-size: 18px;
+}
+
+.social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+.social a:hover {
+  opacity: 1;
+}
+
+/* thew bottom slide with rest */
+.tcb-product-slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.tcb-product-slider .carousel-control {
+  width: 5%;
+}
+.tcb-product-item a {
+  color: #147196;
+}
+.tcb-product-item a:hover {
+  text-decoration: none;
+}
+.tcb-product-item .tcb-hline {
+  margin: 10px 0;
+  height: 1px;
+  background: #ccc;
+}
+@media all and (max-width: 768px) {
+  .tcb-product-item {
+    margin-bottom: 30px;
+  }
+}
+.tcb-product-photo {
+  text-align: center;
+  height: 180px;
+  background: #fff;
+}
+.tcb-product-photo img {
+  height: 100%;
+  display: inline-block;
+}
+.tcb-product-info {
+  background: #f0f0f0;
+  padding: 15px;
+}
+.tcb-product-title h4 {
+  margin-top: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tcb-product-rating {
+  color: #acacac;
+}
+.tcb-product-rating .active {
+  color: #ffb500;
+}
+.tcb-product-price {
+  color: firebrick;
+  font-size: 18px;
+}
+
+.details {
+  margin: 50px 0;
+}
+.details h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+.details .back-link {
+  text-align: center;
+}
+.details .back-link a {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 15px 30px;
+  background: #333;
+  color: #fff;
+  border-radius: 24px;
+}
+.details .back-link a svg {
+  margin-right: 10px;
+  vertical-align: text-top;
+  display: inline-block;
+}
 
 /*---------------------------------------
  => FAQ SYTLES
@@ -1921,7 +2106,7 @@ Responsive styles
   background-image: none;
 }
 
-footer{
+footer {
   position: relative;
   width: 93%;
   margin: 0 auto;
@@ -1929,4 +2114,3 @@ footer{
   margin-top: 40px;
   bottom: 30px;
 }
-
