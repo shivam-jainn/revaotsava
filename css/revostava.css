@@ -1879,7 +1879,7 @@ color:#fff;
 } */
 
 .people {
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
   cursor: pointer;
 }
 .item {
@@ -2830,4 +2830,23 @@ body {
   height: 2px;
   transform: rotate(90deg);
   background: var(--color-white-100);
+}
+
+.poster-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+/* responsive styles for bigger screens */
+@media screen and (min-width: 600px) {
+  .poster-container {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .poster-container {
+    width: 700px;
+  }
 }
