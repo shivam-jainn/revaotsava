@@ -2838,6 +2838,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.artist-poster {
+  border-radius: 2.5%;
+}
 /* responsive styles for bigger screens */
 @media screen and (min-width: 600px) {
   .poster-container {
