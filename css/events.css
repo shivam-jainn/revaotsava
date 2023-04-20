@@ -393,6 +393,9 @@ body {
 .wrapper .button:nth-child(10):hover .icon {
   background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
 }
+.wrapper .button:nth-child(11):hover .icon {
+  background: linear-gradient(110deg, #94bbe9 0%, #d6aae0 50%, #e99494 100%);
+}
 .wrapper .button .icon i {
   font-size: 25px;
   line-height: 60px;
