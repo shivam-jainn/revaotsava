@@ -1836,6 +1836,25 @@ Responsive styles
     display: none;
   }
 }
+.cara-container {
+  /* margin: 0 7%; */
+
+  max-width: 800px;
+  margin: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .cara-container {
+    margin: 0 0%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cara-container {
+    /* margin: 0 20%; */
+  }
+}
+
 /*---------------------------------------
  => Meet the team SYTLES
 -----------------------------------------*/
