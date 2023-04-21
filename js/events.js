@@ -1,184 +1,163 @@
-  // Sample JSON data
+// Sample JSON data
 var data = {
-  "DANCE": [
+  DANCE: [
     {
       title: "CLASSICAL DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/classicalgroupdance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "WESTERN DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/westerndance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-    
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FOLK DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/folkgroup.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "WESTERN STREET (SOLO)",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLASSICAL DANCE (SOLO)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "banner/ClassicalSolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    },  
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
   ],
-  "MUSIC": [
+  MUSIC: [
     {
       title: "BATTLE OF BANDS",
       description: "Description 1",
       imageSrc: "banner/battleofbands.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLASSICAL SINGING (SOLO)",
       description: "Description 1",
       imageSrc: "banner/classicalsolosinging.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    },
-    {
-      title: "WESTERN SINGING (SOLO)",
-      description: "Description 1",
-      imageSrc: "banner/beatboxing.png",
-      badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEAT BOXING",
       description: "Description 1",
+      imageSrc: "banner/beatboxing.png",
+      badgeText: [4, "5000", "3000"],
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
+    {
+      title: "WESTERN SINGING (SOLO) ",
+      description: "Description 1",
       imageSrc: "banner/westernsolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "MEDIA": [
+  MEDIA: [
     {
       title: "SHORT FILM",
       description: "Description 1",
       imageSrc: "banner/ShortFilm.png",
       badgeText: [4, "10000", "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "PHOTOGRAPHY",
       description: "Description 1",
       imageSrc: "banner/photography.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "REELS",
       description: "Description 1",
       imageSrc: "banner/reel.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "FASHION": [
-      {
-        title: "FASHION SHOW",
-        description: "Description 1",
-        imageSrc: "banner/fashionshow.png",
-        badgeText: [5, "10000", "5000"],
-        regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-      }
+  FASHION: [
+    {
+      title: "FASHION SHOW",
+      description: "Description 1",
+      imageSrc: "banner/fashionshow.png",
+      badgeText: [5, "10000", "5000"],
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
   ],
-  "SPORTS": [
+  SPORTS: [
     {
       title: "FOOTBALL",
       description: "Description 1",
       imageSrc: "banner/football.png",
-      badgeText: [5,"10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      badgeText: [5, "10000", "5000"],
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "KABBADI",
       description: "Description 1",
       imageSrc: "banner/kabbadi.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "TECHNICAL": [
+  TECHNICAL: [
     {
       title: "RC DRAG AND ENDURANCE",
       description: "Description 1",
       imageSrc: "banner/rcdragandendurance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "LINE FOLLOW ROBOT",
       description: "Description 1",
       imageSrc: "banner/linefollowrobot.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "banner/drone.png",
       badgeText: [5, "5000", "3000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "THEATRE": [
+  THEATRE: [
     // {
     //   title: "MIME",
     //   description: "Description 1",
@@ -190,84 +169,74 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/Theatre.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "STREET PLAY",
       description: "Description 1",
       imageSrc: "banner/streetplay.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "MANAGEMENT": [
+  MANAGEMENT: [
     {
       title: "TREASURE HUNT",
       description: "Description 1",
       imageSrc: "banner/treasurehunt.png",
       badgeText: [4, "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST MANAGEMENT",
       description: "Description 1",
       imageSrc: "banner/bestmanagement.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST MANAGER",
       description: "Description 1",
       imageSrc: "banner/bestmanager.png",
       badgeText: [4, "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "MARKETING",
       description: "Description 1",
       imageSrc: "banner/marketing.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST ENTREPRENEUR",
       description: "Description 1",
       imageSrc: "banner/entrepreneur.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "OPERATION",
       description: "Description 1",
       imageSrc: "banner/operations.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "AD REELS",
       description: "Description 1",
       imageSrc: "banner/AdReels.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     // {
     //   title: "MAD ADS",
@@ -280,18 +249,16 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/HR.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FINANCE",
       description: "Description 1",
       imageSrc: "banner/finance.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
   "VISUAL ARTS": [
@@ -300,441 +267,387 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/apparelpainting.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "ILLUSTRATION",
       description: "Description 1",
       imageSrc: "banner/illustration.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLAY MODELING",
       description: "Description 1",
       imageSrc: "banner/claymodelling.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FACE PAINTING",
       description: "Description 1",
       imageSrc: "banner/FacePainting.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "LITERATURE": [
+  LITERATURE: [
     {
       title: "POETRY",
       description: "Description 1",
       imageSrc: "banner/poetry.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "DEBATE",
       description: "Description 1",
       imageSrc: "banner/debate.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
   ],
-  "ALL EVENTS":[
+  "ALL EVENTS": [
     {
       title: "CLASSICAL DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/classicalgroupdance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "WESTERN DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/westerndance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-    
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FOLK DANCE (GROUP)",
       description: "Description 1",
       imageSrc: "banner/folkgroup.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "WESTERN STREET SOLO",
       description: "Description 1",
       imageSrc: "banner/westernstreetdance.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLASSICAL DANCE (SOLO)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Purus sit amet volutpat consequat mauris nunc congue nisi. Dolor morbi non arcu risus quis varius quam quisque. Aenean pharetra magna ac placerat. Sit amet luctus venenatis lectus magna fringilla urna. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Metus aliquam eleifend mi in nulla. Eget velit aliquet sagittis id consectetur purus ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Metus aliquam eleifend mi in nulla posuere. Praesent tristique magna sit amet purus. Vel facilisis volutpat est velit egestas. Venenatis cras sed felis eget velit aliquet. Habitant morbi tristique senectus et.",
       imageSrc: "banner/ClassicalSolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    },  
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
     {
       title: "BATTLE OF BANDS",
       description: "Description 1",
       imageSrc: "banner/battleofbands.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLASSICAL SINGING (SOLO)",
       description: "Description 1",
       imageSrc: "banner/classicalsolosinging.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    },
-    {
-      title: "WESTERN SINGING (SOLO)",
-      description: "Description 1",
-      imageSrc: "banner/beatboxing.png",
-      badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEAT BOXING",
       description: "Description 1",
+      imageSrc: "banner/beatboxing.png",
+      badgeText: [4, "5000", "3000"],
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
+    {
+      title: "WESTERN SINGING (SOLO) ",
+      description: "Description 1",
       imageSrc: "banner/westernsolo.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "SHORT FILM",
       description: "Description 1",
       imageSrc: "banner/ShortFilm.png",
       badgeText: [4, "10000", "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "PHOTOGRAPHY",
       description: "Description 1",
       imageSrc: "banner/photography.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "REELS",
       description: "Description 1",
       imageSrc: "banner/reel.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FASHION SHOW",
       description: "Description 1",
       imageSrc: "banner/fashionshow.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FOOTBALL",
       description: "Description 1",
       imageSrc: "banner/football.png",
-      badgeText: [5,"10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-
+      badgeText: [5, "10000", "5000"],
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "KABBADI",
       description: "Description 1",
       imageSrc: "banner/kabbadi.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "RC DRAG AND ENDURANCE",
       description: "Description 1",
       imageSrc: "banner/rcdragandendurance.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "LINE FOLLOW ROBOT",
       description: "Description 1",
       imageSrc: "banner/linefollowrobot.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "DRONE",
       description: "Description 1",
       imageSrc: "banner/drone.png",
       badgeText: [5, "5000", "3000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-    
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "SKIT",
       description: "Description 1",
       imageSrc: "banner/Theatre.png",
       badgeText: [5, "10000", "5000"],
-      regfee : 1000,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 1000,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "STREET PLAY",
       description: "Description 1",
       imageSrc: "banner/streetplay.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
-    }, {
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+    },
+    {
       title: "TREASURE HUNT",
       description: "Description 1",
       imageSrc: "banner/treasurehunt.png",
       badgeText: [4, "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST MANAGEMENT",
       description: "Description 1",
       imageSrc: "banner/bestmanagement.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST MANAGER",
       description: "Description 1",
       imageSrc: "banner/bestmanager.png",
       badgeText: [4, "5000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "MARKETING",
       description: "Description 1",
       imageSrc: "banner/marketing.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "BEST ENTREPRENEUR",
       description: "Description 1",
       imageSrc: "banner/entrepreneur.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "OPERATION",
       description: "Description 1",
       imageSrc: "banner/operations.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "AD REELS",
       description: "Description 1",
       imageSrc: "banner/AdReels.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "HR",
       description: "Description 1",
       imageSrc: "banner/HR.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FINANCE",
       description: "Description 1",
       imageSrc: "banner/finance.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "APPAREL PAINTING",
       description: "Description 1",
       imageSrc: "banner/apparelpainting.png",
       badgeText: [4, "5000", "3000"],
-      regfee : 500,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 500,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "ILLUSTRATION",
       description: "Description 1",
       imageSrc: "banner/illustration.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "CLAY MODELING",
       description: "Description 1",
       imageSrc: "banner/claymodelling.png",
       badgeText: [3, "5000", "3000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "FACE PAINTING",
       description: "Description 1",
       imageSrc: "banner/FacePainting.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "POETRY",
       description: "Description 1",
       imageSrc: "banner/poetry.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
     {
       title: "DEBATE",
       description: "Description 1",
       imageSrc: "banner/debate.png",
       badgeText: [3, "3000", "1000"],
-      regfee : 300,
-      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
-
+      regfee: 300,
+      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
     },
-  ]
-
-
+  ],
 };
-
 
 // Generate categories
 
-
-
 // mobile menu drope downe
-let selectmenu = document.querySelector(".selectmenu")
+let selectmenu = document.querySelector(".selectmenu");
 // selectmenu.classList
 
-let selectcont = document.createElement("div")
-selectcont.classList.add("select-container")
+let selectcont = document.createElement("div");
+selectcont.classList.add("select-container");
 
-let selectdiv = document.createElement("div")
-selectdiv.classList.add("select")
+let selectdiv = document.createElement("div");
+selectdiv.classList.add("select");
 
-
-const input = document.createElement('input');
-input.type = 'text';
-input.id = 'input';
-input.placeholder = 'All events';
-input.addEventListener('focus', () => {
+const input = document.createElement("input");
+input.type = "text";
+input.id = "input";
+input.placeholder = "All events";
+input.addEventListener("focus", () => {
   input.blur();
 });
 
 selectdiv.appendChild(input);
 
-const optCont = document.createElement("div")
-optCont.classList.add("option-container")
-
-
+const optCont = document.createElement("div");
+optCont.classList.add("option-container");
 
 var categories = Object.keys(data);
 for (let index = 0; index < categories.length; index++) {
-  const divopt = document.createElement("div")
-divopt.classList.add("option") 
-  const label = document.createElement("label")
-    label.innerText = categories[index];
-    divopt.appendChild(label)
-    optCont.appendChild(divopt)
-
+  const divopt = document.createElement("div");
+  divopt.classList.add("option");
+  const label = document.createElement("label");
+  label.innerText = categories[index];
+  divopt.appendChild(label);
+  optCont.appendChild(divopt);
 }
 
-
-
-selectcont.appendChild(selectdiv)
-selectcont.appendChild(optCont)
-selectmenu.appendChild(selectcont)
-
+selectcont.appendChild(selectdiv);
+selectcont.appendChild(optCont);
+selectmenu.appendChild(selectcont);
 
 selectdiv.onclick = () => {
-    selectcont.classList.toggle("active");
+  selectcont.classList.toggle("active");
 };
 
-
-optCont.querySelectorAll('.option').forEach((e) => {
+optCont.querySelectorAll(".option").forEach((e) => {
   e.addEventListener("click", () => {
-      input.value = e.querySelector('label').innerText;
-      loadCards(e.querySelector('label').innerText);
-      selectcont.classList.remove("active");
-    });
+    input.value = e.querySelector("label").innerText;
+    loadCards(e.querySelector("label").innerText);
+    selectcont.classList.remove("active");
+  });
 });
-
 
 // const wrapper = document.querySelector(".wrapper");
 // wrapper.appendChild(optCont)
@@ -744,13 +657,11 @@ optCont.querySelectorAll('.option').forEach((e) => {
 // const categorySection = document.createElement("div");
 // categorySection.classList.add("sectiontag");
 
-
 // const outerWrapper = document.createElement("div");
 // outerWrapper.classList.add("outer-wrapper");
 
 // const innerWrapper = document.createElement("div");
 // innerWrapper.classList.add("inner-wrapper");
-
 
 // var categories = Object.keys(data);
 // for (var i = 0; i < categories.length; i++) {
@@ -764,7 +675,6 @@ optCont.querySelectorAll('.option').forEach((e) => {
 //     innerWrapper.appendChild(category);
 // }
 
-
 // const line = document.createElement("div");
 // line.classList.add("pseduo-track");
 
@@ -775,34 +685,19 @@ optCont.querySelectorAll('.option').forEach((e) => {
 //     // console.log("ok")
 //     outerWrapper.appendChild(selectmenu);
 
-
-//   } 
+//   }
 // })
 
 // outerWrapper.appendChild(innerWrapper);
-
 
 // categoryBody.appendChild(categorySection);
 // categorySection.appendChild(outerWrapper);
 // categorySection.appendChild(line);
 
-
-
-
 // category.classList.add("");
-window.onload = function() {
+window.onload = function () {
   loadCards("ALL EVENTS");
 };
-
-
-
-
-
-
-
-
-
-
 
 // Load cards for selected category
 function loadCards(category) {
@@ -810,7 +705,6 @@ function loadCards(category) {
   var cardsDiv = document.getElementById("cards");
   cardsDiv.innerHTML = "";
   for (var i = 0; i < cardData.length; i++) {
-
     const cards = document.createElement("div");
     cards.classList.add("card");
 
@@ -832,56 +726,42 @@ function loadCards(category) {
 
     // console.log(cardData[0].badgeText[0]);
 
-    cardData[i].badgeText.map((item,index) => {
+    cardData[i].badgeText.map((item, index) => {
       const badge = document.createElement("div");
       badge.classList.add("badge");
-      if(typeof(item)==="string"){
-        
-          // if (index==1) {
-    
-          //   const icon = document.createElement("span");
-          //   icon.innerText = `🥇`;
-          //   icon.classList.add("iconfirst")
-          //   badge.appendChild(icon);
-
-          //   const rate = document.createElement("span");
-          //   rate.innerText = `₹${item}`;
-          //   rate.classList.add("ratefirst")
-          //   badge.appendChild(rate);
-
-
-          // } else if(index==2) {
-     
-          //   const icon = document.createElement("span");
-          //   icon.innerText = `🥈`;
-          //   icon.classList.add("iconfirst")
-          //   badge.appendChild(icon);
-
-          //   const rate = document.createElement("span");
-          //   rate.innerText = `₹${item}`;
-          //   badge.appendChild(rate);
-
-          // }
-        
+      if (typeof item === "string") {
+        // if (index==1) {
+        //   const icon = document.createElement("span");
+        //   icon.innerText = `🥇`;
+        //   icon.classList.add("iconfirst")
+        //   badge.appendChild(icon);
+        //   const rate = document.createElement("span");
+        //   rate.innerText = `₹${item}`;
+        //   rate.classList.add("ratefirst")
+        //   badge.appendChild(rate);
+        // } else if(index==2) {
+        //   const icon = document.createElement("span");
+        //   icon.innerText = `🥈`;
+        //   icon.classList.add("iconfirst")
+        //   badge.appendChild(icon);
+        //   const rate = document.createElement("span");
+        //   rate.innerText = `₹${item}`;
+        //   badge.appendChild(rate);
+        // }
         // badge.textContent = item;
+      } else {
+        const staricon = document.createElement("span");
 
-
-      }else{
-
-       const staricon = document.createElement("span")
-
-       let string = ""
-for (let i = 0; i < item; i++) {
-  string+="★"
-}
-staricon.innerText=string;
-       badge.appendChild(staricon);
-        
+        let string = "";
+        for (let i = 0; i < item; i++) {
+          string += "★";
+        }
+        staricon.innerText = string;
+        badge.appendChild(staricon);
       }
 
       cardBadges.appendChild(badge);
     });
-
 
     cardImgContainer.appendChild(cardBadges);
 
@@ -894,39 +774,32 @@ staricon.innerText=string;
 
     cardInfo.appendChild(cardTitle);
 
-    cardregistrationfee = document.createElement("h6")
-    cardregistrationfee.innerText=`Registration Fees 💰: ₹${cardData[i].regfee}`;
-    cardregistrationfee.classList="regfees";
+    cardregistrationfee = document.createElement("h6");
+    cardregistrationfee.innerText = `Registration Fees 💰: ₹${cardData[i].regfee}`;
+    cardregistrationfee.classList = "regfees";
 
     const cardDesc = document.createElement("div");
     cardDesc.classList.add("card-desc");
 
-
-   
     cardDesc.innerHTML = cardData[i].description;
 
     cardInfo.appendChild(cardregistrationfee);
 
     // cardInfo.appendChild(cardDesc);
 
-
-
     // const regbutton = document.createElement("button");
     const anch = document.createElement("a");
     anch.classList.add("button-link");
     anch.href = cardData[i].anchorlink;
-    anch.innerText="Register Now";
-    
-    
+    anch.innerText = "Register Now";
+
     cards.appendChild(cardImgContainer);
     cards.appendChild(cardInfo);
     cards.appendChild(anch);
     // cards.appendChild(regbutton);
 
-
     cardsDiv.appendChild(cards);
   }
-
 
   // cardsDiv.addEventListener("click", (event) => {
   //   const eventdesc = event.target.closest(".card");
@@ -957,8 +830,6 @@ staricon.innerText=string;
   //   }
   // });
 }
-
-
 
 function showPopup(cardData) {
   const existingPopup = document.querySelector(".popup");
@@ -998,42 +869,37 @@ function showPopup(cardData) {
     // close the popup when the close button is clicked
     popup.remove();
   });
-  
+
   document.body.appendChild(popup);
-  
 }
 
-
-
-
-document.getElementById("dancenav").addEventListener('click',()=>{
+document.getElementById("dancenav").addEventListener("click", () => {
   loadCards("DANCE");
-})
-document.getElementById("musicnav").addEventListener('click',()=>{
+});
+document.getElementById("musicnav").addEventListener("click", () => {
   loadCards("MUSIC");
-})
-document.getElementById("medianav").addEventListener('click',()=>{
+});
+document.getElementById("medianav").addEventListener("click", () => {
   loadCards("MEDIA");
-})
-document.getElementById("fashionnav").addEventListener('click',()=>{
+});
+document.getElementById("fashionnav").addEventListener("click", () => {
   loadCards("FASHION");
-})
-document.getElementById("sportsnav").addEventListener('click',()=>{
+});
+document.getElementById("sportsnav").addEventListener("click", () => {
   loadCards("SPORTS");
-})
-document.getElementById("technicalnav").addEventListener('click',()=>{
+});
+document.getElementById("technicalnav").addEventListener("click", () => {
   loadCards("TECHNICAL");
-})
-document.getElementById("theatrenav").addEventListener('click',()=>{
+});
+document.getElementById("theatrenav").addEventListener("click", () => {
   loadCards("THEATRE");
-})
-document.getElementById("managementnav").addEventListener('click',()=>{
+});
+document.getElementById("managementnav").addEventListener("click", () => {
   loadCards("MANAGEMENT");
-})
-document.getElementById("visualartsnav").addEventListener('click',()=>{
+});
+document.getElementById("visualartsnav").addEventListener("click", () => {
   loadCards("VISUAL ARTS");
-})
-document.getElementById("literaturenav").addEventListener('click',()=>{
+});
+document.getElementById("literaturenav").addEventListener("click", () => {
   loadCards("LITERATURE");
-})
-
+});
