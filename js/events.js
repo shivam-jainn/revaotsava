@@ -203,8 +203,9 @@ var data = {
       description: "Description 1",
       imageSrc: "banner/bestmanager.png",
       badgeText: [4, "5000"],
-      regfee: 500,
-      anchorlink: "https://forms.gle/cVwa1kdhw3c6kMMW9",
+      regfee : 300,
+      anchorlink : "https://forms.gle/cVwa1kdhw3c6kMMW9"
+
     },
     {
       title: "MARKETING",
